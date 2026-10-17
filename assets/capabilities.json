@@ -1,0 +1,580 @@
+[
+  {
+    "id": "titlebar",
+    "name": "Title bar and window controls",
+    "location": "Top",
+    "kind": "shell",
+    "source": "src/vs/workbench/browser/parts/titlebar",
+    "purpose": "Application title, command centre and window actions.",
+    "strategy": "Preserve native window integration; change product identity deliberately.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": true
+  },
+  {
+    "id": "activitybar",
+    "name": "Activity Bar",
+    "location": "Left, movable",
+    "kind": "shell",
+    "source": "src/vs/workbench/browser/parts/activitybar",
+    "purpose": "Selects view containers such as Explorer and Extensions.",
+    "strategy": "Hide or relocate through supported layout actions. It is not a list of every installed extension.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "layout"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "sidebar",
+    "name": "Primary Side Bar",
+    "location": "Beside Activity Bar",
+    "kind": "shell",
+    "source": "src/vs/workbench/browser/parts/sidebar",
+    "purpose": "Hosts active views such as files or a domain project tree.",
+    "strategy": "Keep the container and choose its contents; hiding it does not disable views.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "layout"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "auxiliarybar",
+    "name": "Secondary Side Bar",
+    "location": "Opposite primary sidebar",
+    "kind": "shell",
+    "source": "src/vs/workbench/browser/parts/auxiliarybar",
+    "purpose": "Provides a second area for views.",
+    "strategy": "Candidate location for an inspector; a scientific property inspector must still be implemented.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "layout"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "editor",
+    "name": "Editor area and groups",
+    "location": "Centre",
+    "kind": "shell",
+    "source": "src/vs/workbench/browser/parts/editor",
+    "purpose": "Holds tabs, split groups, text editors and custom editors.",
+    "strategy": "Keep the editor infrastructure even when a custom domain document dominates.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "layout",
+      "working-copy"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "panel",
+    "name": "Panel container",
+    "location": "Bottom or side",
+    "kind": "shell",
+    "source": "src/vs/workbench/browser/parts/panel",
+    "purpose": "Hosts Terminal, Output, Problems and other views.",
+    "strategy": "Hide the container without assuming its services stop.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "layout"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "statusbar",
+    "name": "Status Bar",
+    "location": "Bottom edge",
+    "kind": "shell",
+    "source": "src/vs/workbench/browser/parts/statusbar",
+    "purpose": "Shows state and short actions.",
+    "strategy": "Contribute domain status and remove clutter through layout choices.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "layout"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "commands",
+    "name": "Commands, menus and keybindings",
+    "location": "Menus and palette",
+    "kind": "infrastructure",
+    "source": "src/vs/workbench/services/commands",
+    "purpose": "Dispatches actions independently of their visible button.",
+    "strategy": "Do not remove command infrastructure to hide menu entries.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": false
+  },
+  {
+    "id": "notifications",
+    "name": "Notifications and progress",
+    "location": "Overlay and status surfaces",
+    "kind": "infrastructure",
+    "source": "src/vs/workbench/browser/parts/notifications",
+    "purpose": "Reports progress, errors and questions.",
+    "strategy": "Retain failure reporting and accessible alternatives in every profile.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": false
+  },
+  {
+    "id": "layout",
+    "name": "Layout and view registration",
+    "location": "Across the window",
+    "kind": "infrastructure",
+    "source": "src/vs/workbench/services/layout",
+    "purpose": "Coordinates visibility, focus and size of workbench parts.",
+    "strategy": "Treat as foundation, not as a removable ribbon.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": false
+  },
+  {
+    "id": "files",
+    "name": "File Explorer and file operations",
+    "location": "Primary sidebar and commands",
+    "kind": "feature",
+    "source": "src/vs/workbench/contrib/files",
+    "purpose": "Browse, open, rename and organize workspace resources.",
+    "strategy": "A domain tree may supplement it; file services remain necessary when the tree is hidden.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "workspace",
+      "working-copy"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "search",
+    "name": "Search across files",
+    "location": "Sidebar and search editor",
+    "kind": "feature",
+    "source": "src/vs/workbench/contrib/search",
+    "purpose": "Finds text across workspace resources.",
+    "strategy": "Separate global search from finding text within an editor.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "workspace"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "scm",
+    "name": "Source Control interface",
+    "location": "Activity Bar and sidebar",
+    "kind": "feature",
+    "source": "src/vs/workbench/contrib/scm",
+    "purpose": "Presents change sets supplied by providers.",
+    "strategy": "Separate provider UI from the bundled Git extension and an installed Git executable.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "extension-host"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "debug",
+    "name": "Run and Debug",
+    "location": "Sidebar, toolbar and console",
+    "kind": "feature",
+    "source": "src/vs/workbench/contrib/debug",
+    "purpose": "Drives debug sessions through adapters.",
+    "strategy": "Adapter licensing and terminal-backed launches require separate review.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "commands"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "tasks",
+    "name": "Tasks and problem matchers",
+    "location": "Commands and terminal",
+    "kind": "feature",
+    "source": "src/vs/workbench/contrib/tasks",
+    "purpose": "Runs configured processes and associates output with problems.",
+    "strategy": "Observed dependency on terminal services; do not remove terminal while claiming task parity.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "terminal",
+      "commands"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "terminal",
+    "name": "Integrated terminal",
+    "location": "Panel or editor",
+    "kind": "feature",
+    "source": "src/vs/workbench/contrib/terminal",
+    "purpose": "Shell sessions, process interaction and extension terminal API.",
+    "strategy": "Hiding the panel leaves terminal APIs available. Exclusion needs a dedicated experiment.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "commands"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "output",
+    "name": "Output and logs",
+    "location": "Panel",
+    "kind": "feature",
+    "source": "src/vs/workbench/contrib/output",
+    "purpose": "Named text channels for tools and extensions.",
+    "strategy": "A useful low-complexity interface for a domain engine; distinct from an interactive shell.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "commands"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "problems",
+    "name": "Problems and diagnostics",
+    "location": "Panel and editor markers",
+    "kind": "feature",
+    "source": "src/vs/workbench/contrib/markers",
+    "purpose": "Collects diagnostic messages and locations.",
+    "strategy": "Domain validation can reuse diagnostics rather than create a second error system.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": true
+  },
+  {
+    "id": "extensions-ui",
+    "name": "Extensions manager",
+    "location": "Activity Bar and sidebar",
+    "kind": "feature",
+    "source": "src/vs/workbench/contrib/extensions",
+    "purpose": "Lists and manages extensions.",
+    "strategy": "Hiding this view does not remove the extension host or prevent installation through other routes.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "extension-host"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "extension-host",
+    "name": "Extension hosts and API bridge",
+    "location": "Background processes",
+    "kind": "infrastructure",
+    "source": "src/vs/workbench/services/extensions",
+    "purpose": "Loads extensions and mediates their API access.",
+    "strategy": "Retain for domain extensions. Desktop, web and remote hosts have different capabilities.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": false
+  },
+  {
+    "id": "settings",
+    "name": "Settings and keybinding editors",
+    "location": "Editor and menus",
+    "kind": "feature",
+    "source": "src/vs/workbench/contrib/preferences",
+    "purpose": "Exposes configuration and shortcuts.",
+    "strategy": "Defaults do not enforce a restriction; user and workspace overrides must be considered.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "commands"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "themes",
+    "name": "Themes and icon themes",
+    "location": "Whole workbench",
+    "kind": "feature",
+    "source": "src/vs/workbench/contrib/themes",
+    "purpose": "Changes colours and icons through supported contributions.",
+    "strategy": "Use theme tokens. Arbitrary workbench DOM/CSS changes are not a supported extension mechanism.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": true
+  },
+  {
+    "id": "workspace",
+    "name": "Workspaces and folders",
+    "location": "Explorer, recent items and window state",
+    "kind": "infrastructure",
+    "source": "src/vs/workbench/services/workspaces",
+    "purpose": "Manages workspace identity and multi-folder configuration.",
+    "strategy": "Keep separate from the scientific project format and its migration rules.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": false
+  },
+  {
+    "id": "working-copy",
+    "name": "Unsaved documents and backup",
+    "location": "Background, tabs and save prompts",
+    "kind": "infrastructure",
+    "source": "src/vs/workbench/services/workingCopy",
+    "purpose": "Tracks document lifecycle and recovery.",
+    "strategy": "Preserve save, revert, dirty-state and recovery contracts when adding domain editors.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": false
+  },
+  {
+    "id": "webviews",
+    "name": "Webviews and messaging",
+    "location": "Editors or side views",
+    "kind": "feature",
+    "source": "src/vs/workbench/contrib/webview",
+    "purpose": "Hosts specialized HTML interfaces such as plots.",
+    "strategy": "Requires message contracts, resource policy, keyboard and theme integration.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": true
+  },
+  {
+    "id": "custom-editors",
+    "name": "Custom document editors",
+    "location": "Editor tabs",
+    "kind": "feature",
+    "source": "src/vs/workbench/contrib/customEditor",
+    "purpose": "Connects a domain file to a specialized editor provider.",
+    "strategy": "Use the document lifecycle; test undo, save, restore and multiple views.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "editor",
+      "webviews",
+      "extension-host",
+      "working-copy"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "notebooks",
+    "name": "Notebook workbench",
+    "location": "Editor area",
+    "kind": "feature",
+    "source": "src/vs/workbench/contrib/notebook",
+    "purpose": "Hosts cell-based documents, execution and outputs.",
+    "strategy": "Controller, renderer and format provider are separate components; do not equate this with Jupyter availability.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "editor",
+      "extension-host"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "testing",
+    "name": "Testing interface",
+    "location": "Sidebar and editor",
+    "kind": "feature",
+    "source": "src/vs/workbench/contrib/testing",
+    "purpose": "Displays tests provided by extensions.",
+    "strategy": "Useful for reproducibility checks, but optional domain UI needs assessment.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "extension-host"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "outline",
+    "name": "Outline and symbol navigation",
+    "location": "Sidebar and breadcrumbs",
+    "kind": "feature",
+    "source": "src/vs/workbench/contrib/outline",
+    "purpose": "Navigates document structure from providers.",
+    "strategy": "Could expose model structure when a provider has meaningful symbols.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": true
+  },
+  {
+    "id": "timeline",
+    "name": "Timeline and history views",
+    "location": "Sidebar",
+    "kind": "feature",
+    "source": "src/vs/workbench/contrib/timeline",
+    "purpose": "Shows history supplied by providers.",
+    "strategy": "A possible provenance entry point; scientific reproducibility needs richer records.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": true
+  },
+  {
+    "id": "trust",
+    "name": "Workspace Trust",
+    "location": "Prompt and restricted features",
+    "kind": "infrastructure",
+    "source": "src/vs/workbench/services/workspaces/common/workspaceTrust.ts",
+    "purpose": "Coordinates trust state used by execution-related features.",
+    "strategy": "Do not treat hiding trust prompts as disabling arbitrary execution. Audit trust providers before changes.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": false
+  },
+  {
+    "id": "accessibility",
+    "name": "Accessibility and signals",
+    "location": "All surfaces",
+    "kind": "infrastructure",
+    "source": "src/vs/workbench/contrib/accessibility",
+    "purpose": "Provides accessible navigation and feature support.",
+    "strategy": "Preserve keyboard access and screen-reader behaviour; assess each custom view.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": false
+  },
+  {
+    "id": "authentication",
+    "name": "Accounts and authentication",
+    "location": "Account menu and providers",
+    "kind": "integration",
+    "source": "src/vs/workbench/contrib/authentication",
+    "purpose": "Connects extensions to authentication providers.",
+    "strategy": "Public API presence does not supply credentials or permission to reuse a hosted service.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": true
+  },
+  {
+    "id": "sync",
+    "name": "Settings Sync",
+    "location": "Account and settings flows",
+    "kind": "integration",
+    "source": "src/vs/workbench/contrib/userDataSync",
+    "purpose": "Synchronizes user state through configured services.",
+    "strategy": "Service operation and account entitlement are separate from open-source client code.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": true
+  },
+  {
+    "id": "remote",
+    "name": "Remote workbench plumbing",
+    "location": "Remote indicator and commands",
+    "kind": "integration",
+    "source": "src/vs/workbench/contrib/remote",
+    "purpose": "Connects a workbench to remote resources and extension hosts.",
+    "strategy": "Do not assume Microsoft Remote extensions or server distribution rights carry over.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": true
+  },
+  {
+    "id": "chat",
+    "name": "Chat and agent interfaces",
+    "location": "Views, editors and commands",
+    "kind": "integration",
+    "source": "src/vs/workbench/contrib/chat",
+    "purpose": "User interfaces and orchestration for assistant workflows.",
+    "strategy": "Model access, provider extensions and credentials are separately governed. Disabling one view is not removal of all AI code.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": true
+  },
+  {
+    "id": "mcp",
+    "name": "MCP integrations",
+    "location": "Commands and assistant workflows",
+    "kind": "integration",
+    "source": "src/vs/workbench/contrib/mcp",
+    "purpose": "Connects configured tool servers to supported workflows.",
+    "strategy": "Include in the modern surface inventory; review execution and provider dependencies.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": true
+  },
+  {
+    "id": "updates",
+    "name": "Application updates",
+    "location": "Background and notifications",
+    "kind": "integration",
+    "source": "src/vs/workbench/contrib/update",
+    "purpose": "Checks for and coordinates application updates.",
+    "strategy": "A branded application needs its own release channel, signing and rollback policy.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": true
+  },
+  {
+    "id": "telemetry",
+    "name": "Telemetry client contributions",
+    "location": "Background",
+    "kind": "integration",
+    "source": "src/vs/workbench/contrib/telemetry",
+    "purpose": "Instrumentation integrated with product services.",
+    "strategy": "Audit endpoints and extension telemetry separately; hiding UI has no effect.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": true
+  },
+  {
+    "id": "profiles",
+    "name": "User profiles",
+    "location": "Settings and commands",
+    "kind": "feature",
+    "source": "src/vs/workbench/contrib/userDataProfile",
+    "purpose": "Separates groups of user configuration.",
+    "strategy": "VS Code user profiles are not this project's build manifests; avoid conflating the two.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [
+      "settings"
+    ],
+    "can_hide": true
+  },
+  {
+    "id": "agent-sessions",
+    "name": "Agent Sessions window",
+    "location": "Separate application surface",
+    "kind": "integration",
+    "source": "src/vs/sessions",
+    "purpose": "Additional agent-oriented window in this development snapshot.",
+    "strategy": "Audit independently before promising a classic-workbench-only distribution.",
+    "removal": "unproven",
+    "evidence": "source-location-verified",
+    "requires": [],
+    "can_hide": true
+  }
+]

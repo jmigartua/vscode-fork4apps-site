@@ -1,0 +1,127 @@
+<!-- Closes the reading column opened by _gen/docs-nav.html, adds the right
+     "On this page" list, and wires: current-page marking in the left nav,
+     breadcrumbs, the page TOC (from h2/h3 in the reading column) and a
+     scroll-spy. Pure DOM, no library. -->
+  </div>
+  <aside class="docs-toc"><button class="docs-fold" type="button" data-fold="toc" aria-label="Hide the page outline" title="Hide the page outline">&rsaquo;</button><div class="t">On this page</div><ol></ol></aside>
+</div>
+<script>
+(function () {
+  /* 0. The two side panels fold on their chevrons; the choice is remembered in this browser. */
+  var docs = document.querySelector('.docs');
+  if (docs) {
+    var store = {};
+    try { store = JSON.parse(localStorage.getItem('docs-fold') || '{}'); } catch (e) { store = {}; }
+    function apply() {
+      docs.classList.toggle('nav-folded', !!store.nav);
+      docs.classList.toggle('toc-folded', !!store.toc);
+      document.querySelectorAll('.docs-fold').forEach(function (b) {
+        var which = b.getAttribute('data-fold'), folded = !!store[which];
+        b.innerHTML = (which === 'nav') === folded ? '&rsaquo;' : '&lsaquo;';
+        var what = which === 'nav' ? 'the navigation' : 'the page outline';
+        b.title = (folded ? 'Show ' : 'Hide ') + what; b.setAttribute('aria-label', b.title);
+      });
+    }
+    document.querySelectorAll('.docs-fold').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var which = b.getAttribute('data-fold'); store[which] = !store[which];
+        try { localStorage.setItem('docs-fold', JSON.stringify(store)); } catch (e) {}
+        apply();
+      });
+    });
+    apply();
+  }
+  /* 0b. The header ribbon: mark the entry whose section holds this page. Quarto rewrites the hrefs to
+     relative paths, so folders are read from the resolved URLs; the Overview link gives the site root. */
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll('.site-nav a'));
+    if (!links.length) return;
+    /* a served URL may end in '/' (GitHub Pages: …/about/); read it as …/about/index.html */
+    function folder(path) { if (/\/$/.test(path)) path += 'index.html'; var s = path.split('/').filter(Boolean); return s.length > 1 ? s[s.length - 2] : ''; }
+    var wm = document.querySelector('a.wordmark');            // the wordmark links to the site root
+    var root = folder((wm || links[0]).pathname);
+    var map = { 'focus-literature': 'validation', user: 'manual', theory: 'manual' };
+    function key(path) { var f = folder(path); if (f === root) return 'overview'; if (/^I\d\d$/.test(f)) return 'ideas'; return map[f] || f; }
+    var here = key(location.pathname);
+    links.forEach(function (a) { a.classList.toggle('current', key(a.pathname) === here); });
+  })();
+
+  var main = document.querySelector('.docs-main');
+  var nav = document.querySelector('.docs-nav');
+  var toc = document.querySelector('.docs-toc ol');
+  if (!main || !nav || !toc) return;
+
+  /* 1. Left nav: mark the current page (and section, if the hash matches). */
+  var here = location.pathname.replace(/\/index\.html$/, '/');
+  var links = Array.prototype.slice.call(nav.querySelectorAll('a'));
+  var pageLink = null, hashLink = null;
+  links.forEach(function (a) {
+    var p = a.pathname.replace(/\/index\.html$/, '/');
+    if (p !== here) return;
+    if (!a.hash && !pageLink) pageLink = a;
+    if (a.hash && a.hash === location.hash) hashLink = a;
+  });
+  var cur = hashLink || pageLink;
+  if (cur) {
+    cur.classList.add('current');
+    var det = cur.closest('details.group');
+    if (det) { det.open = true; det.classList.add('has-current'); }
+    /* Breadcrumbs: group title › page (› section). */
+    var crumbs = document.createElement('div');
+    crumbs.className = 'docs-crumbs';
+    var g = det ? det.querySelector('summary.t') : null;
+    var parts = [];
+    function push(t) { if (t && parts[parts.length - 1] !== t) parts.push(t); }
+    if (g) push(g.textContent.trim());
+    if (pageLink && pageLink !== cur) push(pageLink.textContent.trim());
+    push(cur.textContent.trim());
+    crumbs.innerHTML = parts.map(function (t, i) {
+      return (i ? '<span class="sep">›</span>' : '') + '<span>' + t.replace(/</g, '&lt;') + '</span>';
+    }).join('');
+    main.insertBefore(crumbs, main.firstChild);
+  }
+
+  /* 2. Right "On this page": h2 and h3 of the reading column. */
+  var used = {};
+  var heads = Array.prototype.slice.call(main.querySelectorAll('h2, h3')).filter(function (h) {
+    if (h.closest('.site-foot, .featured-band, .msg-grid, [data-toc="no"]')) return false;
+    if (h.classList.contains('unnumbered') || h.id === 'contenido') return false;
+    return h.textContent.trim().length > 0;
+  });
+  heads.forEach(function (h) {
+    if (!h.id) {
+      var s = h.textContent.trim().toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+        .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60) || 'sec';
+      while (used[s] || document.getElementById(s)) s += '-';
+      h.id = s;
+    }
+    used[h.id] = true;
+    var li = document.createElement('li');
+    if (h.tagName === 'H3') li.className = 'l3';
+    var a = document.createElement('a');
+    a.href = '#' + h.id;
+    /* This runs before KaTeX has rendered the headings, so a heading with mathematics still holds TeX
+       source: copy its markup, including the math spans, and let the page's KaTeX pass render the copy. */
+    var copy = h.cloneNode(true);
+    copy.querySelectorAll('.katex-mathml, annotation, .anchorjs-link').forEach(function (n) { n.remove(); });
+    var label = copy.textContent.trim().replace(/\s+/g, ' ');
+    if (copy.querySelector('.math, .math-done, .katex')) a.innerHTML = copy.innerHTML.trim();
+    else a.textContent = label.length > 72 ? label.slice(0, 70).replace(/[\s,;:]+\S*$/, '') + '…' : label;
+    a.title = label;
+    li.appendChild(a);
+    toc.appendChild(li);
+  });
+  if (!heads.length) { document.querySelector('.docs-toc').hidden = true; return; }
+
+  /* 3. Scroll-spy. */
+  var items = Array.prototype.slice.call(toc.querySelectorAll('a'));
+  function spy() {
+    var y = window.scrollY + 120, best = null;
+    heads.forEach(function (h) { if (h.getBoundingClientRect().top + window.scrollY <= y) best = h; });
+    items.forEach(function (a) { a.classList.toggle('current', best && a.getAttribute('href') === '#' + best.id); });
+  }
+  window.addEventListener('scroll', spy, { passive: true });
+  window.addEventListener('hashchange', spy);
+  spy();
+})();
+</script>

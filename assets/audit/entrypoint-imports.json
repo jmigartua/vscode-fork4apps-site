@@ -1,0 +1,1640 @@
+{
+  "src/vs/workbench/workbench.common.main.ts": [
+    {
+      "line": 8,
+      "target": "../editor/editor.all.js"
+    },
+    {
+      "line": 10,
+      "target": "./api/browser/extensionHost.contribution.js"
+    },
+    {
+      "line": 11,
+      "target": "./browser/workbench.contribution.js"
+    },
+    {
+      "line": 12,
+      "target": "./browser/workbench.zenMode.contribution.js"
+    },
+    {
+      "line": 14,
+      "target": "./common/agentsColors.js"
+    },
+    {
+      "line": 15,
+      "target": "./common/agentsSizes.js"
+    },
+    {
+      "line": 22,
+      "target": "./browser/actions/textInputActions.js"
+    },
+    {
+      "line": 23,
+      "target": "./browser/actions/developerActions.js"
+    },
+    {
+      "line": 24,
+      "target": "./browser/actions/helpActions.js"
+    },
+    {
+      "line": 25,
+      "target": "./browser/actions/layoutActions.js"
+    },
+    {
+      "line": 26,
+      "target": "./browser/actions/listCommands.js"
+    },
+    {
+      "line": 27,
+      "target": "./browser/actions/navigationActions.js"
+    },
+    {
+      "line": 28,
+      "target": "./browser/actions/windowActions.js"
+    },
+    {
+      "line": 29,
+      "target": "./browser/actions/workspaceActions.js"
+    },
+    {
+      "line": 30,
+      "target": "./browser/actions/workspaceCommands.js"
+    },
+    {
+      "line": 31,
+      "target": "./browser/actions/quickAccessActions.js"
+    },
+    {
+      "line": 32,
+      "target": "./browser/actions/widgetNavigationCommands.js"
+    },
+    {
+      "line": 39,
+      "target": "./services/actions/common/menusExtensionPoint.js"
+    },
+    {
+      "line": 40,
+      "target": "./api/common/configurationExtensionPoint.js"
+    },
+    {
+      "line": 41,
+      "target": "./api/browser/viewsExtensionPoint.js"
+    },
+    {
+      "line": 48,
+      "target": "./browser/parts/editor/editor.contribution.js"
+    },
+    {
+      "line": 49,
+      "target": "./browser/parts/editor/diffEditor.workbench.contribution.js"
+    },
+    {
+      "line": 50,
+      "target": "./browser/parts/editor/editorParts.js"
+    },
+    {
+      "line": 51,
+      "target": "./browser/parts/paneCompositePartService.js"
+    },
+    {
+      "line": 52,
+      "target": "./browser/parts/banner/bannerPart.js"
+    },
+    {
+      "line": 53,
+      "target": "./browser/parts/statusbar/statusbarPart.js"
+    },
+    {
+      "line": 54,
+      "target": "./browser/parts/titlebar/menubar.contribution.js"
+    },
+    {
+      "line": 61,
+      "target": "../platform/actions/common/actions.contribution.js"
+    },
+    {
+      "line": 62,
+      "target": "../platform/undoRedo/common/undoRedoService.js"
+    },
+    {
+      "line": 63,
+      "target": "../platform/mcp/common/mcpResourceScannerService.js"
+    },
+    {
+      "line": 64,
+      "target": "./services/workspaces/common/editSessionIdentityService.js"
+    },
+    {
+      "line": 65,
+      "target": "./services/workspaces/common/canonicalUriService.js"
+    },
+    {
+      "line": 66,
+      "target": "./services/extensions/browser/extensionUrlHandler.js"
+    },
+    {
+      "line": 67,
+      "target": "./services/keybinding/common/keybindingEditing.js"
+    },
+    {
+      "line": 68,
+      "target": "./services/decorations/browser/decorationsService.js"
+    },
+    {
+      "line": 69,
+      "target": "./services/dialogs/common/dialogService.js"
+    },
+    {
+      "line": 70,
+      "target": "./services/progress/browser/progressService.js"
+    },
+    {
+      "line": 71,
+      "target": "./services/editor/browser/codeEditorService.js"
+    },
+    {
+      "line": 72,
+      "target": "./services/preferences/browser/preferencesService.js"
+    },
+    {
+      "line": 73,
+      "target": "./services/configuration/common/jsonEditingService.js"
+    },
+    {
+      "line": 74,
+      "target": "./services/textmodelResolver/common/textModelResolverService.js"
+    },
+    {
+      "line": 75,
+      "target": "./services/editor/browser/editorService.js"
+    },
+    {
+      "line": 76,
+      "target": "./services/editor/browser/editorResolverService.js"
+    },
+    {
+      "line": 77,
+      "target": "./services/aiEmbeddingVector/common/aiEmbeddingVectorService.js"
+    },
+    {
+      "line": 78,
+      "target": "./services/aiRelatedInformation/common/aiRelatedInformationService.js"
+    },
+    {
+      "line": 79,
+      "target": "./services/aiSettingsSearch/common/aiSettingsSearchService.js"
+    },
+    {
+      "line": 80,
+      "target": "./services/history/browser/historyService.js"
+    },
+    {
+      "line": 81,
+      "target": "./services/activity/browser/activityService.js"
+    },
+    {
+      "line": 82,
+      "target": "./services/keybinding/browser/keybindingService.js"
+    },
+    {
+      "line": 83,
+      "target": "./services/untitled/common/untitledTextEditorService.js"
+    },
+    {
+      "line": 84,
+      "target": "./services/textresourceProperties/common/textResourcePropertiesService.js"
+    },
+    {
+      "line": 85,
+      "target": "./services/textfile/common/textEditorService.js"
+    },
+    {
+      "line": 86,
+      "target": "./services/language/common/languageService.js"
+    },
+    {
+      "line": 87,
+      "target": "./services/model/common/modelService.js"
+    },
+    {
+      "line": 88,
+      "target": "./services/notebook/common/notebookDocumentService.js"
+    },
+    {
+      "line": 89,
+      "target": "./services/commands/common/commandService.js"
+    },
+    {
+      "line": 90,
+      "target": "./services/themes/browser/workbenchThemeService.js"
+    },
+    {
+      "line": 91,
+      "target": "./services/label/common/labelService.js"
+    },
+    {
+      "line": 92,
+      "target": "./services/extensions/common/extensionManifestPropertiesService.js"
+    },
+    {
+      "line": 93,
+      "target": "./services/extensionManagement/common/extensionGalleryService.js"
+    },
+    {
+      "line": 94,
+      "target": "./services/extensionManagement/browser/extensionEnablementService.js"
+    },
+    {
+      "line": 95,
+      "target": "./services/extensionManagement/browser/builtinExtensionsScannerService.js"
+    },
+    {
+      "line": 96,
+      "target": "./services/extensionRecommendations/common/extensionIgnoredRecommendationsService.js"
+    },
+    {
+      "line": 97,
+      "target": "./services/extensionRecommendations/common/workspaceExtensionsConfig.js"
+    },
+    {
+      "line": 98,
+      "target": "./services/extensionManagement/common/extensionFeaturesManagemetService.js"
+    },
+    {
+      "line": 99,
+      "target": "./services/notification/common/notificationService.js"
+    },
+    {
+      "line": 100,
+      "target": "./services/userDataSync/common/userDataSyncUtil.js"
+    },
+    {
+      "line": 101,
+      "target": "./services/userDataProfile/browser/userDataProfileImportExportService.js"
+    },
+    {
+      "line": 102,
+      "target": "./services/userDataProfile/browser/userDataProfileManagement.js"
+    },
+    {
+      "line": 103,
+      "target": "./services/userDataProfile/common/remoteUserDataProfiles.js"
+    },
+    {
+      "line": 104,
+      "target": "./services/remote/common/remoteExplorerService.js"
+    },
+    {
+      "line": 105,
+      "target": "./services/remote/common/remoteExtensionsScanner.js"
+    },
+    {
+      "line": 106,
+      "target": "./services/terminal/common/embedderTerminalService.js"
+    },
+    {
+      "line": 107,
+      "target": "./services/workingCopy/common/workingCopyService.js"
+    },
+    {
+      "line": 108,
+      "target": "./services/workingCopy/common/workingCopyFileService.js"
+    },
+    {
+      "line": 109,
+      "target": "./services/workingCopy/common/workingCopyEditorService.js"
+    },
+    {
+      "line": 110,
+      "target": "./services/filesConfiguration/common/filesConfigurationService.js"
+    },
+    {
+      "line": 111,
+      "target": "./services/views/browser/viewDescriptorService.js"
+    },
+    {
+      "line": 112,
+      "target": "./services/views/browser/viewsService.js"
+    },
+    {
+      "line": 113,
+      "target": "./services/quickinput/browser/quickInputService.js"
+    },
+    {
+      "line": 114,
+      "target": "./services/userDataSync/browser/userDataSyncWorkbenchService.js"
+    },
+    {
+      "line": 115,
+      "target": "./services/authentication/browser/authenticationService.js"
+    },
+    {
+      "line": 116,
+      "target": "./services/authentication/browser/authenticationExtensionsService.js"
+    },
+    {
+      "line": 117,
+      "target": "./services/authentication/browser/authenticationUsageService.js"
+    },
+    {
+      "line": 118,
+      "target": "./services/authentication/browser/authenticationAccessService.js"
+    },
+    {
+      "line": 119,
+      "target": "./services/authentication/browser/authenticationMcpUsageService.js"
+    },
+    {
+      "line": 120,
+      "target": "./services/authentication/browser/authenticationMcpAccessService.js"
+    },
+    {
+      "line": 121,
+      "target": "./services/authentication/browser/authenticationMcpService.js"
+    },
+    {
+      "line": 122,
+      "target": "./services/authentication/browser/dynamicAuthenticationProviderStorageService.js"
+    },
+    {
+      "line": 123,
+      "target": "./services/authentication/browser/authenticationQueryService.js"
+    },
+    {
+      "line": 124,
+      "target": "../platform/hover/browser/hoverService.js"
+    },
+    {
+      "line": 125,
+      "target": "../platform/userInteraction/browser/userInteractionServiceImpl.js"
+    },
+    {
+      "line": 126,
+      "target": "./services/assignment/common/assignmentService.js"
+    },
+    {
+      "line": 127,
+      "target": "./services/outline/browser/outlineService.js"
+    },
+    {
+      "line": 128,
+      "target": "./services/languageDetection/browser/languageDetectionWorkerServiceImpl.js"
+    },
+    {
+      "line": 129,
+      "target": "../editor/common/services/languageFeaturesService.js"
+    },
+    {
+      "line": 130,
+      "target": "../editor/common/services/semanticTokensStylingService.js"
+    },
+    {
+      "line": 131,
+      "target": "../editor/common/services/treeViewsDndService.js"
+    },
+    {
+      "line": 132,
+      "target": "./services/textMate/browser/textMateTokenizationFeature.contribution.js"
+    },
+    {
+      "line": 133,
+      "target": "./services/treeSitter/browser/treeSitter.contribution.js"
+    },
+    {
+      "line": 134,
+      "target": "./services/userActivity/common/userActivityService.js"
+    },
+    {
+      "line": 135,
+      "target": "./services/userActivity/browser/userActivityBrowser.js"
+    },
+    {
+      "line": 136,
+      "target": "./services/userAttention/browser/userAttentionBrowser.js"
+    },
+    {
+      "line": 137,
+      "target": "./services/editor/browser/editorPaneService.js"
+    },
+    {
+      "line": 138,
+      "target": "./services/editor/common/customEditorLabelService.js"
+    },
+    {
+      "line": 139,
+      "target": "./services/dataChannel/browser/dataChannelService.js"
+    },
+    {
+      "line": 140,
+      "target": "./services/github/browser/githubService.js"
+    },
+    {
+      "line": 141,
+      "target": "./services/inlineCompletions/common/inlineCompletionsUnification.js"
+    },
+    {
+      "line": 142,
+      "target": "./services/chat/common/chatEntitlementService.js"
+    },
+    {
+      "line": 143,
+      "target": "./services/agentHost/common/agentHostResourceService.js"
+    },
+    {
+      "line": 144,
+      "target": "../platform/agentHost/browser/agentHostConnectionsService.js"
+    },
+    {
+      "line": 145,
+      "target": "./services/log/common/defaultLogLevels.js"
+    },
+    {
+      "line": 201,
+      "target": "./services/accounts/browser/defaultAccount.js"
+    },
+    {
+      "line": 204,
+      "target": "./services/policies/browser/accountPolicyGate.contribution.js"
+    },
+    {
+      "line": 205,
+      "target": "./services/policies/browser/managedSettingsUpdate.contribution.js"
+    },
+    {
+      "line": 208,
+      "target": "./services/policies/browser/policyTelemetry.contribution.js"
+    },
+    {
+      "line": 211,
+      "target": "./contrib/telemetry/browser/telemetry.contribution.js"
+    },
+    {
+      "line": 214,
+      "target": "./contrib/preferences/browser/preferences.contribution.js"
+    },
+    {
+      "line": 215,
+      "target": "./contrib/preferences/browser/keybindingsEditorContribution.js"
+    },
+    {
+      "line": 216,
+      "target": "./contrib/preferences/browser/preferencesSearch.js"
+    },
+    {
+      "line": 219,
+      "target": "./contrib/performance/browser/performance.contribution.js"
+    },
+    {
+      "line": 222,
+      "target": "./contrib/notebook/browser/notebook.contribution.js"
+    },
+    {
+      "line": 225,
+      "target": "./contrib/speech/browser/speech.contribution.js"
+    },
+    {
+      "line": 228,
+      "target": "./contrib/chat/browser/chat.shared.contribution.js"
+    },
+    {
+      "line": 229,
+      "target": "./contrib/chat/browser/chat.contribution.js"
+    },
+    {
+      "line": 230,
+      "target": "./contrib/chat/browser/agentSessions/agentHost/agentHost.contribution.js"
+    },
+    {
+      "line": 231,
+      "target": "./contrib/chat/browser/remoteAgentHost/remoteAgentHost.contribution.js"
+    },
+    {
+      "line": 232,
+      "target": "./contrib/chat/browser/chat.view.contribution.js"
+    },
+    {
+      "line": 233,
+      "target": "./contrib/inlineChat/browser/inlineChat.contribution.js"
+    },
+    {
+      "line": 236,
+      "target": "./contrib/agentsVoice/browser/agentsVoice.contribution.js"
+    },
+    {
+      "line": 237,
+      "target": "./contrib/mcp/browser/mcp.contribution.js"
+    },
+    {
+      "line": 238,
+      "target": "./contrib/mcp/browser/mcp.view.contribution.js"
+    },
+    {
+      "line": 239,
+      "target": "./contrib/chat/browser/chatSessions/chatSessions.contribution.js"
+    },
+    {
+      "line": 240,
+      "target": "./contrib/chat/browser/contextContrib/chatContext.contribution.js"
+    },
+    {
+      "line": 241,
+      "target": "./contrib/imageCarousel/browser/imageCarousel.contribution.js"
+    },
+    {
+      "line": 244,
+      "target": "./contrib/interactive/browser/interactive.contribution.js"
+    },
+    {
+      "line": 247,
+      "target": "./contrib/replNotebook/browser/repl.contribution.js"
+    },
+    {
+      "line": 250,
+      "target": "./contrib/testing/browser/testing.contribution.js"
+    },
+    {
+      "line": 253,
+      "target": "./contrib/logs/common/logs.contribution.js"
+    },
+    {
+      "line": 256,
+      "target": "./contrib/quickaccess/browser/quickAccess.contribution.js"
+    },
+    {
+      "line": 259,
+      "target": "./contrib/files/browser/explorerViewlet.js"
+    },
+    {
+      "line": 260,
+      "target": "./contrib/files/browser/fileActions.contribution.js"
+    },
+    {
+      "line": 261,
+      "target": "./contrib/files/browser/files.contribution.js"
+    },
+    {
+      "line": 264,
+      "target": "./contrib/bulkEdit/browser/bulkEditService.js"
+    },
+    {
+      "line": 265,
+      "target": "./contrib/bulkEdit/browser/preview/bulkEdit.contribution.js"
+    },
+    {
+      "line": 268,
+      "target": "./contrib/inlineCompletions/browser/renameSymbolTrackerService.js"
+    },
+    {
+      "line": 271,
+      "target": "./contrib/search/browser/search.contribution.js"
+    },
+    {
+      "line": 272,
+      "target": "./contrib/search/browser/searchView.js"
+    },
+    {
+      "line": 275,
+      "target": "./contrib/searchEditor/browser/searchEditor.contribution.js"
+    },
+    {
+      "line": 278,
+      "target": "./contrib/sash/browser/sash.contribution.js"
+    },
+    {
+      "line": 281,
+      "target": "./contrib/git/browser/git.contributions.js"
+    },
+    {
+      "line": 282,
+      "target": "./contrib/github/browser/githubLinkPresentation.contribution.js"
+    },
+    {
+      "line": 285,
+      "target": "./contrib/scm/browser/scm.contribution.js"
+    },
+    {
+      "line": 286,
+      "target": "./contrib/scm/browser/quickDiff.contribution.js"
+    },
+    {
+      "line": 287,
+      "target": "./contrib/scm/browser/scm.service.contribution.js"
+    },
+    {
+      "line": 290,
+      "target": "./contrib/debug/browser/debug.contribution.js"
+    },
+    {
+      "line": 291,
+      "target": "./contrib/debug/browser/debugEditorContribution.js"
+    },
+    {
+      "line": 292,
+      "target": "./contrib/debug/browser/breakpointEditorContribution.js"
+    },
+    {
+      "line": 293,
+      "target": "./contrib/debug/browser/callStackEditorContribution.js"
+    },
+    {
+      "line": 294,
+      "target": "./contrib/debug/browser/repl.js"
+    },
+    {
+      "line": 295,
+      "target": "./contrib/debug/browser/debugViewlet.js"
+    },
+    {
+      "line": 298,
+      "target": "./contrib/markers/browser/markers.contribution.js"
+    },
+    {
+      "line": 301,
+      "target": "./contrib/processExplorer/browser/processExplorer.contribution.js"
+    },
+    {
+      "line": 304,
+      "target": "./contrib/mergeEditor/browser/mergeEditor.contribution.js"
+    },
+    {
+      "line": 307,
+      "target": "./contrib/multiDiffEditor/browser/multiDiffEditor.contribution.js"
+    },
+    {
+      "line": 310,
+      "target": "./contrib/commands/common/commands.contribution.js"
+    },
+    {
+      "line": 313,
+      "target": "./contrib/comments/browser/comments.contribution.js"
+    },
+    {
+      "line": 316,
+      "target": "./contrib/url/browser/url.contribution.js"
+    },
+    {
+      "line": 319,
+      "target": "./contrib/webview/browser/webview.contribution.js"
+    },
+    {
+      "line": 320,
+      "target": "./contrib/webviewPanel/browser/webviewPanel.contribution.js"
+    },
+    {
+      "line": 321,
+      "target": "./contrib/webviewView/browser/webviewView.contribution.js"
+    },
+    {
+      "line": 322,
+      "target": "./contrib/customEditor/browser/customEditor.contribution.js"
+    },
+    {
+      "line": 325,
+      "target": "./contrib/externalUriOpener/common/externalUriOpener.contribution.js"
+    },
+    {
+      "line": 328,
+      "target": "./contrib/extensions/browser/extensions.contribution.js"
+    },
+    {
+      "line": 329,
+      "target": "./contrib/extensions/browser/extensionsViewlet.js"
+    },
+    {
+      "line": 332,
+      "target": "./contrib/output/browser/output.contribution.js"
+    },
+    {
+      "line": 333,
+      "target": "./contrib/output/browser/outputView.js"
+    },
+    {
+      "line": 336,
+      "target": "./contrib/terminal/terminal.all.js"
+    },
+    {
+      "line": 339,
+      "target": "./contrib/externalTerminal/browser/externalTerminal.contribution.js"
+    },
+    {
+      "line": 342,
+      "target": "./contrib/relauncher/browser/relauncher.contribution.js"
+    },
+    {
+      "line": 345,
+      "target": "./contrib/modernUI/browser/modernUI.contribution.js"
+    },
+    {
+      "line": 348,
+      "target": "./contrib/tasks/browser/task.contribution.js"
+    },
+    {
+      "line": 351,
+      "target": "./contrib/remote/common/remote.contribution.js"
+    },
+    {
+      "line": 352,
+      "target": "./contrib/remote/browser/remote.contribution.js"
+    },
+    {
+      "line": 355,
+      "target": "./contrib/emmet/browser/emmet.contribution.js"
+    },
+    {
+      "line": 358,
+      "target": "./contrib/codeEditor/browser/codeEditor.contribution.js"
+    },
+    {
+      "line": 361,
+      "target": "./contrib/markdown/browser/markdown.contribution.js"
+    },
+    {
+      "line": 364,
+      "target": "./contrib/keybindings/browser/keybindings.contribution.js"
+    },
+    {
+      "line": 367,
+      "target": "./contrib/snippets/browser/snippets.contribution.js"
+    },
+    {
+      "line": 370,
+      "target": "./contrib/format/browser/format.contribution.js"
+    },
+    {
+      "line": 373,
+      "target": "./contrib/folding/browser/folding.contribution.js"
+    },
+    {
+      "line": 376,
+      "target": "./contrib/limitIndicator/browser/limitIndicator.contribution.js"
+    },
+    {
+      "line": 379,
+      "target": "./contrib/inlayHints/browser/inlayHintsAccessibilty.js"
+    },
+    {
+      "line": 382,
+      "target": "./contrib/themes/browser/themes.contribution.js"
+    },
+    {
+      "line": 385,
+      "target": "./contrib/update/browser/update.contribution.js"
+    },
+    {
+      "line": 388,
+      "target": "./contrib/surveys/browser/nps.contribution.js"
+    },
+    {
+      "line": 389,
+      "target": "./contrib/surveys/browser/languageSurveys.contribution.js"
+    },
+    {
+      "line": 392,
+      "target": "./contrib/welcomeGettingStarted/browser/gettingStarted.contribution.js"
+    },
+    {
+      "line": 393,
+      "target": "./contrib/welcomeAgentSessions/browser/agentSessionsWelcome.contribution.js"
+    },
+    {
+      "line": 394,
+      "target": "./contrib/welcomeWalkthrough/browser/walkThrough.contribution.js"
+    },
+    {
+      "line": 395,
+      "target": "./contrib/welcomeViews/common/viewsWelcome.contribution.js"
+    },
+    {
+      "line": 396,
+      "target": "./contrib/welcomeViews/common/newFile.contribution.js"
+    },
+    {
+      "line": 399,
+      "target": "./contrib/welcomeOnboarding/browser/welcomeOnboarding.contribution.js"
+    },
+    {
+      "line": 402,
+      "target": "./contrib/onboarding/browser/onboarding.contribution.js"
+    },
+    {
+      "line": 403,
+      "target": "./contrib/chat/browser/onboarding/modelPickerTryout.contribution.js"
+    },
+    {
+      "line": 404,
+      "target": "./contrib/codeEditor/browser/diffEditorTryout.contribution.js"
+    },
+    {
+      "line": 407,
+      "target": "./contrib/callHierarchy/browser/callHierarchy.contribution.js"
+    },
+    {
+      "line": 410,
+      "target": "./contrib/typeHierarchy/browser/typeHierarchy.contribution.js"
+    },
+    {
+      "line": 413,
+      "target": "./contrib/codeEditor/browser/outline/documentSymbolsOutline.js"
+    },
+    {
+      "line": 414,
+      "target": "./contrib/outline/browser/outline.contribution.js"
+    },
+    {
+      "line": 417,
+      "target": "./contrib/languageDetection/browser/languageDetection.contribution.js"
+    },
+    {
+      "line": 420,
+      "target": "./contrib/languageStatus/browser/languageStatus.contribution.js"
+    },
+    {
+      "line": 423,
+      "target": "./contrib/authentication/browser/authentication.contribution.js"
+    },
+    {
+      "line": 426,
+      "target": "./contrib/userDataSync/browser/userDataSync.contribution.js"
+    },
+    {
+      "line": 429,
+      "target": "./contrib/userDataProfile/browser/userDataProfile.contribution.js"
+    },
+    {
+      "line": 432,
+      "target": "./contrib/editSessions/browser/editSessions.contribution.js"
+    },
+    {
+      "line": 435,
+      "target": "./contrib/remoteCodingAgents/browser/remoteCodingAgents.contribution.js"
+    },
+    {
+      "line": 438,
+      "target": "./contrib/codeActions/browser/codeActions.contribution.js"
+    },
+    {
+      "line": 441,
+      "target": "./contrib/timeline/browser/timeline.contribution.js"
+    },
+    {
+      "line": 442,
+      "target": "./contrib/timeline/browser/timeline.service.contribution.js"
+    },
+    {
+      "line": 445,
+      "target": "./contrib/localHistory/browser/localHistory.contribution.js"
+    },
+    {
+      "line": 448,
+      "target": "./contrib/workspace/browser/workspace.contribution.js"
+    },
+    {
+      "line": 451,
+      "target": "./contrib/workspaces/browser/workspaces.contribution.js"
+    },
+    {
+      "line": 454,
+      "target": "./contrib/list/browser/list.contribution.js"
+    },
+    {
+      "line": 457,
+      "target": "./contrib/accessibilitySignals/browser/accessibilitySignal.contribution.js"
+    },
+    {
+      "line": 460,
+      "target": "./contrib/bracketPairColorizer2Telemetry/browser/bracketPairColorizer2Telemetry.contribution.js"
+    },
+    {
+      "line": 463,
+      "target": "./contrib/accessibility/browser/accessibility.contribution.js"
+    },
+    {
+      "line": 466,
+      "target": "./contrib/meteredConnection/browser/meteredConnection.contribution.js"
+    },
+    {
+      "line": 469,
+      "target": "./contrib/share/browser/share.contribution.js"
+    },
+    {
+      "line": 472,
+      "target": "./contrib/scrollLocking/browser/scrollLocking.contribution.js"
+    },
+    {
+      "line": 475,
+      "target": "./contrib/inlineCompletions/browser/inlineCompletions.contribution.js"
+    },
+    {
+      "line": 478,
+      "target": "./contrib/dropOrPasteInto/browser/dropOrPasteInto.contribution.js"
+    },
+    {
+      "line": 481,
+      "target": "./contrib/editTelemetry/browser/editTelemetry.contribution.js"
+    },
+    {
+      "line": 484,
+      "target": "./contrib/opener/browser/opener.contribution.js"
+    }
+  ],
+  "src/vs/workbench/workbench.desktop.main.ts": [
+    {
+      "line": 15,
+      "target": "./workbench.common.main.js"
+    },
+    {
+      "line": 22,
+      "target": "./electron-browser/desktop.main.js"
+    },
+    {
+      "line": 23,
+      "target": "./electron-browser/desktop.contribution.js"
+    },
+    {
+      "line": 30,
+      "target": "./electron-browser/parts/dialogs/dialog.contribution.js"
+    },
+    {
+      "line": 37,
+      "target": "./services/textfile/electron-browser/nativeTextFileService.js"
+    },
+    {
+      "line": 38,
+      "target": "./services/dialogs/electron-browser/fileDialogService.js"
+    },
+    {
+      "line": 39,
+      "target": "./services/workspaces/electron-browser/workspacesService.js"
+    },
+    {
+      "line": 40,
+      "target": "./services/menubar/electron-browser/menubarService.js"
+    },
+    {
+      "line": 41,
+      "target": "./services/update/electron-browser/updateService.js"
+    },
+    {
+      "line": 42,
+      "target": "./services/url/electron-browser/urlService.js"
+    },
+    {
+      "line": 43,
+      "target": "./services/lifecycle/electron-browser/lifecycleService.js"
+    },
+    {
+      "line": 44,
+      "target": "./services/title/electron-browser/titleService.js"
+    },
+    {
+      "line": 45,
+      "target": "./services/host/electron-browser/nativeHostService.js"
+    },
+    {
+      "line": 46,
+      "target": "../platform/meteredConnection/electron-browser/meteredConnectionService.js"
+    },
+    {
+      "line": 47,
+      "target": "./services/request/electron-browser/requestService.js"
+    },
+    {
+      "line": 48,
+      "target": "./services/github/electron-browser/githubService.js"
+    },
+    {
+      "line": 49,
+      "target": "../platform/copilotConnectors/electron-browser/copilotConnectorsRequestService.js"
+    },
+    {
+      "line": 50,
+      "target": "../platform/customizationMarketplace/electron-browser/customizationMarketplaceService.js"
+    },
+    {
+      "line": 51,
+      "target": "./services/clipboard/electron-browser/clipboardService.js"
+    },
+    {
+      "line": 52,
+      "target": "./services/contextmenu/electron-browser/contextmenuService.js"
+    },
+    {
+      "line": 53,
+      "target": "./services/workspaces/electron-browser/workspaceEditingService.js"
+    },
+    {
+      "line": 54,
+      "target": "./services/configurationResolver/electron-browser/configurationResolverService.js"
+    },
+    {
+      "line": 55,
+      "target": "./services/accessibility/electron-browser/accessibilityService.js"
+    },
+    {
+      "line": 56,
+      "target": "./services/keybinding/electron-browser/nativeKeyboardLayout.js"
+    },
+    {
+      "line": 57,
+      "target": "./services/path/electron-browser/pathService.js"
+    },
+    {
+      "line": 58,
+      "target": "./services/themes/electron-browser/nativeHostColorSchemeService.js"
+    },
+    {
+      "line": 59,
+      "target": "./services/extensionManagement/electron-browser/extensionManagementService.js"
+    },
+    {
+      "line": 60,
+      "target": "./services/mcp/electron-browser/mcpGalleryManifestService.js"
+    },
+    {
+      "line": 61,
+      "target": "./services/mcp/electron-browser/mcpWorkbenchManagementService.js"
+    },
+    {
+      "line": 62,
+      "target": "./services/encryption/electron-browser/encryptionService.js"
+    },
+    {
+      "line": 63,
+      "target": "./services/imageResize/electron-browser/imageResizeService.js"
+    },
+    {
+      "line": 64,
+      "target": "./services/localTranscription/electron-browser/localTranscriptionService.js"
+    },
+    {
+      "line": 65,
+      "target": "./services/secrets/electron-browser/secretStorageService.js"
+    },
+    {
+      "line": 66,
+      "target": "./services/localization/electron-browser/languagePackService.js"
+    },
+    {
+      "line": 67,
+      "target": "./services/telemetry/electron-browser/telemetryService.js"
+    },
+    {
+      "line": 68,
+      "target": "./services/extensions/electron-browser/extensionHostStarter.js"
+    },
+    {
+      "line": 69,
+      "target": "../platform/extensionResourceLoader/common/extensionResourceLoaderService.js"
+    },
+    {
+      "line": 70,
+      "target": "./services/localization/electron-browser/localeService.js"
+    },
+    {
+      "line": 71,
+      "target": "./services/extensions/electron-browser/extensionsScannerService.js"
+    },
+    {
+      "line": 72,
+      "target": "./services/extensionManagement/electron-browser/extensionManagementServerService.js"
+    },
+    {
+      "line": 73,
+      "target": "./services/extensionManagement/electron-browser/extensionGalleryManifestService.js"
+    },
+    {
+      "line": 74,
+      "target": "./services/extensionManagement/electron-browser/extensionGalleryAccountService.js"
+    },
+    {
+      "line": 75,
+      "target": "./services/extensionManagement/electron-browser/extensionTipsService.js"
+    },
+    {
+      "line": 76,
+      "target": "./services/userDataSync/electron-browser/userDataSyncService.js"
+    },
+    {
+      "line": 77,
+      "target": "./services/userDataSync/electron-browser/userDataAutoSyncService.js"
+    },
+    {
+      "line": 78,
+      "target": "./services/timer/electron-browser/timerService.js"
+    },
+    {
+      "line": 79,
+      "target": "./services/environment/electron-browser/shellEnvironmentService.js"
+    },
+    {
+      "line": 80,
+      "target": "./services/integrity/electron-browser/integrityService.js"
+    },
+    {
+      "line": 81,
+      "target": "./services/workingCopy/electron-browser/workingCopyBackupService.js"
+    },
+    {
+      "line": 82,
+      "target": "./services/checksum/electron-browser/checksumService.js"
+    },
+    {
+      "line": 83,
+      "target": "../platform/remote/electron-browser/sharedProcessTunnelService.js"
+    },
+    {
+      "line": 84,
+      "target": "./services/tunnel/electron-browser/tunnelService.js"
+    },
+    {
+      "line": 85,
+      "target": "../platform/diagnostics/electron-browser/diagnosticsService.js"
+    },
+    {
+      "line": 86,
+      "target": "../platform/profiling/electron-browser/profilingService.js"
+    },
+    {
+      "line": 87,
+      "target": "../platform/telemetry/electron-browser/customEndpointTelemetryService.js"
+    },
+    {
+      "line": 88,
+      "target": "../platform/remoteTunnel/electron-browser/remoteTunnelService.js"
+    },
+    {
+      "line": 89,
+      "target": "./services/files/electron-browser/elevatedFileService.js"
+    },
+    {
+      "line": 90,
+      "target": "./services/search/electron-browser/searchService.js"
+    },
+    {
+      "line": 91,
+      "target": "./services/workingCopy/electron-browser/workingCopyHistoryService.js"
+    },
+    {
+      "line": 92,
+      "target": "./services/userDataSync/browser/userDataSyncEnablementService.js"
+    },
+    {
+      "line": 93,
+      "target": "./services/extensions/electron-browser/nativeExtensionService.js"
+    },
+    {
+      "line": 94,
+      "target": "../platform/userDataProfile/electron-browser/userDataProfileStorageService.js"
+    },
+    {
+      "line": 95,
+      "target": "./services/auxiliaryWindow/electron-browser/auxiliaryWindowService.js"
+    },
+    {
+      "line": 96,
+      "target": "../platform/extensionManagement/electron-browser/extensionsProfileScannerService.js"
+    },
+    {
+      "line": 97,
+      "target": "../platform/sandbox/electron-browser/sandboxHelperService.js"
+    },
+    {
+      "line": 98,
+      "target": "../platform/webContentExtractor/electron-browser/webContentExtractorService.js"
+    },
+    {
+      "line": 99,
+      "target": "./services/agentHost/electron-browser/agentHostService.js"
+    },
+    {
+      "line": 100,
+      "target": "../platform/agentHost/electron-browser/remoteAgentHostService.js"
+    },
+    {
+      "line": 101,
+      "target": "../platform/agentHost/electron-browser/agentHostMcpOAuthMetadataService.js"
+    },
+    {
+      "line": 102,
+      "target": "../platform/agentHost/browser/agentHostEnablementService.js"
+    },
+    {
+      "line": 103,
+      "target": "./services/browserView/electron-browser/playwrightWorkbenchService.js"
+    },
+    {
+      "line": 104,
+      "target": "./services/process/electron-browser/processService.js"
+    },
+    {
+      "line": 105,
+      "target": "./services/power/electron-browser/powerService.js"
+    },
+    {
+      "line": 120,
+      "target": "./contrib/onboarding/electron-browser/onboardingTryout.contribution.js"
+    },
+    {
+      "line": 123,
+      "target": "./contrib/logs/electron-browser/logs.contribution.js"
+    },
+    {
+      "line": 126,
+      "target": "./contrib/localization/electron-browser/localization.contribution.js"
+    },
+    {
+      "line": 129,
+      "target": "./contrib/files/electron-browser/fileActions.contribution.js"
+    },
+    {
+      "line": 132,
+      "target": "./contrib/codeEditor/electron-browser/codeEditor.contribution.js"
+    },
+    {
+      "line": 135,
+      "target": "./contrib/debug/electron-browser/extensionHostDebugService.js"
+    },
+    {
+      "line": 138,
+      "target": "./contrib/extensions/electron-browser/extensions.contribution.js"
+    },
+    {
+      "line": 139,
+      "target": "./contrib/extensions/electron-browser/devtoolsExtensionHost.contribution.js"
+    },
+    {
+      "line": 142,
+      "target": "./contrib/issue/electron-browser/issue.contribution.js"
+    },
+    {
+      "line": 145,
+      "target": "./contrib/surveys/browser/survey.contribution.js"
+    },
+    {
+      "line": 148,
+      "target": "./contrib/processExplorer/electron-browser/processExplorer.contribution.js"
+    },
+    {
+      "line": 151,
+      "target": "./contrib/remote/electron-browser/remote.contribution.js"
+    },
+    {
+      "line": 154,
+      "target": "./contrib/terminal/electron-browser/terminal.contribution.js"
+    },
+    {
+      "line": 157,
+      "target": "./contrib/themes/browser/themes.test.contribution.js"
+    },
+    {
+      "line": 158,
+      "target": "./services/themes/electron-browser/themes.contribution.js"
+    },
+    {
+      "line": 160,
+      "target": "./contrib/userDataSync/electron-browser/userDataSync.contribution.js"
+    },
+    {
+      "line": 163,
+      "target": "./contrib/tags/electron-browser/workspaceTagsService.js"
+    },
+    {
+      "line": 164,
+      "target": "./contrib/tags/electron-browser/tags.contribution.js"
+    },
+    {
+      "line": 166,
+      "target": "./contrib/performance/electron-browser/performance.contribution.js"
+    },
+    {
+      "line": 169,
+      "target": "./contrib/tasks/electron-browser/taskService.js"
+    },
+    {
+      "line": 172,
+      "target": "./contrib/externalTerminal/electron-browser/externalTerminal.contribution.js"
+    },
+    {
+      "line": 175,
+      "target": "./contrib/webview/electron-browser/webview.contribution.js"
+    },
+    {
+      "line": 178,
+      "target": "./contrib/browserView/electron-browser/browserView.contribution.js"
+    },
+    {
+      "line": 179,
+      "target": "./contrib/canvases/electron-browser/editorCanvases.contribution.js"
+    },
+    {
+      "line": 182,
+      "target": "./contrib/splash/electron-browser/splash.contribution.js"
+    },
+    {
+      "line": 185,
+      "target": "./contrib/localHistory/electron-browser/localHistory.contribution.js"
+    },
+    {
+      "line": 188,
+      "target": "./contrib/mergeEditor/electron-browser/mergeEditor.contribution.js"
+    },
+    {
+      "line": 191,
+      "target": "./contrib/multiDiffEditor/browser/multiDiffEditor.contribution.js"
+    },
+    {
+      "line": 194,
+      "target": "./contrib/remoteTunnel/electron-browser/remoteTunnel.contribution.js"
+    },
+    {
+      "line": 197,
+      "target": "./contrib/chat/electron-browser/chat.contribution.js"
+    },
+    {
+      "line": 198,
+      "target": "./contrib/chat/electron-browser/tunnelHost.contribution.js"
+    },
+    {
+      "line": 201,
+      "target": "./contrib/agentsVoice/electron-browser/agentsVoiceNativeCommands.js"
+    },
+    {
+      "line": 204,
+      "target": "./contrib/encryption/electron-browser/encryption.contribution.js"
+    },
+    {
+      "line": 207,
+      "target": "./contrib/modernUI/electron-browser/frostedGlass.contribution.js"
+    },
+    {
+      "line": 210,
+      "target": "./contrib/emergencyAlert/electron-browser/emergencyAlert.contribution.js"
+    },
+    {
+      "line": 213,
+      "target": "./contrib/mcp/electron-browser/mcp.contribution.js"
+    },
+    {
+      "line": 216,
+      "target": "./contrib/policyExport/electron-browser/policyExport.contribution.js"
+    },
+    {
+      "line": 219,
+      "target": "./contrib/keybindingsExport/electron-browser/keybindingsExport.contribution.js"
+    },
+    {
+      "line": 222,
+      "target": "./contrib/keybindings/electron-browser/systemWideKeybindings.contribution.js"
+    }
+  ],
+  "src/vs/workbench/workbench.web.main.ts": [
+    {
+      "line": 16,
+      "target": "./workbench.common.main.js"
+    },
+    {
+      "line": 23,
+      "target": "./browser/parts/dialogs/dialog.web.contribution.js"
+    },
+    {
+      "line": 30,
+      "target": "./browser/web.main.js"
+    },
+    {
+      "line": 37,
+      "target": "./services/integrity/browser/integrityService.js"
+    },
+    {
+      "line": 38,
+      "target": "./services/search/browser/searchService.js"
+    },
+    {
+      "line": 39,
+      "target": "./services/textfile/browser/browserTextFileService.js"
+    },
+    {
+      "line": 40,
+      "target": "./services/keybinding/browser/keyboardLayoutService.js"
+    },
+    {
+      "line": 41,
+      "target": "./services/extensions/browser/extensionService.js"
+    },
+    {
+      "line": 42,
+      "target": "./services/extensionManagement/browser/extensionsProfileScannerService.js"
+    },
+    {
+      "line": 43,
+      "target": "./services/extensions/browser/extensionsScannerService.js"
+    },
+    {
+      "line": 44,
+      "target": "./services/extensionManagement/browser/webExtensionsScannerService.js"
+    },
+    {
+      "line": 45,
+      "target": "./services/extensionManagement/common/extensionManagementServerService.js"
+    },
+    {
+      "line": 46,
+      "target": "./services/mcp/browser/mcpWorkbenchManagementService.js"
+    },
+    {
+      "line": 47,
+      "target": "./services/extensionManagement/browser/extensionGalleryManifestService.js"
+    },
+    {
+      "line": 48,
+      "target": "./services/telemetry/browser/telemetryService.js"
+    },
+    {
+      "line": 49,
+      "target": "./services/url/browser/urlService.js"
+    },
+    {
+      "line": 50,
+      "target": "./services/update/browser/updateService.js"
+    },
+    {
+      "line": 51,
+      "target": "./services/workspaces/browser/workspacesService.js"
+    },
+    {
+      "line": 52,
+      "target": "./services/workspaces/browser/workspaceEditingService.js"
+    },
+    {
+      "line": 53,
+      "target": "./services/dialogs/browser/fileDialogService.js"
+    },
+    {
+      "line": 54,
+      "target": "./services/host/browser/browserHostService.js"
+    },
+    {
+      "line": 55,
+      "target": "../platform/meteredConnection/browser/meteredConnectionService.js"
+    },
+    {
+      "line": 56,
+      "target": "./services/lifecycle/browser/lifecycleService.js"
+    },
+    {
+      "line": 57,
+      "target": "./services/clipboard/browser/clipboardService.js"
+    },
+    {
+      "line": 58,
+      "target": "./services/localization/browser/localeService.js"
+    },
+    {
+      "line": 59,
+      "target": "./services/path/browser/pathService.js"
+    },
+    {
+      "line": 60,
+      "target": "./services/themes/browser/browserHostColorSchemeService.js"
+    },
+    {
+      "line": 61,
+      "target": "./services/encryption/browser/encryptionService.js"
+    },
+    {
+      "line": 62,
+      "target": "./services/imageResize/browser/imageResizeService.js"
+    },
+    {
+      "line": 63,
+      "target": "./services/secrets/browser/secretStorageService.js"
+    },
+    {
+      "line": 64,
+      "target": "./services/workingCopy/browser/workingCopyBackupService.js"
+    },
+    {
+      "line": 65,
+      "target": "./services/tunnel/browser/tunnelService.js"
+    },
+    {
+      "line": 66,
+      "target": "./services/files/browser/elevatedFileService.js"
+    },
+    {
+      "line": 67,
+      "target": "./services/workingCopy/browser/workingCopyHistoryService.js"
+    },
+    {
+      "line": 68,
+      "target": "./services/userDataSync/browser/webUserDataSyncEnablementService.js"
+    },
+    {
+      "line": 69,
+      "target": "./services/userDataProfile/browser/userDataProfileStorageService.js"
+    },
+    {
+      "line": 70,
+      "target": "./services/configurationResolver/browser/configurationResolverService.js"
+    },
+    {
+      "line": 71,
+      "target": "../platform/extensionResourceLoader/browser/extensionResourceLoaderService.js"
+    },
+    {
+      "line": 72,
+      "target": "./services/auxiliaryWindow/browser/auxiliaryWindowService.js"
+    },
+    {
+      "line": 73,
+      "target": "./services/power/browser/powerService.js"
+    },
+    {
+      "line": 74,
+      "target": "./services/localTranscription/browser/localTranscriptionService.js"
+    },
+    {
+      "line": 75,
+      "target": "../platform/sandbox/browser/sandboxHelperService.js"
+    },
+    {
+      "line": 110,
+      "target": "./services/agentHost/browser/webAgentHostEnablementService.js"
+    },
+    {
+      "line": 141,
+      "target": "./contrib/logs/browser/logs.contribution.js"
+    },
+    {
+      "line": 144,
+      "target": "./contrib/localization/browser/localization.contribution.js"
+    },
+    {
+      "line": 147,
+      "target": "./contrib/performance/browser/performance.web.contribution.js"
+    },
+    {
+      "line": 150,
+      "target": "./contrib/preferences/browser/keyboardLayoutPicker.js"
+    },
+    {
+      "line": 153,
+      "target": "./contrib/debug/browser/extensionHostDebugService.js"
+    },
+    {
+      "line": 156,
+      "target": "./contrib/welcomeBanner/browser/welcomeBanner.contribution.js"
+    },
+    {
+      "line": 159,
+      "target": "./contrib/webview/browser/webview.web.contribution.js"
+    },
+    {
+      "line": 162,
+      "target": "./contrib/extensions/browser/extensions.web.contribution.js"
+    },
+    {
+      "line": 165,
+      "target": "./contrib/terminal/browser/terminal.web.contribution.js"
+    },
+    {
+      "line": 166,
+      "target": "./contrib/externalTerminal/browser/externalTerminal.contribution.js"
+    },
+    {
+      "line": 167,
+      "target": "./contrib/terminal/browser/terminalInstanceService.js"
+    },
+    {
+      "line": 170,
+      "target": "./contrib/tasks/browser/taskService.js"
+    },
+    {
+      "line": 173,
+      "target": "./contrib/tags/browser/workspaceTagsService.js"
+    },
+    {
+      "line": 176,
+      "target": "./contrib/issue/browser/issue.contribution.js"
+    },
+    {
+      "line": 179,
+      "target": "./contrib/surveys/browser/survey.contribution.js"
+    },
+    {
+      "line": 182,
+      "target": "./contrib/splash/browser/splash.contribution.js"
+    },
+    {
+      "line": 185,
+      "target": "./contrib/remote/browser/remoteStartEntry.contribution.js"
+    },
+    {
+      "line": 188,
+      "target": "./contrib/processExplorer/browser/processExplorer.web.contribution.js"
+    },
+    {
+      "line": 191,
+      "target": "./contrib/browserView/browser/browserView.contribution.js"
+    }
+  ]
+}

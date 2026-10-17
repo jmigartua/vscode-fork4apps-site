@@ -1,0 +1,14 @@
+{
+  ".github/instructions/source-code-organization.instructions.md": "20dfadeeeacbc28efd1a93d0aaca18b4cceab6d57d3051ea3de6b20ad95f388c",
+  ".nvmrc": "55075b5ec4e8b31936cbbc282b8829116d1fd48f2f2f1856dee592a6650700ce",
+  "LICENSE.txt": "cce33203a80863c22499035b1cfb6aba5df5f02e4ea2669cf5bc5730c1864236",
+  "package.json": "8d87410a73db48009b194f900ff1bf724bda8d6807b9d8e5ede7b8ac550814b3",
+  "product.json": "104a252a18d584b91176d24d20a12b7e08ce9225cf0cb176906928c068c1a945",
+  "src/vs/workbench/api/browser/mainThreadTerminalService.ts": "9e6a0e3ef80ca6e23dc072e9e025ec4f1e0f8b67a16e96dc89429a2f7bff0c21",
+  "src/vs/workbench/browser/layout.ts": "3686b7da2067cdfa1cbb54ce1e8b23d34748b6655021d3a4c58a76e6b533fe0d",
+  "src/vs/workbench/browser/workbench.ts": "ff89d2299eef7718687c931192117b8e9eb9cee3a991a649857d7c717e99da22",
+  "src/vs/workbench/contrib/tasks/browser/terminalTaskSystem.ts": "171c7e5121e8346b00b2ee8bb57f5e6cb5f37dd332d97c06749b2c24e5a6ac71",
+  "src/vs/workbench/workbench.common.main.ts": "8067233e4ec414ea667910d59e1116f15a67ba9c949ed11d99ea160b86df4969",
+  "src/vs/workbench/workbench.desktop.main.ts": "a8c8a112607f5797ecbfa66645cf327ff46178748453c6c16f0a7e621b3301e0",
+  "src/vs/workbench/workbench.web.main.ts": "4ba1590a6136f589923c7473589cff7bb17c7a410aafb176c5945fa4a8c189cc"
+}

@@ -1,0 +1,1 @@
+Sitemap: https://jmigartua.github.io/vscode-fork4apps-site/sitemap.xml

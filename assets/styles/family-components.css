@@ -1,0 +1,81 @@
+/* Rules of this project only; theme.css and site.css are the family kit, copied unchanged (L004). */
+.req-list { list-style: none; padding-left: 0; }
+.req-list li { padding-left: 52px; text-indent: -52px; }
+.req-list .num { display: inline-block; width: 44px; text-indent: 0; font-family: var(--mono); font-size: 12px; color: var(--teal); letter-spacing: 0.04em; }
+.req-list .src { text-indent: 0; font-size: 13.5px; color: var(--ink-faint); margin-top: 2px; }
+/* Program pages (Background): each claim ends with its source; 'not checked' marks a claim without a reachable source. */
+.cite { font-family: var(--mono); font-size: 11.5px; color: var(--ink-faint); white-space: nowrap; }
+.cite a { color: var(--ink-faint); }
+.nc { font-family: var(--mono); font-size: 12px; color: var(--warn); }
+/* Inventory and gap tables (L012): capability, what it does, where it is set, sources. */
+.inventory { table-layout: fixed; }
+.inventory th:nth-child(1) { width: 18%; } .inventory th:nth-child(2) { width: 42%; }
+.inventory th:nth-child(3) { width: 18%; } .inventory th:nth-child(4) { width: 22%; }
+.inventory td.cite { white-space: normal; overflow-wrap: anywhere; }
+/* Proposal (L019): draft tiers. */
+.tier-v1 { color: var(--ok); border-color: var(--ok); }
+.tier-v2 { color: var(--warn); border-color: var(--warn); }
+.tier-later { color: var(--ink-faint); border-color: var(--line-soft); }
+/* Parameter, operation and file dictionaries (L044, L088, L091): one section per entry. The citation line wraps (a
+   long source must not push the page sideways), every entry's table spans the column with the same label width, and
+   the heading holds the name only, the id, symbol, unit and kind on the line below it. */
+section.param p.cite, section.param span.cite { white-space: normal; overflow-wrap: anywhere; }
+section.param .inventory { width: 100%; table-layout: fixed; }
+section.param .inventory th { width: 11.5rem; }
+section.param .inventory td { overflow-wrap: anywhere; }
+section.param h3 { margin-bottom: 2px; }
+section.param .param-meta { margin: 0 0 10px; color: var(--ink-soft); font-size: 14.5px; }
+/* The seed-place (L288): the kit's type, grid and tags in the incubator's own palette. The tokens are redefined
+   on the body when the page holds an ideas block, so the header's line, the wordmark's accent, the navigation's
+   marks and the cards all say where the reader is. Dark mode has its own values. */
+body:has(.ideas) { --teal: #5b3f9e; --teal-soft: #7357b5; --amber: #b4471f; --tint: #f7f4fb; --line: #d9d1e8; --line-soft: #ebe6f3; }
+@media (prefers-color-scheme: dark) {
+  body:has(.ideas) { --teal: #b9a3e6; --teal-soft: #cbbaee; --amber: #e6a07a; --tint: #1d1a26; --line: #3a3448; --line-soft: #2a2535; }
+}
+.site-nav a.nav-ideas { color: #5b3f9e; }
+@media (prefers-color-scheme: dark) { .site-nav a.nav-ideas { color: #b9a3e6; } }
+.idea-life { list-style: none; margin: 0 0 28px; padding: 0; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 0; border: 1px solid var(--line); background: var(--tint); }
+.idea-life li { padding: 12px 12px 10px; border-right: 1px solid var(--line-soft); font-size: 12.5px; color: var(--ink-soft); line-height: 1.4; }
+.idea-life li:last-child { border-right: 0; }
+.idea-life .n { display: block; font-family: var(--serif); font-size: 26px; line-height: 1.1; color: var(--teal); }
+.idea-life b { display: block; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink); margin: 4px 0 2px; }
+.idea-life .idea-parked, .idea-life .idea-discarded { background: var(--paper); }
+.idea-life .idea-parked .n, .idea-life .idea-discarded .n { color: var(--ink-faint); }
+@media (max-width: 900px) { .idea-life { grid-template-columns: repeat(4, 1fr); } .idea-life li { border-bottom: 1px solid var(--line-soft); } }
+.idea-card { padding: 22px 0; border-bottom: 1px solid var(--line-soft); }
+.idea-card h3 { font-family: var(--serif); font-size: 21px; font-weight: 600; margin: 6px 0 8px; line-height: 1.3; }
+.idea-card h3 a { color: var(--ink); }
+.idea-card h3 a:hover { color: var(--teal); text-decoration: none; }
+.idea-card p { font-size: 15.5px; max-width: 78ch; margin: 0 0 8px; }
+.idea-card .src { font-family: var(--mono); font-size: 12.5px; color: var(--ink-faint); }
+.idea-card .log-head .num { color: var(--teal); }
+.idea-home { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); letter-spacing: 0.04em; }
+.idea-latest { font-size: 14px; color: var(--ink-soft); max-width: 78ch; border-left: 2px solid var(--line); padding-left: 12px; margin: 0 0 10px; }
+.idea-latest .d { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); margin-right: 8px; }
+.idea-status { vertical-align: middle; }
+.idea-status.idea-seed { color: var(--ink-faint); border-color: var(--line); border-style: dashed; }
+.idea-status.idea-discussed { color: var(--teal); border-color: var(--teal); }
+.idea-status.idea-workshop { color: var(--amber); border-color: var(--amber); }
+.idea-status.idea-green { color: var(--ok); border-color: var(--ok); }
+.idea-status.idea-migrated { color: var(--paper); background: var(--ok); border-color: var(--ok); }
+.idea-status.idea-parked { color: var(--ink-faint); border-color: var(--line-soft); }
+.idea-status.idea-discarded { color: var(--bad); border-color: var(--bad); text-decoration: line-through; }
+.kind.idea-kind-said { color: var(--ink-faint); }
+.kind.idea-kind-discussion { color: var(--teal); border-color: var(--teal); }
+.kind.idea-kind-decision { color: var(--amber); border-color: var(--amber); }
+.kind.idea-kind-work { color: var(--ink-soft); }
+.kind.idea-kind-migration { color: var(--ok); border-color: var(--ok); }
+.kind { font-size: 11px; font-weight: 600; letter-spacing: 0.04em; border: 1px solid var(--line); padding: 0 6px; border-radius: 2px; text-transform: uppercase; color: var(--ink-faint); }
+article.ideas h1 .status { font-size: 11px; vertical-align: middle; margin-left: 8px; }
+article.ideas .sub .num { font-family: var(--mono); font-size: 12.5px; color: var(--teal); letter-spacing: 0.06em; }
+article.ideas .facts { margin-top: 18px; }
+article.ideas p, article.ideas ul { max-width: 76ch; }
+.idea-note { border-left: 3px solid var(--line); padding-left: 18px; margin: 18px 0 26px; }
+.idea-note h3 { margin-top: 0; }
+.idea-note .idea-note-date { margin: -6px 0 10px; }
+.idea-note .idea-note-date .d { font-family: var(--mono); font-size: 12.5px; color: var(--teal); letter-spacing: 0.04em; }
+.idea-note h4 { font-family: var(--sans); font-size: 12.5px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-faint); margin: 20px 0 6px; }
+.idea-log li { padding-bottom: 14px; }
+.idea-log .d { font-family: var(--mono); font-size: 12.5px; color: var(--teal); letter-spacing: 0.04em; display: block; }
+.idea-log p { margin: 2px 0 0; color: var(--ink); font-size: 15px; max-width: 76ch; }
+.idea-log .ref { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); margin-left: 6px; }

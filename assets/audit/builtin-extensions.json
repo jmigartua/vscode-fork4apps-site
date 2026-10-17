@@ -1,0 +1,1603 @@
+{
+  "scope": "Top-level extensions/*/package.json, not downloaded product built-ins",
+  "extensions": [
+    {
+      "path": "extensions/bat/package.json",
+      "id": "vscode.bat",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.52.0",
+      "contributions": [
+        "grammars",
+        "languages",
+        "snippets"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/clojure/package.json",
+      "id": "vscode.clojure",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "configurationDefaults",
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/coffeescript/package.json",
+      "id": "vscode.coffeescript",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "breakpoints",
+        "configurationDefaults",
+        "grammars",
+        "languages",
+        "snippets"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/configuration-editing/package.json",
+      "id": "vscode.configuration-editing",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.0.0",
+      "contributions": [
+        "jsonValidation",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": [
+        "profileContentHandlers"
+      ]
+    },
+    {
+      "path": "extensions/copilot/package.json",
+      "id": "GitHub.copilot-chat",
+      "version": "0.71.0",
+      "license": "SEE LICENSE IN LICENSE.txt",
+      "engine": "^1.143.0",
+      "contributions": [
+        "chatAgents",
+        "chatParticipants",
+        "chatPromptFiles",
+        "chatSessions",
+        "chatSkills",
+        "chatViewsWelcome",
+        "commands",
+        "configuration",
+        "configurationDefaults",
+        "iconFonts",
+        "icons",
+        "interactiveSession",
+        "jsonValidation",
+        "keybindings",
+        "languageModelChatProviders",
+        "languageModelToolSets",
+        "languageModelTools",
+        "languages",
+        "mcpServerDefinitionProviders",
+        "menus",
+        "submenus",
+        "terminal",
+        "terminalQuickFixes",
+        "typescriptServerPlugins",
+        "views",
+        "viewsContainers",
+        "viewsWelcome",
+        "walkthroughs"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": [
+        "agentSessionsWorkspace",
+        "speech",
+        "agentsWindowConfiguration",
+        "chatDebug",
+        "chatHooks",
+        "envIsConnectionMetered",
+        "extensionsAny",
+        "newSymbolNamesProvider",
+        "interactive",
+        "codeActionAI",
+        "activeComment",
+        "commentReveal",
+        "contribCommentThreadAdditionalMenu",
+        "contribCommentsViewThreadMenus",
+        "contribChatEditorInlineGutterMenu",
+        "documentFiltersExclusive",
+        "embeddings",
+        "findTextInFiles",
+        "findTextInFiles2",
+        "languageModelToolSupportsModel",
+        "findFiles2",
+        "textSearchProvider",
+        "terminalDataWriteEvent",
+        "terminalExecuteCommandEvent",
+        "terminalSelection",
+        "terminalQuickFixProvider",
+        "mappedEditsProvider",
+        "aiRelatedInformation",
+        "aiSettingsSearch",
+        "chatParticipantAdditions",
+        "defaultChatParticipant",
+        "contribSourceControlInputBoxMenu",
+        "authLearnMore",
+        "authIssuers",
+        "testObserver",
+        "aiTextSearchProvider",
+        "chatParticipantPrivate",
+        "chatProvider",
+        "contribDebugCreateConfiguration",
+        "chatReferenceDiagnostic",
+        "textSearchProvider2",
+        "chatReferenceBinaryData",
+        "languageModelSystem",
+        "languageModelCapabilities",
+        "languageModelPricing",
+        "languageModelRateLimit",
+        "inlineCompletionsAdditions",
+        "chatStatusItem",
+        "chatInputNotification",
+        "taskProblemMatcherStatus",
+        "contribLanguageModelToolSets",
+        "textDocumentChangeReason",
+        "resolvers",
+        "taskExecutionTerminal",
+        "dataChannels",
+        "languageModelThinkingPart",
+        "chatSessionsProvider",
+        "devDeviceId",
+        "contribEditorContentMenu",
+        "chatPromptFiles",
+        "mcpServerDefinitions",
+        "tabInputMultiDiff",
+        "workspaceTrust",
+        "environmentPower",
+        "terminalTitle",
+        "toolInvocationApproveCombination",
+        "chatSessionCustomizationProvider"
+      ]
+    },
+    {
+      "path": "extensions/cpp/package.json",
+      "id": "vscode.cpp",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages",
+        "problemMatchers",
+        "problemPatterns",
+        "snippets"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/csharp/package.json",
+      "id": "vscode.csharp",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "0.10.x",
+      "contributions": [
+        "configurationDefaults",
+        "grammars",
+        "languages",
+        "snippets"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/css/package.json",
+      "id": "vscode.css",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "0.10.x",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/css-language-features/package.json",
+      "id": "vscode.css-language-features",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.77.0",
+      "contributions": [
+        "configuration",
+        "configurationDefaults",
+        "jsonValidation"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/dart/package.json",
+      "id": "vscode.dart",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "0.10.x",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/debug-auto-launch/package.json",
+      "id": "vscode.debug-auto-launch",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.5.0",
+      "contributions": [
+        "commands"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/debug-server-ready/package.json",
+      "id": "vscode.debug-server-ready",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.32.0",
+      "contributions": [
+        "debuggers"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": [
+        "terminalDataWriteEvent"
+      ]
+    },
+    {
+      "path": "extensions/diff/package.json",
+      "id": "vscode.diff",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "0.10.x",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/docker/package.json",
+      "id": "vscode.docker",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "configurationDefaults",
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/dotenv/package.json",
+      "id": "vscode.dotenv",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/emmet/package.json",
+      "id": "vscode.emmet",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.13.0",
+      "contributions": [
+        "commands",
+        "configuration",
+        "menus"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/extension-editing/package.json",
+      "id": "vscode.extension-editing",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.4.0",
+      "contributions": [
+        "jsonValidation",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/fsharp/package.json",
+      "id": "vscode.fsharp",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "configurationDefaults",
+        "grammars",
+        "languages",
+        "snippets"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/git/package.json",
+      "id": "vscode.git",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.5.0",
+      "contributions": [
+        "colors",
+        "commands",
+        "configuration",
+        "configurationDefaults",
+        "continueEditSession",
+        "keybindings",
+        "menus",
+        "submenus",
+        "viewsWelcome"
+      ],
+      "extensionDependencies": [
+        "vscode.git-base"
+      ],
+      "proposedAPIs": [
+        "agentSessionsWorkspace",
+        "agentsWindowConfiguration",
+        "canonicalUriProvider",
+        "contribEditSessions",
+        "contribEditorContentMenu",
+        "contribMergeEditorMenus",
+        "contribMultiDiffEditorMenus",
+        "contribDiffEditorGutterToolBarMenus",
+        "contribSourceControlArtifactGroupMenu",
+        "contribSourceControlArtifactMenu",
+        "contribSourceControlHistoryItemMenu",
+        "contribSourceControlHistoryTitleMenu",
+        "contribSourceControlInputBoxMenu",
+        "contribSourceControlTitleMenu",
+        "contribViewsWelcome",
+        "editSessionIdentityProvider",
+        "envIsConnectionMetered",
+        "quickDiffProvider",
+        "quickPickSortByLabel",
+        "scmActionButton",
+        "scmArtifactProvider",
+        "scmHistoryProvider",
+        "scmMultiDiffEditor",
+        "scmProviderOptions",
+        "scmSelectedProvider",
+        "scmTextDocument",
+        "scmValidation",
+        "statusBarItemTooltip",
+        "taskRunOptions",
+        "tabInputMultiDiff",
+        "tabInputTextMerge",
+        "textEditorDiffInformation",
+        "timeline",
+        "workspaceTrust"
+      ]
+    },
+    {
+      "path": "extensions/git-base/package.json",
+      "id": "vscode.git-base",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "0.10.x",
+      "contributions": [
+        "commands",
+        "grammars",
+        "languages",
+        "menus"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/github/package.json",
+      "id": "vscode.github",
+      "version": "0.0.1",
+      "license": "MIT",
+      "engine": "^1.41.0",
+      "contributions": [
+        "commands",
+        "configuration",
+        "continueEditSession",
+        "markdown.previewStyles",
+        "menus",
+        "viewsWelcome"
+      ],
+      "extensionDependencies": [
+        "vscode.git-base"
+      ],
+      "proposedAPIs": [
+        "canonicalUriProvider",
+        "chatSessionsProvider",
+        "contribEditSessions",
+        "contribShareMenu",
+        "contribSourceControlHistoryItemMenu",
+        "scmHistoryProvider",
+        "shareProvider",
+        "timeline"
+      ]
+    },
+    {
+      "path": "extensions/github-authentication/package.json",
+      "id": "vscode.github-authentication",
+      "version": "0.0.2",
+      "license": "MIT",
+      "engine": "^1.41.0",
+      "contributions": [
+        "authentication",
+        "configuration"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": [
+        "authIssuers",
+        "authProviderSpecific",
+        "authSessionAccountIcon",
+        "authSessionExpiration"
+      ]
+    },
+    {
+      "path": "extensions/go/package.json",
+      "id": "vscode.go",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "configurationDefaults",
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/groovy/package.json",
+      "id": "vscode.groovy",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages",
+        "snippets"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/grunt/package.json",
+      "id": "vscode.grunt",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "configuration",
+        "taskDefinitions"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/gulp/package.json",
+      "id": "vscode.gulp",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "configuration",
+        "taskDefinitions"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/handlebars/package.json",
+      "id": "vscode.handlebars",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "0.10.x",
+      "contributions": [
+        "grammars",
+        "htmlLanguageParticipants",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/hlsl/package.json",
+      "id": "vscode.hlsl",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/html/package.json",
+      "id": "vscode.html",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "0.10.x",
+      "contributions": [
+        "grammars",
+        "languages",
+        "snippets"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/html-language-features/package.json",
+      "id": "vscode.html-language-features",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.77.0",
+      "contributions": [
+        "configuration",
+        "configurationDefaults",
+        "jsonValidation"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": [
+        "extensionsAny"
+      ]
+    },
+    {
+      "path": "extensions/ini/package.json",
+      "id": "vscode.ini",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/ipynb/package.json",
+      "id": "vscode.ipynb",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.57.0",
+      "contributions": [
+        "commands",
+        "configuration",
+        "menus",
+        "notebookRenderer",
+        "notebooks"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": [
+        "diffContentOptions"
+      ]
+    },
+    {
+      "path": "extensions/jake/package.json",
+      "id": "vscode.jake",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "configuration",
+        "taskDefinitions"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/java/package.json",
+      "id": "vscode.java",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages",
+        "snippets"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/javascript/package.json",
+      "id": "vscode.javascript",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "0.10.x",
+      "contributions": [
+        "configurationDefaults",
+        "grammars",
+        "languages",
+        "semanticTokenScopes",
+        "snippets"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/json/package.json",
+      "id": "vscode.json",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "0.10.x",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/json-language-features/package.json",
+      "id": "vscode.json-language-features",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.77.0",
+      "contributions": [
+        "commands",
+        "configuration",
+        "configurationDefaults",
+        "jsonValidation",
+        "jsonValidationRegistry"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": [
+        "extensionsAny"
+      ]
+    },
+    {
+      "path": "extensions/julia/package.json",
+      "id": "vscode.julia",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "0.10.x",
+      "contributions": [
+        "configurationDefaults",
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/latex/package.json",
+      "id": "vscode.latex",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/less/package.json",
+      "id": "vscode.less",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages",
+        "problemMatchers"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/log/package.json",
+      "id": "vscode.log",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/lua/package.json",
+      "id": "vscode.lua",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/make/package.json",
+      "id": "vscode.make",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "configurationDefaults",
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/markdown-basics/package.json",
+      "id": "vscode.markdown",
+      "version": "30.0.0",
+      "license": "MIT",
+      "engine": "^1.20.0",
+      "contributions": [
+        "configurationDefaults",
+        "grammars",
+        "languages",
+        "snippets"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/markdown-language-features/package.json",
+      "id": "vscode.markdown-language-features",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.70.0",
+      "contributions": [
+        "commands",
+        "configuration",
+        "configurationDefaults",
+        "customEditors",
+        "jsonValidation",
+        "keybindings",
+        "linkPresentationProviders",
+        "markdown.previewScripts",
+        "markdown.previewStyles",
+        "menus",
+        "notebookRenderer"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": [
+        "agentEditorComments",
+        "customEditorDiffs",
+        "customTextEditorNavigation",
+        "documentDiff",
+        "documentSyntaxHighlighting",
+        "externalUriOpener",
+        "linkPresentation",
+        "textEditorDiffInformation"
+      ]
+    },
+    {
+      "path": "extensions/markdown-math/package.json",
+      "id": "vscode.markdown-math",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.54.0",
+      "contributions": [
+        "configuration",
+        "grammars",
+        "languages",
+        "markdown.markdownItPlugins",
+        "markdown.previewStyles",
+        "notebookRenderer"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/media-preview/package.json",
+      "id": "vscode.media-preview",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.70.0",
+      "contributions": [
+        "commands",
+        "configuration",
+        "customEditors",
+        "menus"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/merge-conflict/package.json",
+      "id": "vscode.merge-conflict",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.5.0",
+      "contributions": [
+        "commands",
+        "configuration",
+        "menus"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/mermaid-markdown-features/package.json",
+      "id": "vscode.mermaid-markdown-features",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.104.0",
+      "contributions": [
+        "chatOutputRenderers",
+        "commands",
+        "configuration",
+        "languageModelTools",
+        "markdown.markdownItPlugins",
+        "markdown.previewScripts",
+        "menus",
+        "notebookRenderer"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": [
+        "chatOutputRenderer",
+        "chatParticipantPrivate"
+      ]
+    },
+    {
+      "path": "extensions/microsoft-authentication/package.json",
+      "id": "vscode.microsoft-authentication",
+      "version": "0.0.1",
+      "license": "MIT",
+      "engine": "^1.42.0",
+      "contributions": [
+        "authentication",
+        "configuration"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": [
+        "nativeWindowHandle",
+        "authIssuers",
+        "authenticationChallenges",
+        "authSessionExpiration"
+      ]
+    },
+    {
+      "path": "extensions/notebook-renderers/package.json",
+      "id": "vscode.builtin-notebook-renderers",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.57.0",
+      "contributions": [
+        "notebookRenderer"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/npm/package.json",
+      "id": "vscode.npm",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "0.10.x",
+      "contributions": [
+        "commands",
+        "configuration",
+        "jsonValidation",
+        "languages",
+        "menus",
+        "taskDefinitions",
+        "terminalQuickFixes",
+        "views"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": [
+        "agentsWindowActivation",
+        "terminalQuickFixProvider"
+      ]
+    },
+    {
+      "path": "extensions/objective-c/package.json",
+      "id": "vscode.objective-c",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/perl/package.json",
+      "id": "vscode.perl",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/php/package.json",
+      "id": "vscode.php",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "0.10.x",
+      "contributions": [
+        "grammars",
+        "languages",
+        "snippets"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/php-language-features/package.json",
+      "id": "vscode.php-language-features",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "0.10.x",
+      "contributions": [
+        "configuration",
+        "jsonValidation"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/powershell/package.json",
+      "id": "vscode.powershell",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/prompt-basics/package.json",
+      "id": "vscode.prompt",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.20.0",
+      "contributions": [
+        "configurationDefaults",
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/pug/package.json",
+      "id": "vscode.pug",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "configurationDefaults",
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/python/package.json",
+      "id": "vscode.python",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "configurationDefaults",
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/r/package.json",
+      "id": "vscode.r",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/razor/package.json",
+      "id": "vscode.razor",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "0.10.x",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/references-view/package.json",
+      "id": "vscode.references-view",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.67.0",
+      "contributions": [
+        "commands",
+        "configuration",
+        "keybindings",
+        "menus",
+        "views",
+        "viewsContainers"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/restructuredtext/package.json",
+      "id": "vscode.restructuredtext",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/ruby/package.json",
+      "id": "vscode.ruby",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "configurationDefaults",
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/rust/package.json",
+      "id": "vscode.rust",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/scss/package.json",
+      "id": "vscode.scss",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages",
+        "problemMatchers"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/search-result/package.json",
+      "id": "vscode.search-result",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.39.0",
+      "contributions": [
+        "configurationDefaults",
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": [
+        "documentFiltersExclusive"
+      ]
+    },
+    {
+      "path": "extensions/shaderlab/package.json",
+      "id": "vscode.shaderlab",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/shellscript/package.json",
+      "id": "vscode.shellscript",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "configurationDefaults",
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/simple-browser/package.json",
+      "id": "vscode.simple-browser",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.70.0",
+      "contributions": [
+        "commands",
+        "configuration",
+        "menus"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": [
+        "externalUriOpener"
+      ]
+    },
+    {
+      "path": "extensions/sql/package.json",
+      "id": "vscode.sql",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/swift/package.json",
+      "id": "vscode.swift",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages",
+        "snippets"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/terminal-suggest/package.json",
+      "id": "vscode.terminal-suggest",
+      "version": "1.0.1",
+      "license": "MIT",
+      "engine": "^1.95.0",
+      "contributions": [
+        "commands",
+        "terminal"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": [
+        "terminalCompletionProvider",
+        "terminalShellEnv"
+      ]
+    },
+    {
+      "path": "extensions/theme-abyss/package.json",
+      "id": "vscode.theme-abyss",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "themes"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/theme-defaults/package.json",
+      "id": "vscode.theme-defaults",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "iconThemes",
+        "themes"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/theme-kimbie-dark/package.json",
+      "id": "vscode.theme-kimbie-dark",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "themes"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/theme-modern-icons/package.json",
+      "id": "vscode.vscode-modern-icons",
+      "version": "1.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "iconThemes"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/theme-monokai/package.json",
+      "id": "vscode.theme-monokai",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "themes"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/theme-monokai-dimmed/package.json",
+      "id": "vscode.theme-monokai-dimmed",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "themes"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/theme-quietlight/package.json",
+      "id": "vscode.theme-quietlight",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "themes"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/theme-red/package.json",
+      "id": "vscode.theme-red",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "themes"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/theme-seti/package.json",
+      "id": "vscode.vscode-theme-seti",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "iconThemes"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/theme-solarized-dark/package.json",
+      "id": "vscode.theme-solarized-dark",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "themes"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/theme-solarized-light/package.json",
+      "id": "vscode.theme-solarized-light",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "themes"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/theme-tomorrow-night-blue/package.json",
+      "id": "vscode.theme-tomorrow-night-blue",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "themes"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/tunnel-forwarding/package.json",
+      "id": "vscode.tunnel-forwarding",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.82.0",
+      "contributions": [
+        "commands"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": [
+        "resolvers",
+        "tunnelFactory"
+      ]
+    },
+    {
+      "path": "extensions/typescript-basics/package.json",
+      "id": "vscode.typescript",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages",
+        "semanticTokenScopes",
+        "snippets"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/typescript-language-features/package.json",
+      "id": "vscode.typescript-language-features",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "^1.30.0",
+      "contributions": [
+        "breakpoints",
+        "commands",
+        "configuration",
+        "jsonValidation",
+        "menus",
+        "problemMatchers",
+        "problemPatterns",
+        "taskDefinitions"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": [
+        "workspaceTrust",
+        "multiDocumentHighlightProvider",
+        "codeActionAI",
+        "codeActionRanges",
+        "editorHoverVerbosityLevel"
+      ]
+    },
+    {
+      "path": "extensions/vb/package.json",
+      "id": "vscode.vb",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages",
+        "snippets"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/vscode-api-tests/package.json",
+      "id": "vscode.vscode-api-tests",
+      "version": "0.0.1",
+      "license": "MIT",
+      "engine": "^1.55.0",
+      "contributions": [
+        "breakpoints",
+        "chatParticipants",
+        "configuration",
+        "configurationDefaults",
+        "debuggers",
+        "interactiveSession",
+        "languageModelChatProviders",
+        "languageModelTools",
+        "notebooks",
+        "statusBarItems",
+        "taskDefinitions",
+        "views"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": [
+        "activeComment",
+        "authSession",
+        "browser",
+        "environmentPower",
+        "chatParticipantPrivate",
+        "chatPromptFiles",
+        "chatProvider",
+        "contribStatusBarItems",
+        "contribViewsRemote",
+        "customEditorMove",
+        "defaultChatParticipant",
+        "diffCommand",
+        "documentFiltersExclusive",
+        "documentSyntaxHighlighting",
+        "editorInsets",
+        "embeddings",
+        "envIsConnectionMetered",
+        "extensionRuntime",
+        "extensionsAny",
+        "externalUriOpener",
+        "fileSearchProvider",
+        "findFiles2",
+        "findTextInFiles",
+        "fsChunks",
+        "interactive",
+        "languageStatusText",
+        "mcpServerDefinitions",
+        "nativeWindowHandle",
+        "notebookDeprecated",
+        "notebookLiveShare",
+        "notebookMessaging",
+        "notebookMime",
+        "portsAttributes",
+        "quickPickSortByLabel",
+        "resolvers",
+        "scmActionButton",
+        "scmSelectedProvider",
+        "scmTextDocument",
+        "scmValidation",
+        "taskPresentationGroup",
+        "telemetry",
+        "terminalDataWriteEvent",
+        "terminalDimensions",
+        "testObserver",
+        "textSearchProvider",
+        "timeline",
+        "tokenInformation",
+        "treeViewActiveItem",
+        "treeViewReveal",
+        "tunnels",
+        "workspaceTrust",
+        "inlineCompletionsAdditions",
+        "devDeviceId",
+        "languageModelProxy",
+        "agentSessionsWorkspace",
+        "linkPresentation"
+      ]
+    },
+    {
+      "path": "extensions/vscode-colorize-perf-tests/package.json",
+      "id": "vscode.vscode-colorize-perf-tests",
+      "version": "0.0.1",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/vscode-colorize-tests/package.json",
+      "id": "vscode.vscode-colorize-tests",
+      "version": "0.0.1",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "productIconThemes",
+        "semanticTokenModifiers",
+        "semanticTokenScopes",
+        "semanticTokenTypes"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/vscode-test-resolver/package.json",
+      "id": "vscode.vscode-test-resolver",
+      "version": "0.0.1",
+      "license": "MIT",
+      "engine": "^1.25.0",
+      "contributions": [
+        "commands",
+        "configuration",
+        "menus",
+        "resourceLabelFormatters"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": [
+        "resolvers",
+        "tunnels"
+      ]
+    },
+    {
+      "path": "extensions/xml/package.json",
+      "id": "vscode.xml",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    },
+    {
+      "path": "extensions/yaml/package.json",
+      "id": "vscode.yaml",
+      "version": "10.0.0",
+      "license": "MIT",
+      "engine": "*",
+      "contributions": [
+        "configurationDefaults",
+        "grammars",
+        "languages"
+      ],
+      "extensionDependencies": [],
+      "proposedAPIs": []
+    }
+  ],
+  "parse_errors": []
+}

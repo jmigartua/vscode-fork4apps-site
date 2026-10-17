@@ -1,0 +1,182 @@
+[
+  {
+    "path": "src/vs/workbench/contrib/tasks/browser/terminalTaskSystem.ts",
+    "line": 35,
+    "text": "import { IShellLaunchConfig, WaitOnExitValue } from '../../../../platform/terminal/common/terminal.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/contrib/tasks/browser/terminalTaskSystem.ts#L35"
+  },
+  {
+    "path": "src/vs/workbench/contrib/tasks/browser/terminalTaskSystem.ts",
+    "line": 36,
+    "text": "import { formatMessageForTerminal } from '../../../../platform/terminal/common/terminalStrings.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/contrib/tasks/browser/terminalTaskSystem.ts#L36"
+  },
+  {
+    "path": "src/vs/workbench/contrib/tasks/browser/terminalTaskSystem.ts",
+    "line": 44,
+    "text": "import { ITerminalGroupService, ITerminalInstance, ITerminalService } from '../../terminal/browser/terminal.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/contrib/tasks/browser/terminalTaskSystem.ts#L44"
+  },
+  {
+    "path": "src/vs/workbench/contrib/tasks/browser/terminalTaskSystem.ts",
+    "line": 45,
+    "text": "import { VSCodeOscProperty, VSCodeOscPt, VSCodeSequence } from '../../terminal/browser/terminalEscapeSequences.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/contrib/tasks/browser/terminalTaskSystem.ts#L45"
+  },
+  {
+    "path": "src/vs/workbench/contrib/tasks/browser/terminalTaskSystem.ts",
+    "line": 46,
+    "text": "import { TerminalProcessExtHostProxy } from '../../terminal/browser/terminalProcessExtHostProxy.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/contrib/tasks/browser/terminalTaskSystem.ts#L46"
+  },
+  {
+    "path": "src/vs/workbench/contrib/tasks/browser/terminalTaskSystem.ts",
+    "line": 47,
+    "text": "import { ITerminalProfileResolverService, TERMINAL_VIEW_ID } from '../../terminal/common/terminal.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/contrib/tasks/browser/terminalTaskSystem.ts#L47"
+  },
+  {
+    "path": "src/vs/workbench/contrib/tasks/browser/terminalTaskSystem.ts",
+    "line": 56,
+    "text": "import { serializeVSCodeOscMessage } from '../../../../platform/terminal/common/xterm/shellIntegrationAddon.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/contrib/tasks/browser/terminalTaskSystem.ts#L56"
+  },
+  {
+    "path": "src/vs/workbench/api/browser/mainThreadTerminalService.ts",
+    "line": 12,
+    "text": "import { IProcessProperty, IProcessReadyWindowsPty, IShellLaunchConfig, IShellLaunchConfigDto, ITerminalOutputMatch, ITerminalOutputMatcher, ProcessPropertyType, remoteResolverTerminal, TerminalExitReason, TerminalLocation, type IProcessPropertyMap } from '../../../platform/terminal/common/terminal.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/api/browser/mainThreadTerminalService.ts#L12"
+  },
+  {
+    "path": "src/vs/workbench/api/browser/mainThreadTerminalService.ts",
+    "line": 13,
+    "text": "import { TerminalDataBufferer } from '../../../platform/terminal/common/terminalDataBuffering.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/api/browser/mainThreadTerminalService.ts#L13"
+  },
+  {
+    "path": "src/vs/workbench/api/browser/mainThreadTerminalService.ts",
+    "line": 14,
+    "text": "import { ITerminalEditorService, ITerminalExternalLinkProvider, ITerminalGroupService, ITerminalInstance, ITerminalLink, ITerminalService } from '../../contrib/terminal/browser/terminal.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/api/browser/mainThreadTerminalService.ts#L14"
+  },
+  {
+    "path": "src/vs/workbench/api/browser/mainThreadTerminalService.ts",
+    "line": 15,
+    "text": "import { TerminalProcessExtHostProxy } from '../../contrib/terminal/browser/terminalProcessExtHostProxy.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/api/browser/mainThreadTerminalService.ts#L15"
+  },
+  {
+    "path": "src/vs/workbench/api/browser/mainThreadTerminalService.ts",
+    "line": 16,
+    "text": "import { IEnvironmentVariableService } from '../../contrib/terminal/common/environmentVariable.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/api/browser/mainThreadTerminalService.ts#L16"
+  },
+  {
+    "path": "src/vs/workbench/api/browser/mainThreadTerminalService.ts",
+    "line": 17,
+    "text": "import { deserializeEnvironmentDescriptionMap, deserializeEnvironmentVariableCollection, serializeEnvironmentVariableCollection } from '../../../platform/terminal/common/environmentVariableShared.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/api/browser/mainThreadTerminalService.ts#L17"
+  },
+  {
+    "path": "src/vs/workbench/api/browser/mainThreadTerminalService.ts",
+    "line": 18,
+    "text": "import { IStartExtensionTerminalRequest, ITerminalProcessExtHostProxy, ITerminalProfileResolverService, ITerminalProfileService } from '../../contrib/terminal/common/terminal.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/api/browser/mainThreadTerminalService.ts#L18"
+  },
+  {
+    "path": "src/vs/workbench/api/browser/mainThreadTerminalService.ts",
+    "line": 23,
+    "text": "import { ISerializableEnvironmentDescriptionMap, ISerializableEnvironmentVariableCollection } from '../../../platform/terminal/common/environmentVariable.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/api/browser/mainThreadTerminalService.ts#L23"
+  },
+  {
+    "path": "src/vs/workbench/api/browser/mainThreadTerminalService.ts",
+    "line": 24,
+    "text": "import { ITerminalLinkProviderService } from '../../contrib/terminalContrib/links/browser/links.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/api/browser/mainThreadTerminalService.ts#L24"
+  },
+  {
+    "path": "src/vs/workbench/api/browser/mainThreadTerminalService.ts",
+    "line": 25,
+    "text": "import { ITerminalQuickFixService, ITerminalQuickFix, TerminalQuickFixType } from '../../contrib/terminalContrib/quickFix/browser/quickFix.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/api/browser/mainThreadTerminalService.ts#L25"
+  },
+  {
+    "path": "src/vs/workbench/api/browser/mainThreadTerminalService.ts",
+    "line": 26,
+    "text": "import { TerminalCapability } from '../../../platform/terminal/common/capabilities/capabilities.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/api/browser/mainThreadTerminalService.ts#L26"
+  },
+  {
+    "path": "src/vs/workbench/api/browser/mainThreadTerminalService.ts",
+    "line": 27,
+    "text": "import { ITerminalCompletionService } from '../../contrib/terminalContrib/suggest/browser/terminalCompletionService.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/api/browser/mainThreadTerminalService.ts#L27"
+  },
+  {
+    "path": "src/vs/workbench/browser/workbench.ts",
+    "line": 18,
+    "text": "import { Position, Parts, IWorkbenchLayoutService, positionToString } from '../services/layout/browser/layoutService.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/browser/workbench.ts#L18"
+  },
+  {
+    "path": "src/vs/workbench/browser/workbench.ts",
+    "line": 26,
+    "text": "import { NotificationsCenter } from './parts/notifications/notificationsCenter.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/browser/workbench.ts#L26"
+  },
+  {
+    "path": "src/vs/workbench/browser/workbench.ts",
+    "line": 27,
+    "text": "import { NotificationsAlerts } from './parts/notifications/notificationsAlerts.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/browser/workbench.ts#L27"
+  },
+  {
+    "path": "src/vs/workbench/browser/workbench.ts",
+    "line": 28,
+    "text": "import { NotificationsStatus } from './parts/notifications/notificationsStatus.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/browser/workbench.ts#L28"
+  },
+  {
+    "path": "src/vs/workbench/browser/workbench.ts",
+    "line": 29,
+    "text": "import { registerNotificationCommands } from './parts/notifications/notificationsCommands.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/browser/workbench.ts#L29"
+  },
+  {
+    "path": "src/vs/workbench/browser/workbench.ts",
+    "line": 30,
+    "text": "import { NotificationsToasts } from './parts/notifications/notificationsToasts.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/browser/workbench.ts#L30"
+  },
+  {
+    "path": "src/vs/workbench/browser/workbench.ts",
+    "line": 49,
+    "text": "import { NotificationAccessibleView } from './parts/notifications/notificationAccessibleView.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/browser/workbench.ts#L49"
+  },
+  {
+    "path": "src/vs/workbench/browser/layout.ts",
+    "line": 13,
+    "text": "import { SidebarPart } from './parts/sidebar/sidebarPart.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/browser/layout.ts#L13"
+  },
+  {
+    "path": "src/vs/workbench/browser/layout.ts",
+    "line": 14,
+    "text": "import { PanelPart } from './parts/panel/panelPart.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/browser/layout.ts#L14"
+  },
+  {
+    "path": "src/vs/workbench/browser/layout.ts",
+    "line": 15,
+    "text": "import { Position, Parts, PartOpensMaximizedOptions, IWorkbenchLayoutService, positionFromString, positionToString, partOpensMaximizedFromString, PanelAlignment, ActivityBarPosition, LayoutSettings, MULTI_WINDOW_PARTS, SINGLE_WINDOW_PARTS, ZenModeSettings, EditorTabsMode, EditorActionsLocation, shouldShowCustomTitleBar, isHorizontal, isMultiWindowPart, IPartVisibilityChangeEvent, isFloatingTopEdgeExposed, ModernUIDensity } from '../services/layout/browser/layoutService.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/browser/layout.ts#L15"
+  },
+  {
+    "path": "src/vs/workbench/browser/layout.ts",
+    "line": 49,
+    "text": "import { AuxiliaryBarPart } from './parts/auxiliarybar/auxiliaryBarPart.js';",
+    "url": "https://github.com/microsoft/vscode/blob/624362540d17f39ae20b2781a44cf8d676a22bfb/src/vs/workbench/browser/layout.ts#L49"
+  }
+]
