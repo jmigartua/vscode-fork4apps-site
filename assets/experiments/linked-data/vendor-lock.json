@@ -1,0 +1,25 @@
+[
+  {
+    "name": "tabulator-tables",
+    "version": "6.6.1",
+    "license": "MIT",
+    "tarball": "https://registry.npmjs.org/tabulator-tables/-/tabulator-tables-6.6.1.tgz",
+    "integrity": "sha512-8A77aN30vJS34w1P5h4HtgEajB7vX2v0AD1fXFIKxp6SxplpGGfKn0Y4ouY91+6gdGK8/quqXoCA2LkrhBVE3A==",
+    "files": {
+      "tabulator.min.js": "5f945a0327dacb19e50e1abed0942d2563848bcf5220998df325afa74cce3c34",
+      "tabulator.min.css": "ff598d8e961398e09a8e52ab21740e5ed952c84feebbdacec8f8a362dd3f73db",
+      "TABULATOR-LICENSE": "191a2ee554684e1064c897b432f0e1bc6dfa714ca045d3f6ea2cf692cbd398b7"
+    }
+  },
+  {
+    "name": "plotly.js-basic-dist-min",
+    "version": "4.1.2",
+    "license": "MIT",
+    "tarball": "https://registry.npmjs.org/plotly.js-basic-dist-min/-/plotly.js-basic-dist-min-4.1.2.tgz",
+    "integrity": "sha512-LvfKTeVYIKzEyMj9TuH+8ot0I7IMG1fET2YxgUtbpZVHd2fBrOlBFsk26wKgnAckHyNhKG7vDk4tEyqGCYs2Aw==",
+    "files": {
+      "plotly-basic.min.js": "fa18ed1c94c06576c0a867bb2477534716c39e5b22affe673f2a184317974926",
+      "PLOTLY-LICENSE": "8c45d9eaf50c2f72dd9c7ab9ef440788ba58a3538484b5c51c1f17d5128752e7"
+    }
+  }
+]

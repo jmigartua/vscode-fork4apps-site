@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linked data component experiment</title>
+<link rel="stylesheet" href="vendor/tabulator.min.css">
+<script src="vendor/tabulator.min.js"></script>
+<script src="vendor/plotly-basic.min.js"></script>
+<link rel="stylesheet" href="style.css"></head><body>
+<header><p>Component experiment · synthetic data</p><h1 id="title">Linked data views</h1>
+<p>Edit a table value; inspect the plot. Click a row or a point to link the selection.</p></header>
+<nav aria-label="Document actions"><button id="undo">Undo</button><button id="redo">Redo</button><button id="snapshot">Save data snapshot</button><label>Open snapshot <input id="open" type="file" accept=".json"></label><button id="svg">Export plot SVG</button></nav>
+<fieldset><legend>Data edits</legend><label>x <input id="new-x" type="number" value="5" step="any"></label> <label>y <input id="new-y" type="number" value="6" step="any"></label> <label>Uncertainty <input id="new-error" type="number" min="0" value="0.2" step="any"></label> <button id="add-point">Add point / row</button> <button id="remove-point">Remove selected</button> <label id="point-mode"><input id="edit-points" type="checkbox">Edit plot points</label><p>Select a point, enable editing, then drag the orange handle. Changes commit on release. Undo restores moved or removed data.</p></fieldset>
+<p id="status" role="status"></p><p id="job-status" role="status"></p>
+<main><section id="table-section"><h2>Data table</h2><div id="table"></div></section><section id="plot-section"><h2>Linked figure</h2><div id="plot"></div></section></main>
+<footer>This experiment evaluates reused components. It is not yet an editor extension or a constructor recipe. Exported snapshots can also be rendered with the optional Matplotlib adapter.</footer>
+<script type="module" src="app.mjs"></script></body></html>

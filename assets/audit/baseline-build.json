@@ -1,0 +1,44 @@
+{
+  "verified_at": "2026-10-17T17:58:19.665217+00:00",
+  "upstream_commit": "624362540d17f39ae20b2781a44cf8d676a22bfb",
+  "host_version": "1.143.0",
+  "platform": "macOS x86_64",
+  "node": "24.18.0",
+  "npm": "11.16.0",
+  "git_lfs": "3.8.0",
+  "lfs_remaining_of_original_98": 0,
+  "steps": {
+    "lfs_pull": 0,
+    "npm_install": 0,
+    "npm_run_compile": 0,
+    "source_host_test": 0
+  },
+  "host_test": {
+    "host_version": "1.143.0",
+    "app": "neutral-workbench",
+    "checks": [
+      "Extension activation and tree registration",
+      "Effective layout settings, restoration and reapplication",
+      "Open, validate, tree contents and summary command",
+      "Edit, dirty state, undo, redo, save and reopen",
+      "Invalid input diagnostics and recovery",
+      "Native save, terminal and command-palette commands remain registered"
+    ],
+    "status": "passed",
+    "scope": "Extension and document workflow; not a compiled product-fork certification"
+  },
+  "scope": "Branded development source compiled and launched; generated extension tested through development-extension loading. Not a packaged release or complete retained-feature certification.",
+  "observations": [
+    "Development host logged no default chat agent and unknown agent-host channels. Chat functionality is not qualified.",
+    "Dependency installation reported audit findings; the development dependency tree is not release-approved.",
+    "Additional visible-host automation opened the example document without extensionDevelopmentPath, but its product-name-in-window-title assertion failed: the macOS title showed only the document and workspace. This check is not claimed as a complete branding or built-in extension qualification."
+  ],
+  "log_hashes": {
+    "lfs-install.log": "4fea4bc2b3b77e0192bd58ef65c3a0c982ecc7409dbffab6873bb6e04be6a875",
+    "host-test.log": "5f6202f197e9f4453ebbaa20000b479ece1792c9f4325018b2343a7276bdf6e4",
+    "compile.log": "9cabd72577aef268c575255ee876439c40d7d50a7be5a0b9f13e3eb7f2954ffe",
+    "lfs-pull.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "npm-install.log": "be3834060803d4175c637c722dda4784b09644ed6f2c2237be2ef1abc770e8f0"
+  },
+  "upstream_clean": true
+}

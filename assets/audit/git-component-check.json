@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "git_version": "git version 2.55.0",
+  "checks": [
+    "Commit a synthetic dataset, journal snapshot, result and hash manifest",
+    "Restore an earlier checkpoint without losing the later branch",
+    "Continue on an alternative branch",
+    "Push to a local bare remote and restore both branches from a fresh clone",
+    "Verify restored artifact bytes against checkpoint hashes; detect a missing result",
+    "Exclude a synthetic credential file using an explicit project policy"
+  ],
+  "scope": "Git CLI with local filesystem remote; not Code - OSS UI, GitHub authentication, LFS upload, conflict handling or automatic journal checkpoint integration"
+}

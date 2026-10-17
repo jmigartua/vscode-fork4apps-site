@@ -1,0 +1,12 @@
+{
+  "package": "@trrack/core",
+  "version": "1.6.1",
+  "status": "passed",
+  "module_loading": "ESM import tested on Node 20.18.0; CommonJS require failed with TypeError: m is not a function",
+  "checks": [
+    "Registered data actions, undo and redo",
+    "Return to a prior revision and branch without losing the original branch",
+    "Export/import restores branches, stored states, error metadata and artifact references"
+  ],
+  "scope": "Isolated Node API smoke test; not crash-safe disk persistence, automatic error capture, host integration or numerical reproducibility certification"
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "title": "Linked views - synthetic example",
+  "axes": {"x": {"label": "Time", "unit": "s"}, "y": {"label": "Signal", "unit": "a.u."}},
+  "rows": [
+    {"id": "r1", "x": 0, "y": 1.2, "yerr": 0.1},
+    {"id": "r2", "x": 1, "y": 2.1, "yerr": 0.15},
+    {"id": "r3", "x": 2, "y": 2.8, "yerr": 0.12},
+    {"id": "r4", "x": 3, "y": 4.2, "yerr": 0.2},
+    {"id": "r5", "x": 4, "y": 4.7, "yerr": 0.18}
+  ]
+}

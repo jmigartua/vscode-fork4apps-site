@@ -1,0 +1,146 @@
+{
+  "status": "passed",
+  "checks": [
+    "Three PDF renderings inspected as rasterized pages",
+    "PGF generated with XeLaTeX",
+    "Actual edited browser snapshot rendered to SVG and PNG; PNG visually inspected"
+  ],
+  "scope": "Synthetic data publication adapter; no scientific uncertainty calculation, print-device test or editor-host integration",
+  "outputs": [
+    {
+      "artifact": "figure-mathtext.pdf",
+      "snapshot_sha256": "1ab6dd4b70b046ea1017a0de38a1ba7bd50f633f74b866634f1c0d18b93ee7d8",
+      "source_revision": 0,
+      "row_ids": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "python": "3.14.4",
+      "matplotlib": "3.10.9",
+      "text_engine": "mathtext",
+      "format": "pdf",
+      "size_inches": [
+        5.6,
+        3.7
+      ],
+      "output_sha256": "92a8df3855f0b386150c708227ea8173d39d8761cc511be571899ed55204c4d5",
+      "scope": "Synthetic values and supplied yerr rendered; uncertainties are not calculated by this adapter."
+    },
+    {
+      "artifact": "figure-latex.pdf",
+      "snapshot_sha256": "1ab6dd4b70b046ea1017a0de38a1ba7bd50f633f74b866634f1c0d18b93ee7d8",
+      "source_revision": 0,
+      "row_ids": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "python": "3.14.4",
+      "matplotlib": "3.10.9",
+      "text_engine": "latex",
+      "format": "pdf",
+      "size_inches": [
+        5.6,
+        3.7
+      ],
+      "output_sha256": "1ff37cc366706314324105a54210117f4a42221f80691eae08aea9c3a90fd97f",
+      "scope": "Synthetic values and supplied yerr rendered; uncertainties are not calculated by this adapter.",
+      "tex_version": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)"
+    },
+    {
+      "artifact": "figure-pgf.pdf",
+      "snapshot_sha256": "1ab6dd4b70b046ea1017a0de38a1ba7bd50f633f74b866634f1c0d18b93ee7d8",
+      "source_revision": 0,
+      "row_ids": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "python": "3.14.4",
+      "matplotlib": "3.10.9",
+      "text_engine": "pgf",
+      "format": "pdf",
+      "size_inches": [
+        5.6,
+        3.7
+      ],
+      "output_sha256": "7a80befb91b84ccf7bbc8008c8253f7ad19f7e777cab735711293536e92a2fde",
+      "scope": "Synthetic values and supplied yerr rendered; uncertainties are not calculated by this adapter.",
+      "tex_version": "XeTeX 3.141592653-2.6-0.999998 (TeX Live 2026)"
+    },
+    {
+      "artifact": "figure.pgf",
+      "snapshot_sha256": "1ab6dd4b70b046ea1017a0de38a1ba7bd50f633f74b866634f1c0d18b93ee7d8",
+      "source_revision": 0,
+      "row_ids": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "python": "3.14.4",
+      "matplotlib": "3.10.9",
+      "text_engine": "pgf",
+      "format": "pgf",
+      "size_inches": [
+        5.6,
+        3.7
+      ],
+      "output_sha256": "302f3b2167ebce9b7f7e33c5ee35503f2c91ce8b01d8c35d9807f9e2eaf8c096",
+      "scope": "Synthetic values and supplied yerr rendered; uncertainties are not calculated by this adapter.",
+      "tex_version": "XeTeX 3.141592653-2.6-0.999998 (TeX Live 2026)"
+    },
+    {
+      "artifact": "browser-snapshot.svg",
+      "snapshot_sha256": "1ff1f2b45a2683dd05e77a0bcdc076c0276b150adbabee06d6a5840dca354aea",
+      "source_revision": 3,
+      "row_ids": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "python": "3.14.4",
+      "matplotlib": "3.10.9",
+      "text_engine": "mathtext",
+      "format": "svg",
+      "size_inches": [
+        5.6,
+        3.7
+      ],
+      "output_sha256": "8da25bfcb7ccc9548332c58af54b4d8c1dc80e43ffdcbc031cde38f84959c547",
+      "scope": "Synthetic values and supplied yerr rendered; uncertainties are not calculated by this adapter."
+    },
+    {
+      "artifact": "browser-snapshot.png",
+      "snapshot_sha256": "1ff1f2b45a2683dd05e77a0bcdc076c0276b150adbabee06d6a5840dca354aea",
+      "source_revision": 3,
+      "row_ids": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "python": "3.14.4",
+      "matplotlib": "3.10.9",
+      "text_engine": "mathtext",
+      "format": "png",
+      "size_inches": [
+        5.6,
+        3.7
+      ],
+      "output_sha256": "f81aad6351182895d681bce19d2e6627018f0ac9ed0abc82810ac6f9f43adf2d",
+      "scope": "Synthetic values and supplied yerr rendered; uncertainties are not calculated by this adapter."
+    }
+  ]
+}

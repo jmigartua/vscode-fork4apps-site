@@ -1,0 +1,15 @@
+{
+  "scope": "Isolated browser component experiment; not a Code - OSS extension test",
+  "checks": [
+    "Real Tabulator cell edit updates Plotly values",
+    "Undo/redo update both rendered views",
+    "Plot point click selects the corresponding stable table row",
+    "Save and reopen preserve the committed data revision and values",
+    "Plotly exports a local SVG",
+    "Actual plot-handle drag commits a point move and refreshes the linked calculation",
+    "Add/remove points update both views; undo restores the removed stable row",
+    "table-only: unused renderer assets absent from output and network requests",
+    "plot-only: unused renderer assets absent from output and network requests"
+  ],
+  "errors": []
+}
