@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Using the audit and planner · VS Code for applications – VS Code for applications</title>
+<title>Using the template and skill · VS Code for applications – VS Code for applications</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -118,23 +118,32 @@ document.addEventListener("DOMContentLoaded", function () {
 <div class="docs"><nav class="docs-nav" aria-label="Site sections"><button class="docs-fold" type="button" data-fold="nav" aria-label="Hide navigation">‹</button><button type="button" class="mobile-nav-toggle" aria-expanded="true" aria-controls="nav-sections">Hide site sections</button><div id="nav-sections"><details class="group" open=""><summary class="t">Overview</summary><ul><li><a href="../index.html">Overview</a></li><li><a href="../brief/index.html">Brief</a></li><li><a href="../assessment/index.html">Assessment</a></li></ul></details><details class="group" open=""><summary class="t">Study</summary><ul><li><a href="../map/index.html">Workbench map</a></li><li><a href="../architecture/index.html">Assembly and dependencies</a></li><li><a href="../alternatives/index.html">Alternatives</a></li><li><a href="../sources/index.html">Sources</a></li></ul></details><details class="group" open=""><summary class="t">Construction</summary><ul><li><a href="../design/index.html">Template and skill</a></li><li><a href="../roadmap/index.html">Roadmap</a></li><li><a href="../ideas/index.html">Ideas</a></li><li><a href="../manual/index.html">Manual</a></li></ul></details><details class="group" open=""><summary class="t">Record</summary><ul><li><a href="../about/index.html">Method</a></li><li><a href="../log/index.html">Log</a></li><li><a href="../releases/index.html">Release status</a></li></ul></details></div></nav><div class="docs-main">
 
 <header id="title-block-header">
-<h1 class="title">Using the audit and planner</h1>
+<h1 class="title">Using the template and skill</h1>
 
 </header>
 
 
-<article class="page-article"><h1>Using the audit and planner</h1>
-
-<p class="sub">The current tools support inspecting the foundation and preparing a configuration plan. They do not create a distributable application.</p>
-<h2 class="anchored">Explore the interface</h2><p>Open the <a href="../map/index.html">workbench map</a>, select a region, and read its role and customization boundary. The toggles affect only this schematic. Search the catalogue for features that do not occupy a permanent region.</p>
-<h2 class="anchored">Reproduce the source audit</h2><pre>python3 tools/audit_source.py</pre><p>The command checks the pinned revision and a clean upstream checkout, then rewrites the source census and selected evidence. A changed revision stops the run. It does not install dependencies or execute upstream code.</p>
-<h2 class="anchored">Prepare a profile</h2><pre>python3 tools/plan_profile.py profiles/research-workbench.json --output audit/research-plan.json</pre><p>A plan-ready result means the request is structurally valid and contains no known conflict under the partial registry. It does not certify that the resulting application exists or works. Disabled/excluded requests return a blocked plan with exit status 2. Invalid input returns exit status 1.</p>
-<h2 class="anchored">Invoke the project skill</h2><p>Ask the agent: “Use the skill at <code>skills/code-oss-app-template/SKILL.md</code> to plan an application with a project tree, custom document editor and terminal, while hiding Run and Debug.” Supply the intended app domain when it is known. The skill must distinguish hide, disable and exclude.</p>
+<article class="page-article"><h1>Using the template and skill</h1>
+<p class="sub">Generate a neutral starting project, test its document workflow, and prepare separate Code - OSS source. A packaged application is a later build result.</p>
+<h2 class="anchored">Generate an example</h2><pre>python3 -m pip install -r requirements.txt
+python3 tools/compose_app.py generate apps/neutral-workbench.json --output artifacts/instances/neutral-workbench</pre>
+<p>Use a new output directory. Generation refuses to overwrite an existing project. For the focused layout, use <code>apps/focused-workbench.json</code> and a separate output directory. To create another product, copy the manifest and change its application identity, bundle identifier and matching profile name.</p>
+<h2 class="anchored">Test and open the example</h2><pre>node --test artifacts/instances/neutral-workbench/extension/test/core.test.cjs
+python3 artifacts/instances/neutral-workbench/scripts/run.py --host "/path/to/editor-executable" --test
+python3 artifacts/instances/neutral-workbench/scripts/run.py --host "/path/to/editor-executable"</pre>
+<p>On macOS, an example executable is <code>/Applications/Visual Studio Code.app/Contents/MacOS/Electron</code>. Use a host implementing editor API 1.112.0 or newer. The launcher uses separate user-data and extension directories. Host tests use a temporary copy of the example document and write <code>.state/last-host-test.json</code>. Persistent state uses a short per-instance directory under <code>~/.workbench-family/</code>, recorded in <code>.state/runtime-location.json</code>.</p>
+<p>In the command palette, use the application's <strong>Open Example Document</strong>, <strong>Validate Document</strong> and <strong>Summarize Document</strong> commands. The focused example also provides <strong>Apply App Layout</strong> and <strong>Restore Visible Layout</strong>. The existing host keeps its own brand; product branding is applied in the separate source-preparation step.</p>
+<h2 class="anchored">Prepare the fork source</h2><pre>python3 tools/compose_app.py prepare-source artifacts/instances/neutral-workbench --upstream upstream/vscode --output artifacts/forks/neutral-workbench</pre>
+<p>The research checkout must be clean and at the locked revision. Preparation creates a separate clone, applies <code>product.overrides.json</code>, adds the generated extension and records <code>product-identity.patch</code> and <code>.workbench-template.json</code>. Review those files and follow <code>template/BUILDING.md</code>. This command does not install dependencies or compile.</p>
+<h2 class="anchored">Ask the skill</h2><p>In this project: “Use <code>$code-oss-app-template</code> to create a new neutral workbench with its activity and status bars hidden.” The project-local skill reads the same generator and registry. The supported commands and contract are maintained in <code>template/CONTRACT.md</code>.</p>
+<h2 class="anchored">Understand an unsupported request</h2><p>The planner can describe more choices than the generator implements. A request to hide Debug is currently planning-only. A request to exclude the terminal is blocked because no exclusion recipe exists and retained task workflows have a known terminal dependency. The generator reports those limits instead of silently ignoring the request.</p>
+<h2 class="anchored">Reproduce checks and audit</h2><pre>python3 -m unittest discover -s tests
+python3 tools/audit_source.py
+python3 tools/plan_profile.py profiles/research-workbench.json --output audit/research-plan.json</pre>
+<p>The source audit requires the pinned checkout and does not execute upstream code. Portable tests run without it; the source-location check explicitly skips when that optional checkout is absent. Do not confuse a successful plan with a generated, built or certified application.</p>
 <h2 class="anchored">Maintain the site</h2><pre>python3 ecosystem/tools/build.py
 quarto render ecosystem/site
-python3 tools/check_site.py</pre><p>Edit <code>ecosystem/data/*.yml</code> for brief, ideas, log, navigation and catalogue. Edit authored study pages directly. Generated pages and <code>ecosystem/LOG.md</code> are recreated from their source records.</p>
-<h2 class="anchored">Run local preview</h2><pre>python3 -m http.server 8765 --directory ecosystem/site/_site</pre><p>Open <code>http://localhost:8765/</code>. A direct file preview may not load the interactive catalogue data; use the local HTTP server.</p>
-
+python3 tools/check_site.py</pre><p>Edit the maintained records and authored pages; regenerate the brief, ideas, log and shared includes. Relevant pushes to the private source repository rebuild and publish the public site through GitHub Pages.</p>
 </article>
 
 
@@ -280,7 +289,7 @@ python3 tools/check_site.py</pre><p>Edit <code>ecosystem/data/*.yml</code> for b
         <li><a href="https://jmigartua.github.io/inverse-problems-configuration-space-site/">inverse problems</a>, the discourse</li>
         <li><a href="https://jmigartua.github.io/lab-plot-fit-site/">lab plot fit</a>, the teaching laboratory app</li></ul></div>
       <div><h4 class="anchored">Status</h4><ul>
-        <li>Research site · initial audit and design</li>
+        <li>Template 0.1 · construction in progress</li>
         <li>Rebuilt from <code>data/*.yml</code> on every render</li></ul></div>
     </div>
     <div class="foot-bottom">

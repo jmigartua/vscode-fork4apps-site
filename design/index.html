@@ -124,77 +124,67 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 <article class="page-article"><h1>The template and the skill</h1>
-
-<p class="sub">The skill should operate a versioned template and a capability registry. It should not carry an untestable, prose-only memory of how to delete parts of VS Code.</p>
-<h2 class="anchored">A proposed product family</h2>
-<div class="flow"><span>Pinned upstream</span><span>Small shared product patch set</span><span>App manifest + domain extensions</span><span>Generated app + evidence</span></div>
-<p>The common foundation owns host updates and supported contracts. Each application owns identity, domain extensions, documents and its selected profile. Patches are applied in a deterministic order and checked against the expected base. Generated output records the exact base, patches, extension versions, build environment and tests.</p>
-<h2 class="anchored">The manifest is the interface to the generator</h2>
-<pre>{
-  "schema_version": 1,
-  "name": "research-workbench",
-  "upstream_commit": "624362540d17f39ae20b2781a44cf8d676a22bfb",
-  "default_state": "retained",
-  "capabilities": {
-    "terminal": "retained",
-    "debug": "hidden",
-    "scm": "hidden",
-    "custom-editors": "retained"
-  }
-}</pre>
-<p>This is the implemented planning format, not a VS Code settings file. Unmentioned capabilities stay retained so that a short request does not silently discard functionality. “Hidden” describes initial presentation and requires a later concrete layout implementation. User configuration is not an enforcement mechanism.</p>
-<h2 class="anchored">What the initial planner actually does</h2>
-<p><code>tools/plan_profile.py</code> validates the schema and pinned revision, checks identifiers and states, expands explicit defaults, and reports conflicts against the catalogue's known prerequisites. It returns a planning artifact with changes and needed runtime checks. It never edits the upstream checkout.</p>
-<p>A disabled or excluded capability is blocked for application generation because no such recipe is certified yet. Known dependency conflicts are explained separately. Even a conflict-free plan has <code>application_ready: false</code>: it still needs implementation, compilation and runtime verification. The graph is deliberately labelled partial.</p>
-<h2 class="anchored">One skill first; separate responsibilities when justified</h2>
-<p>The initial project skill is <code>skills/code-oss-app-template/SKILL.md</code>. It covers audit and profile planning. It reads the real registry and lock rather than embedding a second copy. Keeping it in this project makes the research reproducible; it has not been installed globally.</p>
+<p class="sub">Template 0.1 constructs a neutral workbench project, implements a small set of reversible layout choices, and prepares separately branded Code - OSS source.</p>
+<h2 class="anchored">What now exists</h2>
+<div class="flow"><span>App manifest</span><span>Checked profile + recipes</span><span>Extension, core and tests</span><span>Separate fork source</span></div>
+<p>The generator creates a real starting project: a document extension, a core independent of the editor API, an example workspace, tests, an isolated launcher and a product-identity overlay. A second command applies the overlay and extension to a separate clone of the pinned Code - OSS source. The original research checkout stays unchanged.</p>
+<p>The first example is domain-neutral, as requested. It uses a small JSON document with a title and records to exercise editing, validation, a document tree and a summary output. That document is a demonstrator; later applications can replace its format and core.</p>
+<h2 class="anchored">Two examples, one foundation</h2>
+<p>The generated extension requires host API 1.112.0 or newer. A visual test on older VSCodium exposed a different activity-bar restoration value, so that older host is outside this template version’s support range.</p>
 <div class="table-wrap">
 <table class="caption-top">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th">Responsibility</th>
-<th data-quarto-table-cell-role="th">Inputs</th>
-<th data-quarto-table-cell-role="th">Evidence produced</th>
+<th data-quarto-table-cell-role="th">Example</th>
+<th data-quarto-table-cell-role="th">Initial presentation</th>
+<th data-quarto-table-cell-role="th">Implementation</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Audit</td>
-<td>Pinned source, selected workflows and extension list</td>
-<td>Capabilities, source links, dependencies and unknowns</td>
+<td>Neutral Workbench</td>
+<td>Full baseline layout</td>
+<td>No layout overrides; host implementations remain present.</td>
 </tr>
 <tr class="even">
-<td>Plan</td>
-<td>Natural-language request and capability manifest</td>
-<td>Resolved choices, conflicts, retained contracts and test obligations</td>
-</tr>
-<tr class="odd">
-<td>Compose — future</td>
-<td>Certified recipes, identity and domain extensions</td>
-<td>Generated source with patches and provenance</td>
-</tr>
-<tr class="even">
-<td>Verify — future</td>
-<td>Built app and behavioural contracts</td>
-<td>Build, workflow, recovery and package evidence</td>
-</tr>
-<tr class="odd">
-<td>Maintain — future</td>
-<td>New upstream revision</td>
-<td>Rebase report, compatibility changes and regenerated products</td>
+<td>Focused Workbench</td>
+<td>Activity and status bars hidden</td>
+<td>Two concrete configuration-default recipes; commands apply or restore the layout.</td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>Split these into separate skills when they have sufficiently different inputs and maintained resources. Merely creating five instruction files would not establish five reliable capabilities.</p>
-<h2 class="anchored">A capability contract</h2>
-<p>Before a removal recipe is accepted, record its source revision, affected entry points, direct and reverse dependencies, service providers, extension API effects, state migration, expected fallback, restoration procedure, platform scope and passing tests. Store a dependency witness for each automatic inclusion so that the user can understand why a supposedly unwanted feature remains.</p>
-<h2 class="anchored">Conflict example</h2>
-<p>Request: keep tasks but exclude the terminal. The planner reports the known dependency and the absence of a certified exclusion recipe. Possible resolutions are to retain terminal services while hiding their view, remove the task workflows that require them, or implement and test another executor. It must not silently choose one while claiming to have met both requirements.</p>
-<h2 class="anchored">Configuration growth and maintenance</h2>
-<p>Arbitrary subsets create a combinatorial test problem. Start with a small set of supported profiles, with explicit constraints between capabilities. Test critical interactions and the retained workflows. Add a new combination only when a concrete app requires it. Pairwise tests may help later but cannot replace tests of a known multi-feature dependency.</p>
-<p>Maintain one shared baseline for related products as long as their contracts remain compatible. Prefer extension APIs for domain work, keep host patches localized, and measure upgrade effort after one upstream change. A patch count is a useful indicator, but changed behaviour and entanglement matter more than a small diff alone.</p>
-
+<p>This focused example is intentionally narrower than the earlier research-workbench planning profile. Per-view hiding of Source Control, Debug or Extensions has no composition recipe yet. Requests for unsupported changes fail explicitly. No disabling or source exclusion is supported.</p>
+<h2 class="anchored">The application manifest</h2>
+<pre>{
+  "schema_version": 1,
+  "id": "focused-workbench",
+  "display_name": "Focused Workbench",
+  "publisher": "workbench-family",
+  "bundle_id": "org.workbenchfamily.focused",
+  "profile": {
+    "schema_version": 1,
+    "name": "focused-workbench",
+    "upstream_commit": "624362540d17f39ae20b2781a44cf8d676a22bfb",
+    "default_state": "retained",
+    "capabilities": {
+      "activitybar": "hidden",
+      "statusbar": "hidden"
+    }
+  }
+}</pre>
+<p>Identity belongs to the application; capability choices belong to its profile. Unmentioned capabilities stay retained. The example namespace is illustrative. Product distribution requires an identity controlled by its owner.</p>
+<h2 class="anchored">The construction skill</h2>
+<p><code>code-oss-app-template</code> is now a construction skill, discovered locally through <code>.agents/skills</code>. It reads the contract and executable registry, creates the manifest, invokes the generator, runs core and host checks, and prepares source when requested. Its references explain construction and recipe qualification. There is one maintained skill because these steps currently share the same inputs and tools.</p>
+<p>The skill distinguishes a planning-valid request from a generator-supported one. It does not hide an unsupported request inside a successful result. It has no automatic authority to publish unrelated apps or change the user's global environment.</p>
+<h2 class="anchored">What has been verified</h2>
+<ul><li>Deterministic generated files, input validation and refusal to overwrite existing output.</li><li>Distinct product identifiers, isolated runtime state and preservation of upstream inputs.</li><li>Pure document validation and summary behavior.</li><li>Extension activation, effective layout settings and restoration, document tree, editing, undo/redo, saving/reopening and invalid-input recovery in an isolated Visual Studio Code 1.112.0 host.</li><li>Separate source preparation with a product patch, added extension and recorded LFS pointers.</li></ul>
+<p>The detailed evidence is in the <a href="../assets/audit/template-verification.json">template verification record</a>. Existing-host tests are not a build of the pinned product fork. Native command registration is not a complete regression test of those features.</p>
+<h2 class="anchored">What remains before a product release</h2>
+<p>The prepared fork has not been compiled or packaged. A suitable Node toolchain, required LFS assets and native build prerequisites still need to be established. Icons, service endpoints, updates, signing, installers, crash recovery, accessibility and retained-feature regressions remain release gates.</p>
+<p>The next useful expansion is to build the branded baseline and run the same contracts against that exact binary. After that, qualify additional layout recipes and one carefully bounded exclusion. The capability graph remains partial; a source directory count does not prove modular independence.</p>
+<h2 class="anchored">Regeneration and maintenance</h2>
+<p>Generation creates a new directory and records file hashes. Source preparation rejects changed generated inputs. This protects the initial composition from silent drift, but it is not an incremental upgrade tool: a later template-to-app migration mechanism must account for changes made inside each application.</p>
 </article>
 
 
@@ -340,7 +330,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <li><a href="https://jmigartua.github.io/inverse-problems-configuration-space-site/">inverse problems</a>, the discourse</li>
         <li><a href="https://jmigartua.github.io/lab-plot-fit-site/">lab plot fit</a>, the teaching laboratory app</li></ul></div>
       <div><h4 class="anchored">Status</h4><ul>
-        <li>Research site · initial audit and design</li>
+        <li>Template 0.1 · construction in progress</li>
         <li>Rebuilt from <code>data/*.yml</code> on every render</li></ul></div>
     </div>
     <div class="foot-bottom">

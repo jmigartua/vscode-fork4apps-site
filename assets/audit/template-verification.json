@@ -1,0 +1,117 @@
+{
+  "template_version": "0.1.0",
+  "verified_at": "2026-10-17T17:23:40.571456+00:00",
+  "upstream_commit": "624362540d17f39ae20b2781a44cf8d676a22bfb",
+  "minimum_host_api": "1.112.0",
+  "python_tests": {
+    "passed": 19,
+    "failed": 0,
+    "scope": "Planner, generator, deterministic output, identity separation, overwrite protection, generated-input integrity and real-Git source preparation"
+  },
+  "core_tests": {
+    "passed": 2,
+    "failed": 0,
+    "command": "node --test extension/test/core.test.cjs"
+  },
+  "host_tests": [
+    {
+      "host_version": "1.112.0",
+      "app": "neutral-workbench",
+      "checks": [
+        "Extension activation and tree registration",
+        "Effective layout settings, restoration and reapplication",
+        "Open, validate, tree contents and summary command",
+        "Edit, dirty state, undo, redo, save and reopen",
+        "Invalid input diagnostics and recovery",
+        "Native save, terminal and command-palette commands remain registered"
+      ],
+      "status": "passed",
+      "scope": "Extension and document workflow; not a compiled product-fork certification",
+      "host_product": "Visual Studio Code",
+      "composition_sha256": "3dc0d3c7ce26ba785508484bd3764a332875e7d0fb57c99e1bfeb927550f11e9"
+    },
+    {
+      "host_version": "1.112.0",
+      "app": "focused-workbench",
+      "checks": [
+        "Extension activation and tree registration",
+        "Effective layout settings, restoration and reapplication",
+        "Open, validate, tree contents and summary command",
+        "Edit, dirty state, undo, redo, save and reopen",
+        "Invalid input diagnostics and recovery",
+        "Native save, terminal and command-palette commands remain registered"
+      ],
+      "status": "passed",
+      "scope": "Extension and document workflow; not a compiled product-fork certification",
+      "host_product": "Visual Studio Code",
+      "composition_sha256": "f1fb88bf84522418c5b9d82e4657b39252e637ba3668b8d5d9d8c9cd39f90478"
+    }
+  ],
+  "visible_ui_tests": {
+    "checks": [
+      {
+        "app": "neutral-workbench",
+        "activity_bar_visible": true,
+        "status_bar_visible": true,
+        "layout_restoration_checked": false,
+        "status": "passed",
+        "host": {
+          "product": "Visual Studio Code",
+          "version": "1.112.0"
+        }
+      },
+      {
+        "app": "focused-workbench",
+        "activity_bar_visible": false,
+        "status_bar_visible": false,
+        "layout_restoration_checked": true,
+        "status": "passed",
+        "host": {
+          "product": "Visual Studio Code",
+          "version": "1.112.0"
+        }
+      }
+    ],
+    "scope": "Visible bars and command-driven restoration in isolated existing hosts; not compiled-fork branding",
+    "errors": []
+  },
+  "source_preparation": {
+    "status": "passed",
+    "research_checkout_unchanged": true,
+    "tracked_files_modified": [
+      "product.json"
+    ],
+    "added_extension": "extensions/neutral-workbench",
+    "remaining_lfs_pointers": 98,
+    "product_patch": "audit/template-product-identity.patch",
+    "composition_sha256": "3dc0d3c7ce26ba785508484bd3764a332875e7d0fb57c99e1bfeb927550f11e9",
+    "build_status": "not-built",
+    "package_status": "not-packaged"
+  },
+  "skill": {
+    "name": "code-oss-app-template",
+    "structural_validation": "passed",
+    "discovery": ".agents/skills/code-oss-app-template"
+  },
+  "lessons": [
+    {
+      "issue": "macOS IPC path limit",
+      "resolution": "Short isolated state paths; tests use temporary state."
+    },
+    {
+      "issue": "VSCodium 1.85.2 accepted a restore setting without showing the activity bar",
+      "resolution": "Require API 1.112.0 or newer and check visible bars as well as settings."
+    }
+  ],
+  "not_verified": [
+    "Compiled pinned Code - OSS fork",
+    "Installers, signing and production service configuration",
+    "Crash recovery and accessibility contracts",
+    "Full retained-feature regression",
+    "Physical removal of any feature",
+    "Incremental updates to modified generated applications"
+  ],
+  "host_observations": [
+    "The existing host reported a shell-environment resolution timeout during a visual run. Terminal execution is not certified; the current test checks terminal-command registration only."
+  ]
+}
