@@ -1,0 +1,59 @@
+{
+  "checks": [
+    {
+      "environment": "Installed Visual Studio Code",
+      "host_version": "1.112.0",
+      "app": "linked-workbench",
+      "checks": [
+        "Extension activation and tree registration",
+        "Effective layout settings, restoration and reapplication",
+        "Open, validate, tree contents and summary command",
+        "Edit, dirty state, undo, redo, save and reopen",
+        "Invalid input diagnostics and recovery",
+        "Native save, terminal and command-palette commands remain registered",
+        "Custom editor opens; data edit refreshes calculation; named checkpoint saves through host",
+        "Undo, redo, point moves, branching, invalid and stale edits use the document history",
+        "Provider backup restores unsaved state, branches and errors",
+        "Close/reopen retains edited data, saved results, both branches and error history",
+        "External edit is not overwritten; explicit revert reloads the saved checkpoint"
+      ],
+      "status": "passed",
+      "scope": "Extension and document workflow; not a compiled product-fork certification"
+    },
+    {
+      "environment": "Compiled pinned Code - OSS development host",
+      "host_version": "1.143.0",
+      "app": "linked-workbench",
+      "checks": [
+        "Extension activation and tree registration",
+        "Effective layout settings, restoration and reapplication",
+        "Open, validate, tree contents and summary command",
+        "Edit, dirty state, undo, redo, save and reopen",
+        "Invalid input diagnostics and recovery",
+        "Native save, terminal and command-palette commands remain registered",
+        "Custom editor opens; data edit refreshes calculation; named checkpoint saves through host",
+        "Undo, redo, point moves, branching, invalid and stale edits use the document history",
+        "Provider backup restores unsaved state, branches and errors",
+        "Close/reopen retains edited data, saved results, both branches and error history",
+        "External edit is not overwritten; explicit revert reloads the saved checkpoint"
+      ],
+      "status": "passed",
+      "scope": "Extension and document workflow; not a compiled product-fork certification"
+    }
+  ],
+  "scope": "Generated linked extension loaded in isolated desktop hosts; not a separately packaged linked product",
+  "neutral_omission_host": {
+    "host_version": "1.112.0",
+    "app": "neutral-workbench",
+    "checks": [
+      "Extension activation and tree registration",
+      "Effective layout settings, restoration and reapplication",
+      "Open, validate, tree contents and summary command",
+      "Edit, dirty state, undo, redo, save and reopen",
+      "Invalid input diagnostics and recovery",
+      "Native save, terminal and command-palette commands remain registered"
+    ],
+    "status": "passed",
+    "scope": "Extension and document workflow; not a compiled product-fork certification"
+  }
+}

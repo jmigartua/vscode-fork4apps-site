@@ -1,0 +1,59 @@
+{
+  "verified_at": "2026-10-17T18:51:25.687779+00:00",
+  "template_version": "0.2.0",
+  "package": "linked-data",
+  "status": "qualified-with-explicit-scope",
+  "scope": "Local macOS x86_64 desktop linked editing and explicit saved checkpoints; generated extension in the named hosts",
+  "hosts": [
+    "Visual Studio Code 1.112.0",
+    "Compiled pinned Code - OSS 1.143.0"
+  ],
+  "reused_components": {
+    "Tabulator": "6.6.1",
+    "Plotly.js basic": "4.1.2",
+    "Trrack core": "1.6.1"
+  },
+  "tests": {
+    "python": {
+      "passed": 22
+    },
+    "package_core": {
+      "passed": 7
+    },
+    "host": "audit/linked-editor-host-check.json",
+    "installed_ui": "audit/linked-editor-ui-check.json",
+    "compiled_installed_ui": "audit/linked-editor-compiled-ui-check.json",
+    "failed_crash_gate": "audit/linked-editor-crash-check.json"
+  },
+  "excluded": [
+    "Automatic restoration of unsaved edits after a forced crash",
+    "Fitting, GUM and Monte Carlo engines",
+    "GitHub authentication and automatic remote synchronization",
+    "Independent table-only or plot-only constructor packages",
+    "Large-data performance, network filesystems, simultaneous writers and other OS qualification"
+  ],
+  "neutral_omission": {
+    "renderer_and_history_assets_absent": true,
+    "custom_editor_contribution_absent": true,
+    "host_workflow_passed": true
+  },
+  "source_hashes": {
+    "template/packages/linked-data/README.md": "68109845e604e3bd31e7fcb7e7c6eba314336e6cece9f257b58935ab5efe6597",
+    "template/packages/linked-data/core.mjs": "8ac51d6449c2f83972a28f1a046b562e781e5d64f089bb0d0e67af47dbba343f",
+    "template/packages/linked-data/example.linked-data.json": "d7ff2b6400229751fa153be476bbfb1f68b418f9a7644b732ca8914c25bfc7c1",
+    "template/packages/linked-data/model.mjs": "835c753708e8994db3d3d25167a3664b7c21d09062bc79d1d1cf75eacbcfd628",
+    "template/packages/linked-data/provider.cjs": "4e4302c965adf0f01f5d75cf9fe00923855302b095c9364add4141c0c32a679f",
+    "template/packages/linked-data/storage.mjs": "4a2bd8cfa0a4b94c9d34d968a8d2205564b979aa9a821ed8eb88bfbd4963c649",
+    "template/packages/linked-data/test/core.test.mjs": "64808d8913bb04ae0266bc6ca9774404b6ae6f85aa9237741828e871e40737e7",
+    "template/packages/linked-data/test/host.cjs": "03a80aa3fb61c642e621a85e2dd512a8f2a0f1f495df3ad5481944f87ef64d29",
+    "template/packages/linked-data/vendor/LICENSES.txt": "21ec3e0c7b02a41efdd021641c388cf471476389f9ce32ff449dc43600910d0d",
+    "template/packages/linked-data/vendor/bundle-lock.json": "3899e84806e7e92bc51a2a51dd8d232b558710c96cc6deec0ff1a8f96787ee14",
+    "template/packages/linked-data/vendor/package-lock.json": "71675c51d0e402fb680333a64323802ff81dbeb679a44fd3565bf02ae7d2ff8e",
+    "template/packages/linked-data/vendor/trrack.mjs": "146dec003ef9bec250770952812c16cd9af4ca6a0d2636b30139de1181a9b421",
+    "template/packages/linked-data/webview/app.mjs": "447c98f2eed2a0d2ef14b843566dbfeb63ad469aa0e7fcd8099eb553c1fa5c69",
+    "template/packages/linked-data/webview/index.html": "0690ad24418b09e8a376b0c3363e9e5dd462d0056270263ba7396748685c635c",
+    "template/packages/linked-data/webview/plot.mjs": "7e08f652f908344bb88796d176d7e8c880213c5ecbe995a6401baab706b1025a",
+    "template/packages/linked-data/webview/style.css": "5f800c343c165e55dd89b7d35721ae68751aaec34116eaf3f4e8a0cc4866a5c4",
+    "template/packages/linked-data/webview/table.mjs": "0c8b6de97fb6dd3f2696d17689102f6996c28f1141478882bdeed96ac1319541"
+  }
+}

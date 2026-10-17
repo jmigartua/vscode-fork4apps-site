@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "app": "linked-workbench",
+  "host_executable": "code.sh",
+  "checks": [
+    "Real table edit updates Plotly and the stored mean inside the custom editor",
+    "Checkpoint button saves a named project state through the host",
+    "Dragging a plot handle updates table data and can be undone as one data action",
+    "Scoped keyboard undo, visible redo, checkpoint restoration and a new edit preserve both branches",
+    "A fresh editor process reopens the saved branch and restores the earlier result without recomputation"
+  ],
+  "mode": "Extension installed in an isolated profile, not extension development mode",
+  "scope": "Isolated desktop UI and process restart; not power-loss or remote-filesystem qualification",
+  "errors": []
+}

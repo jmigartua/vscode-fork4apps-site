@@ -1,0 +1,11 @@
+{
+  "status": "not-qualified",
+  "environment": "macOS x86_64, Visual Studio Code 1.112.0",
+  "observations": [
+    "Development-host mode skips persistent window backup registration in the pinned source",
+    "Installed isolated profile produced custom-document and host backup files",
+    "After forced termination, the tested reopen flow loaded the saved file instead of the unsaved edit"
+  ],
+  "disposition": "Automatic unsaved crash recovery is excluded from the supported package scope; saved checkpoints and interrupted atomic-save behavior are qualified separately",
+  "source_evidence": "src/vs/platform/windows/electron-main/windowsMainService.ts:1690"
+}
