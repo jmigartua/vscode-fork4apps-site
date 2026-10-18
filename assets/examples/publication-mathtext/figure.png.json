@@ -1,0 +1,22 @@
+{
+  "snapshot_sha256": "7b7252eaf77c966877338b909ff6a66ae7123d2ccef21df1b2001f8ca40b9e50",
+  "row_ids": [
+    "r1",
+    "r2",
+    "r3",
+    "r4",
+    "r5"
+  ],
+  "python": "3.14.4",
+  "matplotlib": "3.10.9",
+  "text_engine": "mathtext",
+  "format": "png",
+  "size_inches": [
+    5.6,
+    3.7
+  ],
+  "output_sha256": "6cb4ea27309565ed7303bf1418cebec8374fa490c7792d430b633932a88b38ba",
+  "scope": "Synthetic values and supplied yerr rendered; uncertainties are not calculated by this adapter.",
+  "input_node": "00000000-0000-4000-8000-000000000001",
+  "source_sha256": "d7ff2b6400229751fa153be476bbfb1f68b418f9a7644b732ca8914c25bfc7c1"
+}

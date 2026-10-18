@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "app": "publication-workbench",
+  "checks": [
+    "Installed extension opens the linked editor",
+    "Export command offers PDF/SVG/PNG and separate LaTeX PDF",
+    "Cancelling the format picker creates no output"
+  ],
+  "scope": "Visible menu and cancellation; host API test covers export with an explicit destination. Native save dialog not automated.",
+  "errors": []
+}

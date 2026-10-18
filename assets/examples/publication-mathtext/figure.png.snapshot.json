@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "revision": 0,
+  "node": "00000000-0000-4000-8000-000000000001",
+  "source_sha256": "d7ff2b6400229751fa153be476bbfb1f68b418f9a7644b732ca8914c25bfc7c1",
+  "data": {
+    "schema_version": 1,
+    "title": "Linked views - synthetic example",
+    "axes": {
+      "x": {
+        "label": "Time",
+        "unit": "s"
+      },
+      "y": {
+        "label": "Signal",
+        "unit": "a.u."
+      }
+    },
+    "rows": [
+      {
+        "id": "r1",
+        "x": 0,
+        "y": 1.2,
+        "yerr": 0.1
+      },
+      {
+        "id": "r2",
+        "x": 1,
+        "y": 2.1,
+        "yerr": 0.15
+      },
+      {
+        "id": "r3",
+        "x": 2,
+        "y": 2.8,
+        "yerr": 0.12
+      },
+      {
+        "id": "r4",
+        "x": 3,
+        "y": 4.2,
+        "yerr": 0.2
+      },
+      {
+        "id": "r5",
+        "x": 4,
+        "y": 4.7,
+        "yerr": 0.18
+      }
+    ]
+  }
+}

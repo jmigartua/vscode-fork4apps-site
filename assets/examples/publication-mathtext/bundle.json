@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "source_sha256": "d7ff2b6400229751fa153be476bbfb1f68b418f9a7644b732ca8914c25bfc7c1",
+  "input_node": "00000000-0000-4000-8000-000000000001",
+  "engine": "mathtext",
+  "outputs": [
+    {
+      "file": "figure.pdf",
+      "snapshot_sha256": "7b7252eaf77c966877338b909ff6a66ae7123d2ccef21df1b2001f8ca40b9e50",
+      "row_ids": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "python": "3.14.4",
+      "matplotlib": "3.10.9",
+      "text_engine": "mathtext",
+      "format": "pdf",
+      "size_inches": [
+        5.6,
+        3.7
+      ],
+      "output_sha256": "20d178631fbbec7ac42e3108655e590c78dbd27b0b9dae0fb1e8db7ef815c80c",
+      "scope": "Synthetic values and supplied yerr rendered; uncertainties are not calculated by this adapter.",
+      "input_node": "00000000-0000-4000-8000-000000000001",
+      "source_sha256": "d7ff2b6400229751fa153be476bbfb1f68b418f9a7644b732ca8914c25bfc7c1"
+    },
+    {
+      "file": "figure.svg",
+      "snapshot_sha256": "7b7252eaf77c966877338b909ff6a66ae7123d2ccef21df1b2001f8ca40b9e50",
+      "row_ids": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "python": "3.14.4",
+      "matplotlib": "3.10.9",
+      "text_engine": "mathtext",
+      "format": "svg",
+      "size_inches": [
+        5.6,
+        3.7
+      ],
+      "output_sha256": "f93daa5725f32a3e2b0e83f36c5d801626ce29570065449f91efcf2b0aae8de0",
+      "scope": "Synthetic values and supplied yerr rendered; uncertainties are not calculated by this adapter.",
+      "input_node": "00000000-0000-4000-8000-000000000001",
+      "source_sha256": "d7ff2b6400229751fa153be476bbfb1f68b418f9a7644b732ca8914c25bfc7c1"
+    },
+    {
+      "file": "figure.png",
+      "snapshot_sha256": "7b7252eaf77c966877338b909ff6a66ae7123d2ccef21df1b2001f8ca40b9e50",
+      "row_ids": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "python": "3.14.4",
+      "matplotlib": "3.10.9",
+      "text_engine": "mathtext",
+      "format": "png",
+      "size_inches": [
+        5.6,
+        3.7
+      ],
+      "output_sha256": "6cb4ea27309565ed7303bf1418cebec8374fa490c7792d430b633932a88b38ba",
+      "scope": "Synthetic values and supplied yerr rendered; uncertainties are not calculated by this adapter.",
+      "input_node": "00000000-0000-4000-8000-000000000001",
+      "source_sha256": "d7ff2b6400229751fa153be476bbfb1f68b418f9a7644b732ca8914c25bfc7c1"
+    }
+  ],
+  "files": {
+    "figure.pdf": "20d178631fbbec7ac42e3108655e590c78dbd27b0b9dae0fb1e8db7ef815c80c",
+    "figure.pdf.json": "bbdd3a032f7b9035108d6381feb3086d68e0340b6fee8fac660b299ea9cd3e48",
+    "figure.pdf.snapshot.json": "7b7252eaf77c966877338b909ff6a66ae7123d2ccef21df1b2001f8ca40b9e50",
+    "figure.png": "6cb4ea27309565ed7303bf1418cebec8374fa490c7792d430b633932a88b38ba",
+    "figure.png.json": "13fa65d7ba9215f3170e5bb7e5bf4ec99588a6cb7a26714a99cf5873e78f828b",
+    "figure.png.snapshot.json": "7b7252eaf77c966877338b909ff6a66ae7123d2ccef21df1b2001f8ca40b9e50",
+    "figure.svg": "f93daa5725f32a3e2b0e83f36c5d801626ce29570065449f91efcf2b0aae8de0",
+    "figure.svg.json": "30aeab1e422bb9e9e5c3ae161851aa30dee0c1e08c1e73852cc46a1794dee6f8",
+    "figure.svg.snapshot.json": "7b7252eaf77c966877338b909ff6a66ae7123d2ccef21df1b2001f8ca40b9e50",
+    "snapshot.json": "7b7252eaf77c966877338b909ff6a66ae7123d2ccef21df1b2001f8ca40b9e50",
+    "source.linked-data.json": "d7ff2b6400229751fa153be476bbfb1f68b418f9a7644b732ca8914c25bfc7c1"
+  },
+  "scope": "Local saved-project figure export; supplied y errors, no fitting or uncertainty calculation"
+}
