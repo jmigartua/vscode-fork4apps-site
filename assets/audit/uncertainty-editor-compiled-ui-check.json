@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "app": "uncertainty-workbench",
+  "host_executable": "code.sh",
+  "checks": [
+    "Named row bindings and correlation calculate through GTC; table edits refresh the measurement",
+    "Dragging a plot point updates uncertainty inputs; undo restores the previous measurement",
+    "Changing the measurement definition is an undoable action; checkpoint restoration retains its matching result",
+    "Fresh installed-host process restores the saved definition and result without recomputation",
+    "Ratio and shared input identity are visible choices; A/A cancels exactly, and unsharing re-enables input B",
+    "Stop is undoable and restores its previous measurement"
+  ],
+  "mode": "Extension installed in an isolated profile, not extension development mode",
+  "scope": "Desktop UI and normal process restart; not crash recovery",
+  "errors": []
+}

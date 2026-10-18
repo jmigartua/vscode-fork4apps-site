@@ -1,0 +1,16 @@
+{
+  "host_version": "1.142.0",
+  "app": "neutral-workbench",
+  "checks": [
+    "Extension activation and tree registration",
+    "Effective layout settings, restoration and reapplication",
+    "Open, validate, tree contents and summary command",
+    "Edit, dirty state, undo, redo, save and reopen",
+    "Invalid input diagnostics and recovery",
+    "Native save, terminal and command-palette commands remain registered",
+    "Omitted fitting package has no provider, command or numerical assets",
+    "Omitted uncertainty package has no provider, command or numerical assets"
+  ],
+  "status": "passed",
+  "scope": "Extension and document workflow; not a compiled product-fork certification"
+}

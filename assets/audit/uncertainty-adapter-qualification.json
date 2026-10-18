@@ -1,0 +1,122 @@
+{
+  "verified_at": "2026-10-18T07:04:52.293454+00:00",
+  "template_version": "0.6.0",
+  "package": "uncertainty-gtc",
+  "package_version": "0.1.0",
+  "requires": [
+    "linked-data"
+  ],
+  "status": "qualified-with-explicit-scope",
+  "scope": "Local macOS x86_64 weighted scalar sums and first-order ratios; two-input visible form, up to 16 linear inputs through the trusted command",
+  "hosts": [
+    {
+      "environment": "installed",
+      "version": "1.142.0"
+    },
+    {
+      "environment": "compiled",
+      "version": "1.143.0"
+    }
+  ],
+  "reuse": {
+    "decision": "Adopt GTC propagation and Pint conversions; adapt the existing bounded Python job and Trrack history contracts. No replacement scientific or history engine.",
+    "versions": {
+      "GTC": "1.5.1",
+      "Pint": "0.26.1",
+      "numpy": "2.5.4"
+    },
+    "licenses": {
+      "GTC": "MIT",
+      "Pint": "BSD; installed metadata inspected"
+    },
+    "distribution": "External pinned Python environment; libraries are not bundled or installed on activation",
+    "sources": [
+      "https://gtc.readthedocs.io/en/stable/API/reporting_functions.html",
+      "https://pint.readthedocs.io/en/stable/user/nonmult.html"
+    ],
+    "candidate_audit": "audit/uncertainty-candidate-check.json"
+  },
+  "validation": {
+    "correlation": "Finite, exact symmetry/unit diagonal/bounds, PSD eigenvalue tolerance 1e-12; no repair",
+    "units": "Compatible multiplicative units; explicit row semantics; ambiguous a.u. and offset units refused",
+    "ratio_screen": "abs(denominator) > 10 * standard_uncertainty; policy, not proof of linearization validity",
+    "result": "Finite output, analytical variance-budget consistency, node/data/spec/result hashes"
+  },
+  "checks": {
+    "numerical": {
+      "passed": 8,
+      "scope": "Analytical linear/correlated/three-input covariance, mixed units, singular correlation and exact inputs, ratio derivatives, shared identity, denominator screening, invalid values/matrices/units and underflow"
+    },
+    "controller": {
+      "passed": 6,
+      "scope": "Real GTC, row edits, settings undo, branch/save/reopen, missing rows/interpreter, trust, cancellation, stale successes/failures, failed retry persistence, stop and checksum"
+    },
+    "linked_core_regression": 7,
+    "fitting_controller_regression": 6,
+    "host": "audit/uncertainty-adapter-host-check.json",
+    "installed_visible": "audit/uncertainty-editor-ui-check.json",
+    "compiled_visible": "audit/uncertainty-editor-compiled-ui-check.json",
+    "neutral_host": "audit/uncertainty-neutral-host-check.json",
+    "linked_only_visible_omission": "audit/uncertainty-omission-ui-check.json",
+    "combined_host": "audit/uncertainty-combined-host-check.json",
+    "missing_library": {
+      "check": "Python without site packages refuses execution; no result JSON emitted",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr_last_line": "ModuleNotFoundError: No module named 'GTC'"
+    },
+    "composer": 25,
+    "admitted_runtime_matches_candidate": true
+  },
+  "combination": {
+    "packages": [
+      "linked-data",
+      "fitting-scipy",
+      "publication-matplotlib",
+      "uncertainty-gtc"
+    ],
+    "scope": "All provider host contracts pass together, including saved-fit Mathtext export. Measurement results are not part of publication bundles; simultaneous active numerical job UI interactions and combined LaTeX export not newly qualified."
+  },
+  "corrections": [
+    "Host tests use native Save All before closing editors; direct provider writes do not clear the editor dirty state.",
+    "Re-enable the second source selector when shared input identity is switched off.",
+    "Reject ambiguous arbitrary-unit placeholders instead of allowing Pint to interpret a.u. as an unrelated unit expression. Only the new generated synthetic example uses explicit volts.",
+    "Return linear outputs in the first input unit while normalizing calculations internally.",
+    "Store measurement settings as undoable data state rather than latest global journal settings.",
+    "Obsolete failures cannot mask a newer result after reopening; failed retries do not silently show old successes."
+  ],
+  "qualification_notes": [
+    "Initial cold concurrent numerical startup reached the bounded 30-second deadline; dedicated-environment rerun passed. No cold-start performance claim.",
+    "Native focus and Electron webview animation-frame stability affected automation. Tests bring the editor forward, use pointer clicks and verify resulting state. No scripted DOM click substitutes for the tested buttons.",
+    "UI assertions wait for changed measurement content as well as completion to avoid accepting the previous result."
+  ],
+  "limitations": [
+    "No Monte Carlo, general GUM conformity, coverage intervals or finite degrees of freedom",
+    "No arbitrary expressions, offset units, multi-output covariance or shared identities across separate measurement definitions",
+    "No propagation of fitted-parameter uncertainty or measurement-result publication",
+    "Python environment remains external; 30-second cancellable job deadline and bounded I/O",
+    "Explicit save required; automatic unsaved crash recovery excluded",
+    "Other platforms, packaged binaries and large-data performance unqualified"
+  ],
+  "source_sha256": {
+    "template/assets/extension/test/host.cjs": "7b789b795eabb202fb75d41b943b7fe502d1ac3f62d00fbf4481337e399887ba",
+    "template/packages/fitting-scipy/test/host.cjs": "367d4a93d478c36b61b9ab50c681e2219ac27b597d53d9ddd41918b7fe42b34a",
+    "template/packages/linked-data/core.mjs": "f1747518d576d3ba4b30d17deced26d30dfc6cb992fec00df6b9ca61b290b162",
+    "template/packages/linked-data/model.mjs": "2b74e3290039016e8549a5ea4e892eb8c613a30ffea274b5d3e66136c3e0dbf7",
+    "template/packages/linked-data/provider.cjs": "2970ca2aa9d0b6611aa171dc3dc207ef01676687f2ef28ab628eb5356f83b156",
+    "template/packages/linked-data/test/host.cjs": "8328949c62cc4a7e5f59ab1123143ff50dbf42a0fa73e742a29379aef06461c7",
+    "template/packages/publication-matplotlib/test/host.cjs": "695822f30fa04d74b59e34f9df82d4c095088dbbbe193257609bbca895958352",
+    "template/packages/uncertainty-gtc/README.md": "d095553b38f416cfbee49a04a6526e5cce2c13f6e5b8664d7bdbcea8b110b68f",
+    "template/packages/uncertainty-gtc/calculate.mjs": "b5150fb525408c0412ace3e901ac6299718656a704c7e4ac048200213b408c98",
+    "template/packages/uncertainty-gtc/calculate.py": "56eff371c04d79c8b67b48e787631a3c7088a4e96b4a512fdac2b095531c4dd6",
+    "template/packages/uncertainty-gtc/controller.mjs": "4dd93f56907a5611b43f0457082eed2aa65aa975613de99bfa67f0e4024534c6",
+    "template/packages/uncertainty-gtc/provider.cjs": "f6a8f6a12b24eb89a0cbacc192d71e99fc817f94adce4effd9e7e68e48ecb22e",
+    "template/packages/uncertainty-gtc/requirements.txt": "a18f64565d28186177966ec7659f78082683fce8af1c7baf32a041ab696f7f90",
+    "template/packages/uncertainty-gtc/test/controller.test.mjs": "4045e30fd013b47f248dd9d619fdb201f58f1032b369303194a10b95d234d3a9",
+    "template/packages/uncertainty-gtc/test/host.cjs": "a168ea910d61bccde4fe9e10f1cbb811778c66a9f357dca349c6fbed38afaa9f",
+    "template/packages/uncertainty-gtc/test/numerical.py": "c61b2b71840c6c1d43113072747a407458f4e090ac2e1ada598aaa6eed875a15",
+    "template/packages/uncertainty-gtc/webview.mjs": "851c14207ee144ab1280f8219120725d9e4475a61f8fe8dfb6b66245b000d25a",
+    "tools/check_uncertainty_ui.py": "9e656bb721fd5884f80f060ef4c9b898ebddf7368c75cd3d6f5dbb66aa389761",
+    "tools/compose_app.py": "7050635b694bb45ce67dfc575c7e5aef4c05d76643ecab766f8475ea0c5bb8f1"
+  }
+}

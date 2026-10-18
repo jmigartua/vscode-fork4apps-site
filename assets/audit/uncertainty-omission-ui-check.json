@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "app": "linked-workbench",
+  "host_executable": "Code",
+  "checks": [
+    "Omitted package has no visible uncertainty controls or numerical assets"
+  ],
+  "mode": "Extension installed in an isolated profile, not extension development mode",
+  "scope": "Desktop UI and normal process restart; not crash recovery",
+  "errors": []
+}
