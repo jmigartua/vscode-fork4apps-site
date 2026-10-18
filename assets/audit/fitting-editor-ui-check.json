@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "app": "fitting-workbench",
+  "host_executable": "Code",
+  "checks": [
+    "Visible fit controls launch SciPy; a table edit refreshes parameters and the fitted curve",
+    "Dragging a plot point refits the curve; undo restores its previous fit",
+    "Adding and removing rows refits the model and changes its degrees of freedom",
+    "A fresh installed-host process reopens the saved fit and journal without recomputation",
+    "Saturating exponential model and explicit starting values run through the visible editor",
+    "Supplied-sigma selection is visible; stop removes the fitted curve and disables automatic jobs"
+  ],
+  "mode": "Extension installed in an isolated profile, not extension development mode",
+  "scope": "Isolated desktop UI and process restart; not power-loss or remote-filesystem qualification",
+  "errors": []
+}

@@ -1,0 +1,203 @@
+{
+  "verified_at": "2026-10-18T05:00:45.905270+00:00",
+  "template_version": "0.4.0",
+  "package": "fitting-scipy",
+  "requires": [
+    "linked-data"
+  ],
+  "status": "qualified-with-explicit-scope",
+  "scope": "Local macOS x86_64 linked-data fitting, saved results, branch restoration and cancellation",
+  "hosts": [
+    "Visual Studio Code 1.142.0",
+    "Compiled pinned Code - OSS 1.143.0"
+  ],
+  "reuse": {
+    "decision": "Adopt SciPy optimization; implement the bounded JSON and editor-state adapter. No replacement optimizer.",
+    "versions": {
+      "scipy": "1.17.1",
+      "numpy": "2.5.4"
+    },
+    "distribution": "External interpreter and libraries, not bundled binaries",
+    "sources": [
+      "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html",
+      "https://lmfit.github.io/lmfit-py/model.html"
+    ],
+    "lmfit": "Reviewed as a broader modeling candidate; not selected or qualified"
+  },
+  "reference_data": {
+    "retrieved": "2026-10-18",
+    "publisher": "NIST Statistical Reference Datasets",
+    "files": {
+      "Norris.dat": {
+        "url": "https://www.itl.nist.gov/div898/strd/lls/data/LINKS/DATA/Norris.dat",
+        "sha256": "5ab6906c68a9c4b2eb1661c0cd7d2a09f5a469a6d4e05b6b691f190f5f7b944f",
+        "use": "Unmodified reference data and certified values; lower difficulty case"
+      },
+      "Misra1a.dat": {
+        "url": "https://www.itl.nist.gov/div898/strd/nls/data/LINKS/DATA/Misra1a.dat",
+        "sha256": "9d3194d537d9a6bbf92eb819504070923a1885d0191f40b6b3aaeedd130b98e2",
+        "use": "Unmodified reference data and certified values; lower difficulty case"
+      }
+    }
+  },
+  "reference_results": [
+    {
+      "reference": "Norris.dat",
+      "initial": null,
+      "observed_parameters": [
+        {
+          "name": "intercept",
+          "value": -0.2623230737740267,
+          "standard_error": 0.23281823430115478
+        },
+        {
+          "name": "slope",
+          "value": 1.0021168180204545,
+          "standard_error": 0.00042979684819994114
+        }
+      ],
+      "observed_rss": 26.617398529422886,
+      "certified_parameters": [
+        -0.262323073774029,
+        1.00211681802045
+      ],
+      "certified_standard_errors": [
+        0.232818234301152,
+        0.000429796848199937
+      ],
+      "certified_rss": 26.6173985294224,
+      "relative_tolerances": {
+        "parameters": 1e-09,
+        "standard_errors": 1e-08,
+        "rss": 1e-10
+      }
+    },
+    {
+      "reference": "Misra1a.dat",
+      "initial": [
+        500,
+        0.0001
+      ],
+      "observed_parameters": [
+        {
+          "name": "a",
+          "value": 238.9421291787609,
+          "standard_error": 2.7070075241368583
+        },
+        {
+          "name": "b",
+          "value": 0.0005501564318061846,
+          "standard_error": 7.2668688436192704e-06
+        }
+      ],
+      "observed_rss": 0.12455138894440405,
+      "certified_parameters": [
+        238.94212918,
+        0.00055015643181
+      ],
+      "certified_standard_errors": [
+        2.7070075241,
+        7.2668688436e-06
+      ],
+      "certified_rss": 0.12455138894,
+      "relative_tolerances": {
+        "parameters": 1e-08,
+        "standard_errors": 2e-07,
+        "rss": 1e-09
+      }
+    },
+    {
+      "reference": "Misra1a.dat",
+      "initial": [
+        250,
+        0.0005
+      ],
+      "observed_parameters": [
+        {
+          "name": "a",
+          "value": 238.94212919265254,
+          "standard_error": 2.707007647635153
+        },
+        {
+          "name": "b",
+          "value": 0.0005501564317688469,
+          "standard_error": 7.266868829718276e-06
+        }
+      ],
+      "observed_rss": 0.12455138894440375,
+      "certified_parameters": [
+        238.94212918,
+        0.00055015643181
+      ],
+      "certified_standard_errors": [
+        2.7070075241,
+        7.2668688436e-06
+      ],
+      "certified_rss": 0.12455138894,
+      "relative_tolerances": {
+        "parameters": 1e-08,
+        "standard_errors": 2e-07,
+        "rss": 1e-09
+      }
+    }
+  ],
+  "tests": {
+    "numerical": {
+      "passed": 5,
+      "scope": "Norris; both Misra1a starts; weighted line closed form and sigma scaling; weighted saturation unit sigma; invalid and poorly identified inputs"
+    },
+    "controller": {
+      "passed": 6,
+      "scope": "Real solver, stored restoration, malformed results, obsolete jobs after navigation back, invalid sigma, missing interpreter, cancellation, trust gate and unsupported model"
+    },
+    "composer": {
+      "passed": 24
+    },
+    "linked_core_regression": {
+      "passed": 7
+    },
+    "host": "audit/fitting-adapter-host-check.json",
+    "visible_editor": "audit/fitting-editor-ui-check.json",
+    "compiled_visible_editor": "audit/fitting-editor-compiled-ui-check.json"
+  },
+  "neutral_omission": {
+    "host_passed": true,
+    "assets_commands_interpreter_setting_absent": true
+  },
+  "combined_publication": "Both adapters pass their host checks in the same generated extension; exported figures still contain only data/error bars, not the fit",
+  "limitations": [
+    "Only two fixed models; no arbitrary executable expressions",
+    "Exact x and independent y errors; no correlated observations or x-error fitting",
+    "Local least squares, approximate covariance; no coverage or prediction intervals",
+    "No GUM, Monte Carlo, robust estimation or global optimization qualification",
+    "Settings are journaled but not separate undoable data nodes",
+    "Explicit saving required; automatic unsaved crash recovery remains excluded",
+    "Fitted curves and diagnostics are not included in publication bundles",
+    "Other operating systems, bundled numerical environments and large-data performance unqualified"
+  ],
+  "source_sha256": {
+    "template/packages/fitting-scipy/README.md": "3a2b7394f164e844ed37f8aa55405fdeb9eee1d0d3026d6983b0a9e132757eac",
+    "template/packages/fitting-scipy/controller.mjs": "63b17f84050b8dccf38bd61c5cd036f532635f0712192310e52f20fb437c94a1",
+    "template/packages/fitting-scipy/fit.mjs": "0358533b342772eca53a84b5b5c604a0e58921d66a9e89a8d94035a1732eeeaa",
+    "template/packages/fitting-scipy/fit.py": "35af6e4d64f380540f5150c8d30ee2aa0566fc7a8cd92eef2398c04c44934350",
+    "template/packages/fitting-scipy/provider.cjs": "852ff16c78e21eed2fb3dd80d550c88d3a7b13f7c3aea7575f71280322513e1f",
+    "template/packages/fitting-scipy/requirements.txt": "64f661a009ca94167f3df24906806375f890d3accda95697bd541d71ef88f782",
+    "template/packages/fitting-scipy/test/controller.test.mjs": "621d801637a769507ebc39d8689630923fe529f521a7b2a49b74ff2c941ae741",
+    "template/packages/fitting-scipy/test/host.cjs": "ab5963ea9e75fb5310fcddfd9791b2872d37b594e8f51d94646d409ce4a28531",
+    "template/packages/fitting-scipy/test/numerical.py": "453bae2f0fc405b516469c2cebffbb31b8988576257a6ca11ebd62cba5a20cdb",
+    "template/packages/fitting-scipy/test/reference/Misra1a.dat": "9d3194d537d9a6bbf92eb819504070923a1885d0191f40b6b3aaeedd130b98e2",
+    "template/packages/fitting-scipy/test/reference/Norris.dat": "5ab6906c68a9c4b2eb1661c0cd7d2a09f5a469a6d4e05b6b691f190f5f7b944f",
+    "template/packages/fitting-scipy/test/reference/provenance.json": "7eef00b26ce4452eeb6f2778f5f393470898ca8ae9978d5dbeab983a2256c16f",
+    "template/packages/fitting-scipy/webview.mjs": "f4f577524db3345e206df7f0890d46ac85765eb77157b5576ec86512263f0914",
+    "template/packages/linked-data/provider.cjs": "403553654c36207ceaaff1721f96bef704bc82f37c2dd5e0f20456c742a1f4fa",
+    "template/packages/linked-data/webview/app.mjs": "abf82d62127b65b54a7e3000fb53c9d1695ae637ede9abf04292765a5e1462a7",
+    "template/packages/linked-data/webview/plot.mjs": "8d915ade03f0963c2d556bd6a6142b5b84e64df69ce7233f29537270eb3ca6f7",
+    "tools/check_fitting_ui.py": "aee139700e86cdc3594f73026434013182b7071256d24f6850c4d93b7222e708",
+    "tools/compose_app.py": "96db850259f340b4a7e2636e074d712ebc445d2850b2645973ec14666c91c0f0"
+  },
+  "qualification_notes": [
+    "Visible-test setup preserved the virtual-environment interpreter path; resolving its symlink selected a different numerical environment.",
+    "Compiled-host UI automation now selects the visible workbench target rather than the first CDP page and scrolls controls into view.",
+    "A concurrent compiled-host test failed the neutral text undo assertion; the final host run is isolated from UI automation."
+  ]
+}
