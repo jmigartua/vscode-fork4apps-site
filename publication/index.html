@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <article class="page-article"><h1>Publication figures</h1>
 <p class="sub">An optional Matplotlib adapter turns a saved data state into figures with a traceable source.</p>
-<p>Template 0.3 offers <code>publication-matplotlib</code> alongside its required <code>linked-data</code> package. The neutral workbench omits both; a linked-data app can also omit publication. The adapter reuses the earlier Matplotlib experiment and adds editor integration, cancellation and a portable export bundle.</p>
+<p>Template 0.5 offers <code>publication-matplotlib</code> alongside its required <code>linked-data</code> package. The neutral workbench omits both; a linked-data app can also omit publication. The adapter reuses the earlier Matplotlib experiment and adds editor integration, cancellation and a portable export bundle.</p>
 <h2 class="anchored">Choose the output</h2>
 <div class="table-wrap">
 <table class="caption-top">
@@ -150,9 +150,16 @@ document.addEventListener("DOMContentLoaded", function () {
 </tbody>
 </table>
 </div>
-<p>The first renderer is a scatter plot with supplied vertical error bars and literal axis labels. It does not compute uncertainties, fit a model, reproduce every interactive style, or send jobs to a physical printer. The optional <a href="../fitting/index.html">fitting adapter</a> is separate; this renderer does not yet include its fitted curve or diagnostics. PGF remains a separate experiment. Arbitrary TeX commands and preambles are not accepted.</p>
+<p>The first renderer is a scatter plot with supplied vertical error bars and literal axis labels. It does not compute uncertainties, fit a model, reproduce every interactive style, or send jobs to a physical printer. Selecting the optional <a href="../fitting/index.html">fitting adapter</a> as well enables the saved-fit output below. PGF remains a separate experiment. Arbitrary TeX commands and preambles are not accepted.</p>
 <figure><img src="../assets/examples/publication-mathtext/figure.png" alt="Five synthetic measurements rendered as a scatter plot with vertical error bars" style="width:100%;height:auto"><figcaption>A Matplotlib figure generated from the saved synthetic example. The error values are supplied inputs.</figcaption></figure>
 <p><a href="../assets/examples/publication-mathtext/figure.pdf">PDF</a> · <a href="../assets/examples/publication-mathtext/figure.svg">SVG</a> · <a href="../assets/examples/publication-latex/figure.pdf">LaTeX PDF</a> · <a href="../assets/examples/publication-mathtext/bundle.json">Bundle manifest</a> · <a href="../assets/examples/publication-mathtext/source.linked-data.json">Saved source project</a></p>
+<h2 id="saved-fits" class="anchored">Saved fits and residual diagnostics</h2>
+<p>Select all three packages with <code>apps/fitted-publication-workbench.json</code>. Configure <code>fitted-publication-workbench.fittingPython</code> and <code>fitted-publication-workbench.publicationPython</code> in User Settings, using the environments described in the fitting and publication guides. They may be separate environments; publication does not run the numerical solver again.</p>
+<p>Fit the data and wait for completion, leaving the chosen model enabled. <strong>Export Figure Bundle</strong> saves the project and offers a format, then <strong>Data and supplied error bars</strong> or <strong>Saved fit and residual diagnostics</strong>. The latter draws the stored curve and raw residuals (observed y minus fitted y), followed by parameter estimates, approximate standard errors and the fit objective. A missing or mismatched result, or a newer unfinished/failed matching attempt, produces an error. There is no fallback to a different result. Restoring a previous data node can reuse its matching saved fit.</p>
+<figure><img src="../assets/examples/fitted-publication-mathtext/figure.png" alt="Weighted straight-line fit with supplied error bars, a raw residual panel and a parameter summary" style="width:100%;height:auto"><figcaption>A saved weighted straight-line fit to synthetic data. Parameter errors use absolute independent y standard uncertainties; x is treated as exact.</figcaption></figure>
+<p><a href="../assets/examples/fitted-publication-mathtext/figure.pdf">Fitted PDF</a> · <a href="../assets/examples/fitted-publication-mathtext/figure.svg">SVG</a> · <a href="../assets/examples/fitted-publication-mathtext/fit-report.json">Full fit report</a> · <a href="../assets/examples/fitted-publication-mathtext/bundle.json">Manifest</a> · <a href="../assets/examples/fitted-publication-mathtext/source.linked-data.json">Saved project</a></p>
+<p>A second example exports the NIST Misra1a saturating-exponential fit with LaTeX: <a href="../assets/examples/fitted-publication-latex/figure.pdf">PDF</a> · <a href="../assets/examples/fitted-publication-latex/fit-report.json">fit report</a> · <a href="../assets/examples/fitted-publication-latex/bundle.json">manifest</a>. Its supplied error bars are zero and its fit is unweighted; parameter covariance is scaled by RSS / (n − 2). See the <a href="../fitting/index.html">reference-data provenance</a>.</p>
+<p><code>fit-report.json</code> retains the full covariance, residuals, curve, solver versions, specification and source/result hashes. These are approximate least-squares parameter errors, not coverage or prediction intervals. GUM and Monte Carlo propagation remain separate work. The <a href="../assets/audit/fitted-publication-qualification.json">combination qualification</a> records host, omission, failure and rendered-output checks.</p>
 <h2 class="anchored">Generate and configure</h2>
 <pre>python3 tools/compose_app.py generate apps/publication-workbench.json --output artifacts/instances/publication-workbench</pre>
 <p>The canonical example has been generated locally; use a new directory when generating another instance. Inside the generated app, prepare an isolated Python environment:</p>
@@ -167,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <p>Keep the complete bundle when archiving or committing it to Git. Restoring an earlier data state does not delete an exported file. The bundle is an external result with its own recorded source. A forced crash may leave an <code>INCOMPLETE</code> folder; automatic recovery and general power-loss durability are not qualified.</p>
 <h2 class="anchored">Command-line export</h2>
 <pre>node extension/publication-matplotlib/cli.mjs --source workspace/example.linked-data.json --output example.figure --python .state/publication-python/bin/python</pre>
-<p>Add <code>--engine latex</code> for LaTeX PDF. The CLI consumes a saved file and records bundle provenance; it does not modify an open editor's journal. Output directories must be new and their parent must already exist.</p>
+<p>Add <code>--engine latex</code> for LaTeX PDF. In a combined app, add <code>--content fit</code> for a matching saved result; the default <code>--content data</code> needs no fit. The CLI consumes a saved file and records bundle provenance; it does not modify an open editor's journal. Output directories must be new and their parent must already exist.</p>
 <h2 class="anchored">Evidence and boundaries</h2>
 <p>The <a href="../assets/audit/publication-adapter-qualification.json">qualification record</a> distinguishes generated-package checks, actual renderer tests, host commands and visual inspection. Tests exercise frozen input during later edits, checksums, existing output protection, cancellation, missing dependencies and export-history reopening. The visible picker is tested separately; native save-dialog completion is not automated.</p>
 <p>The admitted environment is local macOS x86_64, tested in installed Visual Studio Code 1.142.0 and the compiled pinned Code - OSS 1.143.0 host. LaTeX output was checked with TeX Live 2026. Packaging these dependencies, other operating systems, large datasets, physical printing, forced-crash recovery, GitHub synchronization and scientific engines remain separate work.</p>
@@ -317,7 +324,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <li><a href="https://jmigartua.github.io/inverse-problems-configuration-space-site/">inverse problems</a>, the discourse</li>
         <li><a href="https://jmigartua.github.io/lab-plot-fit-site/">lab plot fit</a>, the teaching laboratory app</li></ul></div>
       <div><h4 class="anchored">Status</h4><ul>
-        <li>Template 0.4 · construction in progress</li>
+        <li>Template 0.5 · construction in progress</li>
         <li>Rebuilt from <code>data/*.yml</code> on every render</li></ul></div>
     </div>
     <div class="foot-bottom">

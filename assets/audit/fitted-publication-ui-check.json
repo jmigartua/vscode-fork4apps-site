@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "app": "fitted-publication-workbench",
+  "checks": [
+    "Installed extension opens the linked editor",
+    "Export command offers PDF/SVG/PNG and separate LaTeX PDF",
+    "Combined app offers data-only and saved-fit content; cancelling creates no output"
+  ],
+  "scope": "Visible menu and cancellation; host API test covers export with an explicit destination. Native save dialog not automated.",
+  "errors": []
+}

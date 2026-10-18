@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <article class="page-article"><h1>Fitting linked data</h1>
 <p class="sub">An optional SciPy adapter connects a fitted model to the table, plot and saved project history.</p>
-<p>Template 0.4 offers <code>fitting-scipy</code> with its required <code>linked-data</code> package. A neutral application includes neither. Publication is a separate choice. The adapter reuses SciPy's least-squares solver and adds model selection, data-state provenance, cancellation and restoration of saved results.</p>
+<p>Template 0.5 offers <code>fitting-scipy</code> with its required <code>linked-data</code> package. A neutral application includes neither. Publication is a separate choice. The adapter reuses SciPy's least-squares solver and adds model selection, data-state provenance, cancellation and restoration of saved results.</p>
 <h2 class="anchored">Two models, explicit assumptions</h2>
 <div class="table-wrap">
 <table class="caption-top">
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <p>Reference checks use the NIST <a href="https://www.itl.nist.gov/div898/strd/lls/data/Norris.shtml">Norris linear dataset</a> and <a href="https://www.itl.nist.gov/div898/strd/nls/data/misra1a.shtml">Misra1a nonlinear dataset</a>, including both published nonlinear starting points. These are lower-difficulty reference cases. Matching them establishes bounded numerical evidence, not universal fitting reliability. A weighted-line check independently derives the solution and covariance from weighted sums; scaling sigma checks the covariance interpretation.</p>
 <p>The <a href="../assets/audit/fitting-adapter-qualification.json">qualification record</a> records tolerances, versions, source hashes and exclusions. <a href="../assets/audit/fitting-adapter-host-check.json">Host checks</a> and <a href="../assets/audit/fitting-editor-ui-check.json">visible interaction checks</a>, including the <a href="../assets/audit/fitting-editor-compiled-ui-check.json">compiled host</a>, distinguish numerical correctness from editor behavior. Neutral omission is checked separately. The admitted desktop scope is local macOS x86_64 on the recorded installed and compiled hosts; no packaged application release is implied.</p>
 <h2 class="anchored">What remains separate</h2>
-<p>GUM propagation, Monte Carlo propagation, correlated observations, x-error fitting, robust estimators, arbitrary model expressions and coverage intervals require their own adapters and reference tests. The current <a href="../publication/index.html">publication renderer</a> exports data points and supplied error bars; it does not yet export the fitted curve or fit diagnostics. That combined output is a next integration step.</p>
+<p>GUM propagation, Monte Carlo propagation, correlated observations, x-error fitting, robust estimators, arbitrary model expressions and coverage intervals require their own adapters and reference tests. Template 0.5 adds optional <a href="../publication/index.html#saved-fits">saved-fit publication</a>: the curve, raw residuals and parameter summary, with a complete JSON report. It uses the saved result without refitting. Data-only export remains available.</p>
 <p><a href="../components/index.html">Component catalogue</a> · <a href="../history/index.html">Action journal and Git</a> · <a href="../roadmap/index.html">Next steps</a></p>
 </article>
 
@@ -339,7 +339,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <li><a href="https://jmigartua.github.io/inverse-problems-configuration-space-site/">inverse problems</a>, the discourse</li>
         <li><a href="https://jmigartua.github.io/lab-plot-fit-site/">lab plot fit</a>, the teaching laboratory app</li></ul></div>
       <div><h4 class="anchored">Status</h4><ul>
-        <li>Template 0.4 · construction in progress</li>
+        <li>Template 0.5 · construction in progress</li>
         <li>Rebuilt from <code>data/*.yml</code> on every render</li></ul></div>
     </div>
     <div class="foot-bottom">

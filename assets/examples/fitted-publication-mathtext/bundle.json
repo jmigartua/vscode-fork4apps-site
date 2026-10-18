@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "source_sha256": "595b350f70dd64c646f0bf2870c602cd1565c8b77a756e6e8543fcad811eeb92",
+  "input_node": "00000000-0000-4000-8000-000000000001",
+  "engine": "mathtext",
+  "content": "fit",
+  "outputs": [
+    {
+      "file": "figure.pdf",
+      "snapshot_sha256": "88e4214dc08c2ed5574043e8989dcdff096654248f445b69c0b94f7f62653587",
+      "row_ids": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "python": "3.14.4",
+      "matplotlib": "3.10.9",
+      "text_engine": "mathtext",
+      "format": "pdf",
+      "size_inches": [
+        6.5,
+        7
+      ],
+      "output_sha256": "c7e595752e2c3f4e094d339c99bf3b2b4e54c27e15853f72a517e5a46befc363",
+      "scope": "Saved fit curve and raw residuals; approximate parameter standard errors, no coverage or prediction intervals.",
+      "content": "fit",
+      "fit_result_sha256": "4726861504cf3bdee83d06171c05c01220d136cd8e18028a4fa5295fc915dac9",
+      "fit_event_id": "11fb9ae4-6e27-4d3d-b2f1-b19b0b7b0198",
+      "residual_definition": "observed y - predicted y",
+      "input_node": "00000000-0000-4000-8000-000000000001",
+      "source_sha256": "595b350f70dd64c646f0bf2870c602cd1565c8b77a756e6e8543fcad811eeb92"
+    },
+    {
+      "file": "figure.svg",
+      "snapshot_sha256": "88e4214dc08c2ed5574043e8989dcdff096654248f445b69c0b94f7f62653587",
+      "row_ids": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "python": "3.14.4",
+      "matplotlib": "3.10.9",
+      "text_engine": "mathtext",
+      "format": "svg",
+      "size_inches": [
+        6.5,
+        7
+      ],
+      "output_sha256": "e3d7dc1a378cc8070c3dda4b6eaf64ad656a67b02efa199975ac37e167b7829b",
+      "scope": "Saved fit curve and raw residuals; approximate parameter standard errors, no coverage or prediction intervals.",
+      "content": "fit",
+      "fit_result_sha256": "4726861504cf3bdee83d06171c05c01220d136cd8e18028a4fa5295fc915dac9",
+      "fit_event_id": "11fb9ae4-6e27-4d3d-b2f1-b19b0b7b0198",
+      "residual_definition": "observed y - predicted y",
+      "input_node": "00000000-0000-4000-8000-000000000001",
+      "source_sha256": "595b350f70dd64c646f0bf2870c602cd1565c8b77a756e6e8543fcad811eeb92"
+    },
+    {
+      "file": "figure.png",
+      "snapshot_sha256": "88e4214dc08c2ed5574043e8989dcdff096654248f445b69c0b94f7f62653587",
+      "row_ids": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "python": "3.14.4",
+      "matplotlib": "3.10.9",
+      "text_engine": "mathtext",
+      "format": "png",
+      "size_inches": [
+        6.5,
+        7
+      ],
+      "output_sha256": "39a259f73b3d263bec4fa1169e5b125f751b51037ec983b7a0c583e105c2d692",
+      "scope": "Saved fit curve and raw residuals; approximate parameter standard errors, no coverage or prediction intervals.",
+      "content": "fit",
+      "fit_result_sha256": "4726861504cf3bdee83d06171c05c01220d136cd8e18028a4fa5295fc915dac9",
+      "fit_event_id": "11fb9ae4-6e27-4d3d-b2f1-b19b0b7b0198",
+      "residual_definition": "observed y - predicted y",
+      "input_node": "00000000-0000-4000-8000-000000000001",
+      "source_sha256": "595b350f70dd64c646f0bf2870c602cd1565c8b77a756e6e8543fcad811eeb92"
+    }
+  ],
+  "files": {
+    "figure.pdf": "c7e595752e2c3f4e094d339c99bf3b2b4e54c27e15853f72a517e5a46befc363",
+    "figure.pdf.json": "a803623c2ad686742ba8736e271c0e283f55a05347107a69a62449fd7b106da7",
+    "figure.pdf.snapshot.json": "88e4214dc08c2ed5574043e8989dcdff096654248f445b69c0b94f7f62653587",
+    "figure.png": "39a259f73b3d263bec4fa1169e5b125f751b51037ec983b7a0c583e105c2d692",
+    "figure.png.json": "c227af3182ca7f22167e6be7b7aa68b4f85ad884ce76472cb33e33f91c7235ec",
+    "figure.png.snapshot.json": "88e4214dc08c2ed5574043e8989dcdff096654248f445b69c0b94f7f62653587",
+    "figure.svg": "e3d7dc1a378cc8070c3dda4b6eaf64ad656a67b02efa199975ac37e167b7829b",
+    "figure.svg.json": "452461767e0bcc91dab664a85b11704f2a16274b4329cb5ec133f4ef53c84d21",
+    "figure.svg.snapshot.json": "88e4214dc08c2ed5574043e8989dcdff096654248f445b69c0b94f7f62653587",
+    "fit-report.json": "1dc38f71b5a06d622a9c1a1b21e2edaa08a9cc019e6a102e9d9a4a85b92a1491",
+    "snapshot.json": "88e4214dc08c2ed5574043e8989dcdff096654248f445b69c0b94f7f62653587",
+    "source.linked-data.json": "595b350f70dd64c646f0bf2870c602cd1565c8b77a756e6e8543fcad811eeb92"
+  },
+  "fit": {
+    "input_sha256": "b353ee9aa16e90b0f52215a2ed35bd744e672d4d788e77a3f231793cad881850",
+    "result_event_id": "11fb9ae4-6e27-4d3d-b2f1-b19b0b7b0198",
+    "result_sha256": "4726861504cf3bdee83d06171c05c01220d136cd8e18028a4fa5295fc915dac9",
+    "report": "fit-report.json"
+  },
+  "scope": "Saved data, fitted curve, raw residuals and approximate parameter errors; no refitting or coverage intervals"
+}

@@ -1,0 +1,36 @@
+{
+  "snapshot_sha256": "18737a54fddf73ef79e709e766c446bf3a413d3bba72ccd57d602dbe49d5246d",
+  "row_ids": [
+    "n0",
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "n5",
+    "n6",
+    "n7",
+    "n8",
+    "n9",
+    "n10",
+    "n11",
+    "n12",
+    "n13"
+  ],
+  "python": "3.14.4",
+  "matplotlib": "3.10.9",
+  "text_engine": "latex",
+  "format": "pdf",
+  "size_inches": [
+    6.5,
+    7
+  ],
+  "output_sha256": "abb6cb6a5e4b5d00f617a252741e4ee71f946450298a863f8bf0d8fda6533ea9",
+  "scope": "Saved fit curve and raw residuals; approximate parameter standard errors, no coverage or prediction intervals.",
+  "content": "fit",
+  "fit_result_sha256": "03e6a7c040cdf6418c9cd86b78073a41b6619ad55f95ccc019dee0bca6620995",
+  "fit_event_id": "93678cd4-8e91-4117-b518-4d82d70af829",
+  "residual_definition": "observed y - predicted y",
+  "tex_version": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)",
+  "input_node": "28c497a9-030f-43da-bdab-b57f0d7f680a",
+  "source_sha256": "4f82fe7aae54839f150088ed27a6a17d7eaebc70a74dfbf2ee95431537f18fe7"
+}

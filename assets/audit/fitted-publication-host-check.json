@@ -1,0 +1,97 @@
+{
+  "checks": [
+    {
+      "environment": "Installed Visual Studio Code",
+      "host_version": "1.142.0",
+      "app": "fitted-publication-workbench",
+      "checks": [
+        "Extension activation and tree registration",
+        "Effective layout settings, restoration and reapplication",
+        "Open, validate, tree contents and summary command",
+        "Edit, dirty state, undo, redo, save and reopen",
+        "Invalid input diagnostics and recovery",
+        "Native save, terminal and command-palette commands remain registered",
+        "Custom editor opens; data edit refreshes calculation; named checkpoint saves through host",
+        "Undo, redo, point moves, branching, invalid and stale edits use the document history",
+        "Provider backup restores unsaved state, branches and errors",
+        "Close/reopen retains edited data, saved results, both branches and error history",
+        "External edit is not overwritten; explicit revert reloads the saved checkpoint",
+        "Host export rejects unsaved input, then creates PDF/SVG/PNG from the saved node with a journal record",
+        "Combined fit/export command rejects missing fit, saves exact fitted state, exports curve/report and reopens its journal",
+        "Export history survives reopen; missing Python produces a recorded error without an output bundle",
+        "Real SciPy fit command, automatic edit/refit, branch restore, save and reopen retain the correct fit",
+        "NIST Misra1a nonlinear reference fit runs through the generated host command",
+        "Invalid y sigma and missing interpreter produce journal errors; stop disables automatic fitting"
+      ],
+      "status": "passed",
+      "scope": "Extension and document workflow; not a compiled product-fork certification"
+    },
+    {
+      "environment": "Compiled pinned Code - OSS",
+      "host_version": "1.143.0",
+      "app": "fitted-publication-workbench",
+      "checks": [
+        "Extension activation and tree registration",
+        "Effective layout settings, restoration and reapplication",
+        "Open, validate, tree contents and summary command",
+        "Edit, dirty state, undo, redo, save and reopen",
+        "Invalid input diagnostics and recovery",
+        "Native save, terminal and command-palette commands remain registered",
+        "Custom editor opens; data edit refreshes calculation; named checkpoint saves through host",
+        "Undo, redo, point moves, branching, invalid and stale edits use the document history",
+        "Provider backup restores unsaved state, branches and errors",
+        "Close/reopen retains edited data, saved results, both branches and error history",
+        "External edit is not overwritten; explicit revert reloads the saved checkpoint",
+        "Host export rejects unsaved input, then creates PDF/SVG/PNG from the saved node with a journal record",
+        "Combined fit/export command rejects missing fit, saves exact fitted state, exports curve/report and reopens its journal",
+        "Export history survives reopen; missing Python produces a recorded error without an output bundle",
+        "Real SciPy fit command, automatic edit/refit, branch restore, save and reopen retain the correct fit",
+        "NIST Misra1a nonlinear reference fit runs through the generated host command",
+        "Invalid y sigma and missing interpreter produce journal errors; stop disables automatic fitting"
+      ],
+      "status": "passed",
+      "scope": "Extension and document workflow; not a compiled product-fork certification"
+    },
+    {
+      "environment": "Publication-only omission in installed Visual Studio Code",
+      "host_version": "1.142.0",
+      "app": "publication-workbench",
+      "checks": [
+        "Extension activation and tree registration",
+        "Effective layout settings, restoration and reapplication",
+        "Open, validate, tree contents and summary command",
+        "Edit, dirty state, undo, redo, save and reopen",
+        "Invalid input diagnostics and recovery",
+        "Native save, terminal and command-palette commands remain registered",
+        "Omitted fitting package has no provider, command or numerical assets",
+        "Custom editor opens; data edit refreshes calculation; named checkpoint saves through host",
+        "Undo, redo, point moves, branching, invalid and stale edits use the document history",
+        "Provider backup restores unsaved state, branches and errors",
+        "Close/reopen retains edited data, saved results, both branches and error history",
+        "External edit is not overwritten; explicit revert reloads the saved checkpoint",
+        "Host export rejects unsaved input, then creates PDF/SVG/PNG from the saved node with a journal record",
+        "Publication-only host refuses fitted output when the numerical package is omitted",
+        "Export history survives reopen; missing Python produces a recorded error without an output bundle"
+      ],
+      "status": "passed",
+      "scope": "Extension and document workflow; not a compiled product-fork certification"
+    },
+    {
+      "environment": "Neutral omission in installed Visual Studio Code",
+      "host_version": "1.142.0",
+      "app": "neutral-workbench",
+      "checks": [
+        "Extension activation and tree registration",
+        "Effective layout settings, restoration and reapplication",
+        "Open, validate, tree contents and summary command",
+        "Edit, dirty state, undo, redo, save and reopen",
+        "Invalid input diagnostics and recovery",
+        "Native save, terminal and command-palette commands remain registered",
+        "Omitted fitting package has no provider, command or numerical assets"
+      ],
+      "status": "passed",
+      "scope": "Extension and document workflow; not a compiled product-fork certification"
+    }
+  ],
+  "scope": "Generated extension and saved-result workflow; not a packaged branded product certification"
+}

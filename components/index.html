@@ -126,6 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <article class="page-article"><h1>Reuse components, compose capabilities</h1>
 <p class="sub">Tables, graphics, fitting, uncertainty and publication output are families of optional tools. Reuse established implementations and build the document adapters that let selected tools work together.</p>
 <p>The user's additions are recorded in <a href="../brief/index.html#R15">R15–R18</a>. The neutral workbench remains the starting example. These capabilities are offers for particular apps, not a compulsory scientific stack.</p>
+<p>The optional <a href="../publication/index.html#saved-fits">fitted publication combination</a> reuses these same SciPy and Matplotlib adapters. It exports the stored result without refitting, adding a residual panel and full JSON report. No additional plotting or optimization framework is introduced.</p>
 <h2 class="anchored">Separate the responsibilities</h2>
 <div class="flow"><span>Import and quantities</span><span>Document and transformations</span><span>Fitting and uncertainty</span><span>Interactive views</span><span>Publication and reports</span></div>
 <p>Each stage can contain smaller modules. A table might select editing, sorting, filtering or clipboard support. A plot might select scatter, error bars, image export or point editing. An app may need a publication renderer without a live plot, or interactive plots without Python. Dependency resolution must distinguish required shared services from optional tools.</p>
@@ -411,7 +412,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <li><a href="https://jmigartua.github.io/inverse-problems-configuration-space-site/">inverse problems</a>, the discourse</li>
         <li><a href="https://jmigartua.github.io/lab-plot-fit-site/">lab plot fit</a>, the teaching laboratory app</li></ul></div>
       <div><h4 class="anchored">Status</h4><ul>
-        <li>Template 0.4 · construction in progress</li>
+        <li>Template 0.5 · construction in progress</li>
         <li>Rebuilt from <code>data/*.yml</code> on every render</li></ul></div>
     </div>
     <div class="foot-bottom">

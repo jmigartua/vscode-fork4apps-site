@@ -1,0 +1,138 @@
+{
+  "verified_at": "2026-10-18T05:34:55.211608+00:00",
+  "template_version": "0.5.0",
+  "status": "qualified-with-explicit-scope",
+  "packages": {
+    "linked-data": "0.1.0",
+    "fitting-scipy": "0.1.1",
+    "publication-matplotlib": "0.2.0"
+  },
+  "scope": "Optional saved-result publication in local macOS x86_64 generated apps; straight-line and positive saturating-exponential models",
+  "reuse": {
+    "decision": "Extend the existing Matplotlib adapter with subplots and inert saved SciPy results. No replacement renderer or solver.",
+    "matplotlib": "3.10.9",
+    "scipy": "1.17.1",
+    "numpy": "2.5.4",
+    "publication_interpreter_has_scipy": false,
+    "dependencies": "External isolated interpreters; not bundled",
+    "sources": [
+      "https://matplotlib.org/3.10.9/api/_as_gen/matplotlib.figure.Figure.subplots.html",
+      "https://matplotlib.org/3.10.9/api/_as_gen/matplotlib.axes.Axes.plot.html"
+    ]
+  },
+  "behaviors": [
+    "Explicit choice of data-only or saved-fit content; independent Mathtext PDF/SVG/PNG or LaTeX PDF choice",
+    "Current data node and specification hash select the exact saved result; export does not refit",
+    "Stored curve, raw residual panel, parameter estimates and approximate standard errors",
+    "Full covariance, statistics, solver versions and result/source hashes in fit-report.json",
+    "Newer unfinished or failed matching attempt, disabled fitting, malformed result and changed data refuse fit export",
+    "Later edits do not change frozen source and results",
+    "Ordinary error/cancellation removes incomplete new bundles; existing destinations protected",
+    "Export identity and outcome persist after explicit save/reopen; data restoration does not delete external files"
+  ],
+  "tests": {
+    "fitted_export": {
+      "passed": 4,
+      "skipped": 0,
+      "includes": "Real weighted line and nonlinear LaTeX render, exact artist coordinates, hashes, stale input, failure and cancellation"
+    },
+    "publication_regression": {
+      "passed": 6,
+      "skipped": 0
+    },
+    "publication_only_fit_refusal": {
+      "passed": 1
+    },
+    "fitting_numerical_regression": {
+      "passed": 5
+    },
+    "fitting_controller_regression": {
+      "passed": 6
+    },
+    "linked_core_regression": {
+      "passed": 7
+    },
+    "neutral_core": {
+      "passed": 2
+    },
+    "constructor": {
+      "passed": 24
+    },
+    "host": "audit/fitted-publication-host-check.json",
+    "visible_installed": "audit/fitted-publication-ui-check.json",
+    "visible_compiled": "audit/fitted-publication-compiled-ui-check.json",
+    "visible_omission": "audit/fitted-publication-omission-ui-check.json",
+    "skill_validator": "passed"
+  },
+  "rendered_review": {
+    "pdfs": "Both complete example PDFs rasterized with Poppler and visually inspected; no clipping or overlap observed",
+    "coordinates": "Matplotlib artist x/y values equal stored curves and residuals for both examples",
+    "examples": {
+      "mathtext": {
+        "path": "ecosystem/site/assets/examples/fitted-publication-mathtext",
+        "bundle_sha256": "f6be2d80e355bb839456bdf4dafb8066f4ce7a03e5ada3c1e6c6e5ba4d98432f",
+        "model": "line",
+        "result_sha256": "4726861504cf3bdee83d06171c05c01220d136cd8e18028a4fa5295fc915dac9"
+      },
+      "latex": {
+        "path": "ecosystem/site/assets/examples/fitted-publication-latex",
+        "bundle_sha256": "c01585adf117f6b4623533f332f422b53a71545ba4cff8c7670501b59030b27f",
+        "model": "saturation",
+        "result_sha256": "03e6a7c040cdf6418c9cd86b78073a41b6619ad55f95ccc019dee0bca6620995"
+      }
+    }
+  },
+  "neutral_omission": {
+    "host_passed": true,
+    "numerical_and_publication_assets_absent": true
+  },
+  "runtime_parity": "Final generated instance has identical application runtime to the passing combined-host runs. The common host test subsequently adds focus immediately before native undo/redo; publication-only host verifies that test correction.",
+  "limitations": [
+    "No GUM or Monte Carlo propagation, coverage or prediction intervals",
+    "Exact x; unweighted or absolute independent y-sigma fits only",
+    "No physical printer control, arbitrary figure design or interactive plot fidelity guarantee",
+    "External Python/Matplotlib and optional TeX dependencies; other operating systems not qualified",
+    "Native save-dialog completion not automated; host tests supply an explicit destination",
+    "Cold macOS font discovery can reach the 90-second renderer timeout; incomplete output is removed, no performance guarantee",
+    "Forced-crash recovery and general power-loss durability remain excluded",
+    "No packaged or signed fitted-publication application built"
+  ],
+  "qualification_notes": [
+    "Combined and publication-only attempts encountered the pre-existing text undo focus issue. The common test now refocuses immediately before native undo/redo; the application runtime is unchanged.",
+    "A compiled-host attempt timed out while macOS system_profiler enumerated fonts during concurrent rendering checks; incomplete output was removed. Subsequent qualification ran alone.",
+    "Compiled-host pointer automation stalled waiting for quick-pick stability; the visible choices were subsequently exercised with keyboard selection.",
+    "Historical template 0.3/0.4 qualification records retain their original scope and source hashes."
+  ],
+  "source_sha256": {
+    "apps/fitted-publication-workbench.json": "04bc4a22f62a65fe6d4f48bb4c99ae6a7d83422b74a3d0a7f507fe165dfca1a5",
+    "template/assets/extension/test/host.cjs": "ae50fb1c528732e723ff7953f2c495c718778fae52ba955c42a3b7979ef3b091",
+    "template/packages/fitting-scipy/README.md": "092666144cfaf97adbd1a1f4b52ce7fc8d72ec94e23736f6a370c81df6b0db65",
+    "template/packages/fitting-scipy/controller.mjs": "9c34f44b5f02a31dd63dc1b731b3dfedeae7cdb96dcba92b69e9f500bd0ccaeb",
+    "template/packages/fitting-scipy/fit.mjs": "0358533b342772eca53a84b5b5c604a0e58921d66a9e89a8d94035a1732eeeaa",
+    "template/packages/fitting-scipy/fit.py": "35af6e4d64f380540f5150c8d30ee2aa0566fc7a8cd92eef2398c04c44934350",
+    "template/packages/fitting-scipy/provider.cjs": "852ff16c78e21eed2fb3dd80d550c88d3a7b13f7c3aea7575f71280322513e1f",
+    "template/packages/fitting-scipy/requirements.txt": "64f661a009ca94167f3df24906806375f890d3accda95697bd541d71ef88f782",
+    "template/packages/fitting-scipy/saved.mjs": "357a4cbba67c09db21fdb2f3243ef253e1a3a00f8d3e8a8b0b45d354fdf9560f",
+    "template/packages/fitting-scipy/test/controller.test.mjs": "621d801637a769507ebc39d8689630923fe529f521a7b2a49b74ff2c941ae741",
+    "template/packages/fitting-scipy/test/host.cjs": "ab5963ea9e75fb5310fcddfd9791b2872d37b594e8f51d94646d409ce4a28531",
+    "template/packages/fitting-scipy/test/numerical.py": "453bae2f0fc405b516469c2cebffbb31b8988576257a6ca11ebd62cba5a20cdb",
+    "template/packages/fitting-scipy/test/reference/Misra1a.dat": "9d3194d537d9a6bbf92eb819504070923a1885d0191f40b6b3aaeedd130b98e2",
+    "template/packages/fitting-scipy/test/reference/Norris.dat": "5ab6906c68a9c4b2eb1661c0cd7d2a09f5a469a6d4e05b6b691f190f5f7b944f",
+    "template/packages/fitting-scipy/test/reference/provenance.json": "7eef00b26ce4452eeb6f2778f5f393470898ca8ae9978d5dbeab983a2256c16f",
+    "template/packages/fitting-scipy/webview.mjs": "f4f577524db3345e206df7f0890d46ac85765eb77157b5576ec86512263f0914",
+    "template/packages/publication-matplotlib/README.md": "3672801e30ee738902d422188f852041600b3f87039b1947ec7e817a1f33f12d",
+    "template/packages/publication-matplotlib/cli.mjs": "1b0fee1ad92bccfdc01760034c6671acf8c18a2b77086db441ad4e376b3c0e46",
+    "template/packages/publication-matplotlib/export.mjs": "b031b6b580bdf0c9ff55447a6b8df5f4ac00012d9b25d2af5a2f7501d0ae21d0",
+    "template/packages/publication-matplotlib/export_figure.py": "c9a0070bc960dbaa5b130ff9e2d0a925a40acc45ffa3a3ae963451e8e6328673",
+    "template/packages/publication-matplotlib/provider.cjs": "3d63e38c924b6f7c15c1d0bd118937b26e4460bdfe30c00d9b3eeb9b222cac00",
+    "template/packages/publication-matplotlib/requirements.txt": "9df64c193d6294e71dfca6e9f9588c1c525f9243ab201d264428e9e1434beb8d",
+    "template/packages/publication-matplotlib/reuse.json": "42c2f28745ae95c35634f89d664cfb4949d01a6abe5d8d1b400cbdca3bdd9bb1",
+    "template/packages/publication-matplotlib/test/export.test.mjs": "667708055a920e6e63ae27637cd0c8198ccc7e9b3fcc0875ea3bdaa00ba02117",
+    "template/packages/publication-matplotlib/test/fit-fixture.mjs": "5c18d01af4e8d471daaf2a6381cb633aba1c92e2a85fd6bfd9b1fa5bc3c1313b",
+    "template/packages/publication-matplotlib/test/fitted-export.test.mjs": "f835b706fde4fd0e2c897e9b15d3db12b582dc667d480e0e8db6bc830ca81da1",
+    "template/packages/publication-matplotlib/test/host.cjs": "60b983e56df90b8e19f437100dda0e80b3381505c70d157e787f4cb7f5689474",
+    "template/packages/publication-matplotlib/test/inspect_render.py": "1f6451fccf1fe71af9becc703aa0add15e4f233e6fa37049a05f17ec3126ba0f",
+    "template/recipes.json": "05db464f5e84720583ad1399e8bbb9cc5b424d6398b2c52c85d230eb847444b3",
+    "tools/check_publication_ui.py": "aee6296a7fae3ccea0f9d1fecddef248f95f573add37e08016783b4df9f432f7"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "snapshot_sha256": "88e4214dc08c2ed5574043e8989dcdff096654248f445b69c0b94f7f62653587",
+  "row_ids": [
+    "r1",
+    "r2",
+    "r3",
+    "r4",
+    "r5"
+  ],
+  "python": "3.14.4",
+  "matplotlib": "3.10.9",
+  "text_engine": "mathtext",
+  "format": "pdf",
+  "size_inches": [
+    6.5,
+    7
+  ],
+  "output_sha256": "c7e595752e2c3f4e094d339c99bf3b2b4e54c27e15853f72a517e5a46befc363",
+  "scope": "Saved fit curve and raw residuals; approximate parameter standard errors, no coverage or prediction intervals.",
+  "content": "fit",
+  "fit_result_sha256": "4726861504cf3bdee83d06171c05c01220d136cd8e18028a4fa5295fc915dac9",
+  "fit_event_id": "11fb9ae4-6e27-4d3d-b2f1-b19b0b7b0198",
+  "residual_definition": "observed y - predicted y",
+  "input_node": "00000000-0000-4000-8000-000000000001",
+  "source_sha256": "595b350f70dd64c646f0bf2870c602cd1565c8b77a756e6e8543fcad811eeb92"
+}
