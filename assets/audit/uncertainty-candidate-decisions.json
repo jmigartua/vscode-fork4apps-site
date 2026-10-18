@@ -1,0 +1,93 @@
+{
+  "checked": "2026-10-18",
+  "evidence": "audit/uncertainty-candidate-check.json",
+  "provenance": "experiments/uncertainty/provenance.json",
+  "admitted_constructor_options": [],
+  "template_version": "0.5.0",
+  "decisions": [
+    {
+      "candidate": "GTC",
+      "version": "1.5.1",
+      "license_observed": "MIT",
+      "decision": "Adapt selected capabilities; preferred next integration candidate",
+      "scope": "First-order scalar propagation with correlations; independent finite-df coverage arithmetic",
+      "evidence_level": "Installed package, source/license inspection and bounded numerical tests",
+      "gaps": [
+        "Non-PSD correlation accepted by raw API; validate before construction",
+        "First-order approximation fails square-at-zero and underestimates mass example",
+        "Correlated finite-df coverage and uncertainty budget UI not qualified",
+        "No generated-editor, history, cancellation or omission evidence"
+      ]
+    },
+    {
+      "candidate": "uncertainties",
+      "version": "3.2.3",
+      "license_observed": "BSD-3-Clause text",
+      "decision": "Retain as numerical comparator; do not add a duplicate engine to the constructor now",
+      "scope": "First-order scalar propagation and tested correlations",
+      "evidence_level": "Installed package, source/license inspection and bounded numerical tests",
+      "gaps": [
+        "Non-PSD covariance silently changed in tested correlated_values case",
+        "NaN estimate propagated",
+        "No coverage or distribution propagation qualification",
+        "No editor integration"
+      ]
+    },
+    {
+      "candidate": "Suncal",
+      "version": "1.7.1",
+      "license_observed": "GPLv3 package metadata and included license",
+      "decision": "Retain headless scientific comparator; hold product integration",
+      "scope": "First-order and sampled scalar models; tested normal correlations and independent rectangular inputs",
+      "evidence_level": "Installed headless package, source/license inspection and bounded numerical tests",
+      "gaps": [
+        "GUM path accepts invalid covariance",
+        "Negative normal standard deviation replaced by tiny positive scale in tested case",
+        "Invalid MC evaluations removed with warning; adapter must reject unrequested conditioning",
+        "Document compatible distribution plan before bundling",
+        "Adaptive convergence, arbitrary joint laws and editor integration not qualified",
+        "Symbolic input order depends on Python hash seed; NumPy seed alone does not guarantee fresh-process replay"
+      ]
+    },
+    {
+      "candidate": "mcerp",
+      "version": "1.1.1",
+      "license_observed": "BSD-3-Clause",
+      "decision": "Continue evaluation for bounded independent-input sampling; do not admit yet",
+      "scope": "Latin hypercube propagation; tested normal/rectangular inputs and nondegenerate normal correlations",
+      "evidence_level": "Installed package, source/license inspection and bounded numerical tests",
+      "gaps": [
+        "Not an IID or adaptive JCGM 101 implementation",
+        "Perfectly correlated separate inputs leave nonzero difference",
+        "Invalid covariance caused IndexError instead of useful validation",
+        "Invalid model samples remain NaN",
+        "Global RNG, convergence policy and editor integration need qualification"
+      ]
+    },
+    {
+      "candidate": "METAS UncLib",
+      "version": "2.9 license",
+      "license_observed": "Official EULA section 4(c) restricts redistribution; direct named-user acquisition",
+      "decision": "Exclude from bundled constructor candidates; external-tool study only",
+      "scope": "Distribution review only; no runtime installed or tested",
+      "evidence_level": "Official full license text reviewed in browser; subsequent direct retrieval attempts failed",
+      "source": "https://www.ejpd.admin.ch/dam/metas/en/data/fachbereiche/hochfrequenz/unclib/unclib_v_290/metas_unclib_license_v2.9.0-e.pdf.download.pdf/metas_unclib_license_v2.9.0-e.pdf",
+      "gaps": [
+        "No numerical evidence; this is not a numerical failure",
+        "An open-source wrapper does not establish permission to redistribute the runtime"
+      ]
+    }
+  ],
+  "next_slice": {
+    "proposal": "Optional GTC-backed scalar measurement model with explicit inputs, covariance and provenance",
+    "required_before_admission": [
+      "Finite values, nonnegative u, symmetric PSD covariance and dimensional validation",
+      "Stable identities for shared inputs and revision-bound model specification",
+      "First-order applicability disclosures and no unqualified coverage claims",
+      "Reference, boundary and rejection tests for the actual adapter",
+      "Generated-editor updates, cancellation and stale-result rejection",
+      "Saved results, undo/redo, branching and reopened state",
+      "Omission leaves neutral generated app independent of uncertainty dependencies"
+    ]
+  }
+}

@@ -1,0 +1,1699 @@
+{
+  "schema": 1,
+  "scope": "Numerical candidate audit only; no constructor admission or standards certification",
+  "environment": {
+    "python": "3.12.7",
+    "system": "Darwin",
+    "machine": "x86_64",
+    "packages": {
+      "kiwisolver": "1.5.1",
+      "packaging": "26.3",
+      "matplotlib": "3.10.9",
+      "flexcache": "0.3",
+      "numpy": "2.5.4",
+      "uncertainties": "3.2.3",
+      "pillow": "13.0.0",
+      "contourpy": "1.4.0",
+      "sympy": "1.14.0",
+      "Markdown": "3.11.1",
+      "python-dateutil": "2.9.0.post0",
+      "mpmath": "1.3.0",
+      "PyYAML": "6.0.3",
+      "scipy": "1.17.1",
+      "Pint": "0.26.1",
+      "cycler": "0.12.1",
+      "pip": "24.2",
+      "flexparser": "0.4",
+      "platformdirs": "4.13.4",
+      "GTC": "1.5.1",
+      "mcerp": "1.1.1",
+      "typing_extensions": "4.16.0",
+      "suncal": "1.7.1",
+      "fonttools": "4.67.0",
+      "pyparsing": "3.3.3",
+      "six": "1.17.0"
+    },
+    "python_hash_seed": "0",
+    "numpy_rng": "MT19937"
+  },
+  "source_hashes": {
+    "experiments/uncertainty/README.md": "47e826eb7a00f9aaf52ff1d3d907daabb8a3d205044cfd0367e19efa59ce29ae",
+    "experiments/uncertainty/check.py": "aeac631934de034238bfdda444435c1034d5a46632b9f9cb24d2987361955f4f",
+    "experiments/uncertainty/plot.py": "cb1037fab3919546dde15013a4606dbfe0c40fce5d98f8ee88f3f698ca0ccb6d",
+    "experiments/uncertainty/provenance.json": "45118e3727e17590ee47ab1c7d4e4f60fb41d329977159692c02f1d05bb9407f",
+    "experiments/uncertainty/requirements.txt": "0703ab01e12651b39bda019083e2a881fe73f4b130e2e8d0075300bf33f2f0a9"
+  },
+  "references": {
+    "mass": "JCGM 101:2008 section 9.3, equation 24, Tables 5 and 6",
+    "h2": "GTC GUM_H2 example; analytical Jacobian comparison"
+  },
+  "results": [
+    {
+      "case": "independent",
+      "engine": "GTC",
+      "method": "first-order",
+      "estimate": 50.0,
+      "u": 4.123105625617661
+    },
+    {
+      "case": "independent",
+      "engine": "uncertainties",
+      "method": "first-order",
+      "estimate": 50.0,
+      "u": 4.123105625617661
+    },
+    {
+      "case": "independent",
+      "engine": "Suncal",
+      "method": "first-order",
+      "estimate": 50.0,
+      "u": 4.123105625617661
+    },
+    {
+      "case": "independent",
+      "engine": "Suncal",
+      "method": "IID Gaussian-copula",
+      "estimate": 49.99972164252685,
+      "u": 4.117066737864421,
+      "requested": 100000,
+      "returned": 100000,
+      "nonfinite_returned": 0,
+      "seed": 101,
+      "sample_sha256": "defe51771feb88c8b913574547d7722e0c58090dba176da7e8cd80a92460f9b5",
+      "equal_tailed_95": [
+        41.937260167643906,
+        58.05376696659044
+      ],
+      "library_warnings": [],
+      "input_samples": {
+        "y": 100000,
+        "x": 100000
+      },
+      "shortest_95": [
+        41.96066432826826,
+        58.070594683378005
+      ]
+    },
+    {
+      "case": "independent",
+      "engine": "mcerp",
+      "method": "Latin hypercube / rank correlation",
+      "estimate": 49.999995950742,
+      "u": 4.123926651018341,
+      "requested": 100000,
+      "returned": 100000,
+      "nonfinite_returned": 0,
+      "seed": 101,
+      "sample_sha256": "281376acb53b0e25226fba1c57d33f227409597dfd3cb24c97841659f53686e8",
+      "equal_tailed_95": [
+        41.904404319141626,
+        58.06540817549655
+      ],
+      "input_samples": {
+        "x": 100000,
+        "y": 100000
+      }
+    },
+    {
+      "case": "positive-correlation",
+      "engine": "GTC",
+      "method": "first-order",
+      "estimate": 50.0,
+      "u": 4.795831523312719
+    },
+    {
+      "case": "positive-correlation",
+      "engine": "uncertainties",
+      "method": "first-order",
+      "estimate": 50.0,
+      "u": 4.795831523312719
+    },
+    {
+      "case": "positive-correlation",
+      "engine": "Suncal",
+      "method": "first-order",
+      "estimate": 50.0,
+      "u": 4.795831523312719
+    },
+    {
+      "case": "positive-correlation",
+      "engine": "Suncal",
+      "method": "IID Gaussian-copula",
+      "estimate": 50.010425486328096,
+      "u": 4.803187280531004,
+      "requested": 100000,
+      "returned": 100000,
+      "nonfinite_returned": 0,
+      "seed": 101,
+      "sample_sha256": "c91ab59e6e7ede76360457b354e475e5fab045aa331c29c5cb2b2d73474bc9b6",
+      "equal_tailed_95": [
+        40.6246078098174,
+        59.42281635246134
+      ],
+      "library_warnings": [],
+      "input_samples": {
+        "y": 100000,
+        "x": 100000
+      },
+      "shortest_95": [
+        40.73711473860847,
+        59.527665443214445
+      ]
+    },
+    {
+      "case": "positive-correlation",
+      "engine": "mcerp",
+      "method": "Latin hypercube / rank correlation",
+      "estimate": 49.99999595074201,
+      "u": 4.795821448636261,
+      "requested": 100000,
+      "returned": 100000,
+      "nonfinite_returned": 0,
+      "seed": 101,
+      "sample_sha256": "b4f149f5bb229c3521b082ae4cbea01a047781882e019b4954b32fdd19c30d9a",
+      "equal_tailed_95": [
+        40.579068439926345,
+        59.38124858877858
+      ],
+      "input_samples": {
+        "x": 100000,
+        "y": 100000
+      },
+      "observed_input_correlation": [
+        [
+          1.0,
+          0.7499899120919292
+        ],
+        [
+          0.7499899120919292,
+          1.0
+        ]
+      ]
+    },
+    {
+      "case": "negative-correlation",
+      "engine": "GTC",
+      "method": "first-order",
+      "estimate": 50.0,
+      "u": 3.3166247903554
+    },
+    {
+      "case": "negative-correlation",
+      "engine": "uncertainties",
+      "method": "first-order",
+      "estimate": 50.0,
+      "u": 3.3166247903554
+    },
+    {
+      "case": "negative-correlation",
+      "engine": "Suncal",
+      "method": "first-order",
+      "estimate": 50.0,
+      "u": 3.3166247903554
+    },
+    {
+      "case": "negative-correlation",
+      "engine": "Suncal",
+      "method": "IID Gaussian-copula",
+      "estimate": 49.995566850484394,
+      "u": 3.326378821718019,
+      "requested": 100000,
+      "returned": 100000,
+      "nonfinite_returned": 0,
+      "seed": 101,
+      "sample_sha256": "41cba35e7b1cbac21849061d93cd26b620a5bb94e0fe217da671469c523ce04f",
+      "equal_tailed_95": [
+        43.52263267654895,
+        56.56575461073635
+      ],
+      "library_warnings": [],
+      "input_samples": {
+        "y": 100000,
+        "x": 100000
+      },
+      "shortest_95": [
+        43.599778797789455,
+        56.63692968591333
+      ]
+    },
+    {
+      "case": "negative-correlation",
+      "engine": "mcerp",
+      "method": "Latin hypercube / rank correlation",
+      "estimate": 49.99999595074201,
+      "u": 3.31663884043807,
+      "requested": 100000,
+      "returned": 100000,
+      "nonfinite_returned": 0,
+      "seed": 101,
+      "sample_sha256": "ce6f9f14f729f97ac717d15723ad2983cb1211da45b94e723428f279edb8ed40",
+      "equal_tailed_95": [
+        43.51529878960784,
+        56.48861952004214
+      ],
+      "input_samples": {
+        "x": 100000,
+        "y": 100000
+      },
+      "observed_input_correlation": [
+        [
+          1.0,
+          -0.749989953711673
+        ],
+        [
+          -0.749989953711673,
+          1.0
+        ]
+      ]
+    },
+    {
+      "case": "shared-cancellation",
+      "engine": "GTC",
+      "method": "first-order",
+      "estimate": -10.0,
+      "u": 2.23606797749979
+    },
+    {
+      "case": "shared-cancellation",
+      "engine": "uncertainties",
+      "method": "first-order",
+      "estimate": -10.0,
+      "u": 2.23606797749979
+    },
+    {
+      "case": "shared-cancellation",
+      "engine": "Suncal",
+      "method": "first-order",
+      "estimate": -10.0,
+      "u": 2.23606797749979
+    },
+    {
+      "case": "shared-cancellation",
+      "engine": "Suncal",
+      "method": "IID Gaussian-copula",
+      "estimate": -10.011054951149053,
+      "u": 2.2355709955638137,
+      "requested": 100000,
+      "returned": 100000,
+      "nonfinite_returned": 0,
+      "seed": 101,
+      "sample_sha256": "d2a5bd4c389fb9c93fa3cdac41d83f8104d04ca638afb0fb44b3274503b4a082",
+      "equal_tailed_95": [
+        -14.401436289401932,
+        -5.615263816723451
+      ],
+      "library_warnings": [],
+      "input_samples": {
+        "y": 100000,
+        "x": 100000
+      },
+      "shortest_95": [
+        -14.373256866882498,
+        -5.592434323198994
+      ]
+    },
+    {
+      "case": "shared-cancellation",
+      "engine": "mcerp",
+      "method": "Latin hypercube / rank correlation",
+      "estimate": -9.999997332191569,
+      "u": 2.235309725407377,
+      "requested": 100000,
+      "returned": 100000,
+      "nonfinite_returned": 0,
+      "seed": 101,
+      "sample_sha256": "9d6997c051e110b63a2d2173ca0fd665aa292e08d97b156c1281b7cb4661c7f1",
+      "equal_tailed_95": [
+        -14.373297361333151,
+        -5.624914325370428
+      ],
+      "input_samples": {
+        "x": 100000,
+        "y": 100000,
+        "c": 100000
+      }
+    },
+    {
+      "case": "square-at-zero",
+      "engine": "GTC",
+      "method": "first-order",
+      "estimate": 0.0,
+      "u": 0.0
+    },
+    {
+      "case": "square-at-zero",
+      "engine": "uncertainties",
+      "method": "first-order",
+      "estimate": 0.0,
+      "u": 0.0
+    },
+    {
+      "case": "square-at-zero",
+      "engine": "Suncal",
+      "method": "first-order",
+      "estimate": 0.0,
+      "u": 0.0
+    },
+    {
+      "case": "square-at-zero",
+      "engine": "Suncal",
+      "method": "IID Gaussian-copula",
+      "estimate": 0.9971662781711607,
+      "u": 1.4145386523525951,
+      "requested": 100000,
+      "returned": 100000,
+      "nonfinite_returned": 0,
+      "seed": 101,
+      "sample_sha256": "b59cc49ed240deb87c3670d4c82c9af4d277bf5bfbda4bbd752af4752ebe96bd",
+      "equal_tailed_95": [
+        0.001021405671311857,
+        5.001357472051357
+      ],
+      "library_warnings": [],
+      "input_samples": {
+        "x": 100000
+      },
+      "shortest_95": [
+        1.7060672967924486e-11,
+        3.8236669382340778
+      ]
+    },
+    {
+      "case": "square-at-zero",
+      "engine": "mcerp",
+      "method": "Latin hypercube / rank correlation",
+      "estimate": 0.9999949909579178,
+      "u": 1.4141337333434938,
+      "requested": 100000,
+      "returned": 100000,
+      "nonfinite_returned": 0,
+      "seed": 101,
+      "sample_sha256": "dc99196c30f079b252ec8019a4114e436e247874d6169a8a687db0a16ab47390",
+      "equal_tailed_95": [
+        0.0009824761861989997,
+        5.023122861710459
+      ],
+      "input_samples": {
+        "x": 100000
+      }
+    },
+    {
+      "case": "mass-calibration",
+      "engine": "GTC",
+      "method": "first-order",
+      "estimate": 1.2339999999967404,
+      "u": 0.05385164807134505
+    },
+    {
+      "case": "mass-calibration",
+      "engine": "uncertainties",
+      "method": "first-order",
+      "estimate": 1.2339999999967404,
+      "u": 0.05385164807134505
+    },
+    {
+      "case": "mass-calibration",
+      "engine": "Suncal",
+      "method": "first-order",
+      "estimate": 1.2339999999967404,
+      "u": 0.05385164807134505
+    },
+    {
+      "case": "mass-calibration",
+      "engine": "Suncal",
+      "method": "IID Gaussian-copula",
+      "estimate": 1.2338804955569118,
+      "u": 0.07559270898381323,
+      "requested": 100000,
+      "returned": 100000,
+      "nonfinite_returned": 0,
+      "seed": 101,
+      "sample_sha256": "08da5b9f6bb7c3849f947c57e73885d9f3251f446a4301351574bb4a35937994",
+      "equal_tailed_95": [
+        1.0846498408413026,
+        1.383191928360975
+      ],
+      "library_warnings": [],
+      "input_samples": {
+        "d": 100000,
+        "r": 100000,
+        "m": 100000,
+        "a": 100000,
+        "w": 100000
+      },
+      "shortest_95": [
+        1.084237434566603,
+        1.382671037732507
+      ]
+    },
+    {
+      "case": "mass-calibration",
+      "engine": "mcerp",
+      "method": "Latin hypercube / rank correlation",
+      "estimate": 1.2339836246172753,
+      "u": 0.07568346358328962,
+      "requested": 100000,
+      "returned": 100000,
+      "nonfinite_returned": 0,
+      "seed": 101,
+      "sample_sha256": "5e9616433661851fe723f12c45701692365061bf8e763925bafaba615ef3c34d",
+      "equal_tailed_95": [
+        1.0845687591885507,
+        1.384680807931727
+      ],
+      "input_samples": {
+        "m": 100000,
+        "d": 100000,
+        "a": 100000,
+        "w": 100000,
+        "r": 100000
+      }
+    },
+    {
+      "case": "GUM-H2-0",
+      "engine": "GTC",
+      "method": "first-order",
+      "estimate": 127.73216992810211,
+      "u": 0.06997872798837174
+    },
+    {
+      "case": "GUM-H2-1",
+      "engine": "GTC",
+      "method": "first-order",
+      "estimate": 219.8465119126384,
+      "u": 0.2957168268461236
+    },
+    {
+      "case": "GUM-H2-2",
+      "engine": "GTC",
+      "method": "first-order",
+      "estimate": 254.2597019480189,
+      "u": 0.23660297183529755
+    },
+    {
+      "case": "GUM-H2-0",
+      "engine": "uncertainties",
+      "method": "first-order",
+      "estimate": 127.73216992810211,
+      "u": 0.06997872798837179
+    },
+    {
+      "case": "GUM-H2-1",
+      "engine": "uncertainties",
+      "method": "first-order",
+      "estimate": 219.8465119126384,
+      "u": 0.29571682684612366
+    },
+    {
+      "case": "GUM-H2-2",
+      "engine": "uncertainties",
+      "method": "first-order",
+      "estimate": 254.2597019480189,
+      "u": 0.23660297183529758
+    },
+    {
+      "case": "GUM-H2-0",
+      "engine": "Suncal",
+      "method": "first-order",
+      "estimate": 127.73216992810211,
+      "u": 0.06997872798837174
+    },
+    {
+      "case": "GUM-H2-1",
+      "engine": "Suncal",
+      "method": "first-order",
+      "estimate": 219.8465119126384,
+      "u": 0.29571682684612355
+    },
+    {
+      "case": "GUM-H2-2",
+      "engine": "Suncal",
+      "method": "first-order",
+      "estimate": 254.2597019480189,
+      "u": 0.23660297183529752
+    }
+  ],
+  "stability": [
+    {
+      "engine": "Suncal",
+      "estimate": 1.2338804955569118,
+      "u": 0.07559270898381323,
+      "requested": 100000,
+      "returned": 100000,
+      "nonfinite_returned": 0,
+      "seed": 101,
+      "sample_sha256": "08da5b9f6bb7c3849f947c57e73885d9f3251f446a4301351574bb4a35937994",
+      "equal_tailed_95": [
+        1.0846498408413026,
+        1.383191928360975
+      ],
+      "library_warnings": [],
+      "input_samples": {
+        "d": 100000,
+        "r": 100000,
+        "m": 100000,
+        "a": 100000,
+        "w": 100000
+      },
+      "shortest_95": [
+        1.084237434566603,
+        1.382671037732507
+      ]
+    },
+    {
+      "engine": "Suncal",
+      "estimate": 1.234351522124271,
+      "u": 0.07539788215907495,
+      "requested": 100000,
+      "returned": 100000,
+      "nonfinite_returned": 0,
+      "seed": 202,
+      "sample_sha256": "b543c1ce6433c4f11e8ca0725bb98a7756e92aea1b2a260cc0e9bd849be1e423",
+      "equal_tailed_95": [
+        1.0853108249270007,
+        1.3833310978701774
+      ],
+      "library_warnings": [],
+      "input_samples": {
+        "d": 100000,
+        "r": 100000,
+        "m": 100000,
+        "a": 100000,
+        "w": 100000
+      },
+      "shortest_95": [
+        1.0845058748673182,
+        1.382453509606421
+      ]
+    },
+    {
+      "engine": "Suncal",
+      "estimate": 1.2336565217763569,
+      "u": 0.07549779108624045,
+      "requested": 100000,
+      "returned": 100000,
+      "nonfinite_returned": 0,
+      "seed": 303,
+      "sample_sha256": "0b07ecef2cdcb039869623a7d9d303b165fac6d862e365ace7f947d793f1c3c1",
+      "equal_tailed_95": [
+        1.0846347838065413,
+        1.3834440339938738
+      ],
+      "library_warnings": [],
+      "input_samples": {
+        "d": 100000,
+        "r": 100000,
+        "m": 100000,
+        "a": 100000,
+        "w": 100000
+      },
+      "shortest_95": [
+        1.0813528133003274,
+        1.3799734032218112
+      ]
+    },
+    {
+      "engine": "Suncal",
+      "estimate": 1.2338761932778524,
+      "u": 0.07550202714730536,
+      "requested": 400000,
+      "returned": 400000,
+      "nonfinite_returned": 0,
+      "seed": 101,
+      "sample_sha256": "4f6c5da6f60290fb25fda08eb754b7c684e884040955b7967c1b54992aecbefb",
+      "equal_tailed_95": [
+        1.0840733609340532,
+        1.3831671430518326
+      ],
+      "library_warnings": [],
+      "input_samples": {
+        "d": 400000,
+        "r": 400000,
+        "m": 400000,
+        "a": 400000,
+        "w": 400000
+      },
+      "shortest_95": [
+        1.0841941311664414,
+        1.383258756424766
+      ]
+    },
+    {
+      "engine": "Suncal",
+      "estimate": 1.2339968825714658,
+      "u": 0.0755615541519689,
+      "requested": 400000,
+      "returned": 400000,
+      "nonfinite_returned": 0,
+      "seed": 202,
+      "sample_sha256": "cd40676bfe49afdca9351a9886e9d76ed246d2aeb7fd548a9636d2f133afd728",
+      "equal_tailed_95": [
+        1.084357576583716,
+        1.3838809799577574
+      ],
+      "library_warnings": [],
+      "input_samples": {
+        "d": 400000,
+        "r": 400000,
+        "m": 400000,
+        "a": 400000,
+        "w": 400000
+      },
+      "shortest_95": [
+        1.0852419952861965,
+        1.3846857382013695
+      ]
+    },
+    {
+      "engine": "Suncal",
+      "estimate": 1.2339235835797315,
+      "u": 0.07558044841035526,
+      "requested": 400000,
+      "returned": 400000,
+      "nonfinite_returned": 0,
+      "seed": 303,
+      "sample_sha256": "ca78237a3b1b3399f3f5294c9d28114a13d9ca0fea11c1f66825c19136fdfb84",
+      "equal_tailed_95": [
+        1.084161475716246,
+        1.3836515280207093
+      ],
+      "library_warnings": [],
+      "input_samples": {
+        "d": 400000,
+        "r": 400000,
+        "m": 400000,
+        "a": 400000,
+        "w": 400000
+      },
+      "shortest_95": [
+        1.083985269535333,
+        1.3834294163971208
+      ]
+    },
+    {
+      "engine": "mcerp",
+      "estimate": 1.2339836246172753,
+      "u": 0.07568346358328962,
+      "requested": 100000,
+      "returned": 100000,
+      "nonfinite_returned": 0,
+      "seed": 101,
+      "sample_sha256": "5e9616433661851fe723f12c45701692365061bf8e763925bafaba615ef3c34d",
+      "equal_tailed_95": [
+        1.0845687591885507,
+        1.384680807931727
+      ],
+      "input_samples": {
+        "m": 100000,
+        "d": 100000,
+        "a": 100000,
+        "w": 100000,
+        "r": 100000
+      }
+    },
+    {
+      "engine": "mcerp",
+      "estimate": 1.234107334222989,
+      "u": 0.07561256650170409,
+      "requested": 100000,
+      "returned": 100000,
+      "nonfinite_returned": 0,
+      "seed": 202,
+      "sample_sha256": "e36289eba16d9cf3fe844c3b38adba9cc7fa6790e8467ad58726dd737e0b549c",
+      "equal_tailed_95": [
+        1.0845642170072096,
+        1.3851927405074094
+      ],
+      "input_samples": {
+        "m": 100000,
+        "d": 100000,
+        "a": 100000,
+        "w": 100000,
+        "r": 100000
+      }
+    },
+    {
+      "engine": "mcerp",
+      "estimate": 1.2341127927421505,
+      "u": 0.07550581760700037,
+      "requested": 100000,
+      "returned": 100000,
+      "nonfinite_returned": 0,
+      "seed": 303,
+      "sample_sha256": "bedfc665a6a9b4e74f31711a916a849b88a8e504d0aa7f7b1933a3e9872826a2",
+      "equal_tailed_95": [
+        1.0848247197827732,
+        1.3837180673755938
+      ],
+      "input_samples": {
+        "m": 100000,
+        "d": 100000,
+        "a": 100000,
+        "w": 100000,
+        "r": 100000
+      }
+    },
+    {
+      "engine": "mcerp",
+      "estimate": 1.233953272261621,
+      "u": 0.07545260230865906,
+      "requested": 400000,
+      "returned": 400000,
+      "nonfinite_returned": 0,
+      "seed": 101,
+      "sample_sha256": "e1916de75036bd2e7144cdb11080ae28909530c7f549a9473f32be4b1b2797cb",
+      "equal_tailed_95": [
+        1.0847954323999147,
+        1.3836744007843662
+      ],
+      "input_samples": {
+        "m": 400000,
+        "d": 400000,
+        "a": 400000,
+        "w": 400000,
+        "r": 400000
+      }
+    },
+    {
+      "engine": "mcerp",
+      "estimate": 1.2340353205504957,
+      "u": 0.07536351545884215,
+      "requested": 400000,
+      "returned": 400000,
+      "nonfinite_returned": 0,
+      "seed": 202,
+      "sample_sha256": "56c000c0a15a0ef0c824d9767b071e00c6bfdeaee9ca384512b9c97a112122cd",
+      "equal_tailed_95": [
+        1.0845378596288355,
+        1.3830381735784611
+      ],
+      "input_samples": {
+        "m": 400000,
+        "d": 400000,
+        "a": 400000,
+        "w": 400000,
+        "r": 400000
+      }
+    },
+    {
+      "engine": "mcerp",
+      "estimate": 1.2339916670199373,
+      "u": 0.07555120363302281,
+      "requested": 400000,
+      "returned": 400000,
+      "nonfinite_returned": 0,
+      "seed": 303,
+      "sample_sha256": "38495c696b1a23a50f3f93985cfc0102113834632bbfaa09436b1d715fa60556",
+      "equal_tailed_95": [
+        1.0842930851285928,
+        1.3839450091832985
+      ],
+      "input_samples": {
+        "m": 400000,
+        "d": 400000,
+        "a": 400000,
+        "w": 400000,
+        "r": 400000
+      }
+    }
+  ],
+  "fresh_process_replays": [
+    {
+      "python_hash_seed": "0",
+      "results": {
+        "Suncal": {
+          "estimate": 1.2344089955303819,
+          "u": 0.07495369497415903,
+          "requested": 10000,
+          "returned": 10000,
+          "nonfinite_returned": 0,
+          "seed": 101,
+          "sample_sha256": "a9b58ad40fe2578a7dd307313e7f49da913037dd27b5a82f6ebacd611fc4f7ba",
+          "equal_tailed_95": [
+            1.0894020904750505,
+            1.382535959445522
+          ],
+          "library_warnings": [],
+          "input_samples": {
+            "d": 10000,
+            "r": 10000,
+            "m": 10000,
+            "a": 10000,
+            "w": 10000
+          },
+          "shortest_95": [
+            1.0893043673277134,
+            1.3824105588137172
+          ]
+        },
+        "mcerp": {
+          "estimate": 1.2336488265303618,
+          "u": 0.07552458262445944,
+          "requested": 10000,
+          "returned": 10000,
+          "nonfinite_returned": 0,
+          "seed": 101,
+          "sample_sha256": "1caa25ec5a24153ab95345196074d17a471d229362c8db4cd9f1230bc1539a68",
+          "equal_tailed_95": [
+            1.083993398140592,
+            1.3813262466796004
+          ],
+          "input_samples": {
+            "m": 10000,
+            "d": 10000,
+            "a": 10000,
+            "w": 10000,
+            "r": 10000
+          }
+        }
+      }
+    },
+    {
+      "python_hash_seed": "0",
+      "results": {
+        "Suncal": {
+          "estimate": 1.2344089955303819,
+          "u": 0.07495369497415903,
+          "requested": 10000,
+          "returned": 10000,
+          "nonfinite_returned": 0,
+          "seed": 101,
+          "sample_sha256": "a9b58ad40fe2578a7dd307313e7f49da913037dd27b5a82f6ebacd611fc4f7ba",
+          "equal_tailed_95": [
+            1.0894020904750505,
+            1.382535959445522
+          ],
+          "library_warnings": [],
+          "input_samples": {
+            "d": 10000,
+            "r": 10000,
+            "m": 10000,
+            "a": 10000,
+            "w": 10000
+          },
+          "shortest_95": [
+            1.0893043673277134,
+            1.3824105588137172
+          ]
+        },
+        "mcerp": {
+          "estimate": 1.2336488265303618,
+          "u": 0.07552458262445944,
+          "requested": 10000,
+          "returned": 10000,
+          "nonfinite_returned": 0,
+          "seed": 101,
+          "sample_sha256": "1caa25ec5a24153ab95345196074d17a471d229362c8db4cd9f1230bc1539a68",
+          "equal_tailed_95": [
+            1.083993398140592,
+            1.3813262466796004
+          ],
+          "input_samples": {
+            "m": 10000,
+            "d": 10000,
+            "a": 10000,
+            "w": 10000,
+            "r": 10000
+          }
+        }
+      }
+    },
+    {
+      "python_hash_seed": "1",
+      "results": {
+        "Suncal": {
+          "estimate": 1.234365276392689,
+          "u": 0.0746419157766283,
+          "requested": 10000,
+          "returned": 10000,
+          "nonfinite_returned": 0,
+          "seed": 101,
+          "sample_sha256": "5d49fbf4a3cc951adf6f793acfad1653443a2c5094e3cccf40c4162a06dd7720",
+          "equal_tailed_95": [
+            1.087334113857287,
+            1.3835464624389713
+          ],
+          "library_warnings": [],
+          "input_samples": {
+            "d": 10000,
+            "m": 10000,
+            "r": 10000,
+            "a": 10000,
+            "w": 10000
+          },
+          "shortest_95": [
+            1.0835564154258464,
+            1.379800060080015
+          ]
+        },
+        "mcerp": {
+          "estimate": 1.2336488265303618,
+          "u": 0.07552458262445944,
+          "requested": 10000,
+          "returned": 10000,
+          "nonfinite_returned": 0,
+          "seed": 101,
+          "sample_sha256": "1caa25ec5a24153ab95345196074d17a471d229362c8db4cd9f1230bc1539a68",
+          "equal_tailed_95": [
+            1.083993398140592,
+            1.3813262466796004
+          ],
+          "input_samples": {
+            "m": 10000,
+            "d": 10000,
+            "a": 10000,
+            "w": 10000,
+            "r": 10000
+          }
+        }
+      }
+    }
+  ],
+  "raw_failure_probes": [
+    {
+      "name": "GTC/non-PSD",
+      "outcome": "returned",
+      "value": {
+        "estimate": 30.0,
+        "u": 2.7928480087537886
+      },
+      "warnings": []
+    },
+    {
+      "name": "GTC/negative-sd",
+      "outcome": "raised",
+      "exception": "ValueError",
+      "message": "invalid uncertainty: '-1'",
+      "warnings": []
+    },
+    {
+      "name": "GTC/NaN-mean",
+      "outcome": "raised",
+      "exception": "ValueError",
+      "message": "invalid: 'nan'",
+      "warnings": []
+    },
+    {
+      "name": "GTC/perfect-correlation",
+      "outcome": "returned",
+      "value": {
+        "estimate": 0.0,
+        "u": 0.0
+      },
+      "warnings": []
+    },
+    {
+      "name": "uncertainties/non-PSD",
+      "outcome": "returned",
+      "value": {
+        "estimate": 30.0,
+        "u": 2.9776948578836397
+      },
+      "warnings": []
+    },
+    {
+      "name": "uncertainties/negative-sd",
+      "outcome": "raised",
+      "exception": "NegativeStdDev",
+      "message": "The standard deviation cannot be negative",
+      "warnings": []
+    },
+    {
+      "name": "uncertainties/NaN-mean",
+      "outcome": "returned",
+      "value": {
+        "estimate": "nan",
+        "u": "nan"
+      },
+      "warnings": []
+    },
+    {
+      "name": "uncertainties/perfect-correlation",
+      "outcome": "returned",
+      "value": {
+        "estimate": 0.0,
+        "u": 0.0
+      },
+      "warnings": []
+    },
+    {
+      "name": "Suncal/non-PSD",
+      "outcome": "returned",
+      "value": {
+        "estimate": 30.0,
+        "u": 2.7928480087537886
+      },
+      "warnings": []
+    },
+    {
+      "name": "Suncal/negative-sd",
+      "outcome": "returned",
+      "value": 1e-99,
+      "warnings": []
+    },
+    {
+      "name": "Suncal/NaN-mean",
+      "outcome": "returned",
+      "value": {
+        "estimate": "nan",
+        "u": "nan"
+      },
+      "warnings": [
+        "Mean of empty slice"
+      ]
+    },
+    {
+      "name": "Suncal/perfect-correlation",
+      "outcome": "returned",
+      "value": {
+        "estimate": 0.0,
+        "u": 0.0
+      },
+      "warnings": []
+    },
+    {
+      "name": "Suncal/sample-non-PSD",
+      "outcome": "raised",
+      "exception": "ValueError",
+      "message": "The input matrix must be symmetric positive semidefinite.",
+      "warnings": []
+    },
+    {
+      "name": "Suncal/sample-perfect-correlation",
+      "outcome": "returned",
+      "value": {
+        "estimate": -2.9432543547228265e-11,
+        "u": 5.384955682842487e-09,
+        "requested": 10000,
+        "returned": 10000,
+        "nonfinite_returned": 0,
+        "seed": 101,
+        "sample_sha256": "dd842b821663875ec499e78ff0a03fe86cf3e53fbb36169c57f5ed6fa485fcea",
+        "equal_tailed_95": [
+          -1.0498203273368034e-08,
+          1.0618164089301602e-08
+        ],
+        "library_warnings": [],
+        "input_samples": {
+          "y": 10000,
+          "x": 10000
+        },
+        "shortest_95": [
+          -1.0955060414374884e-08,
+          1.0067888189801977e-08
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "name": "Suncal/invalid-domain",
+      "outcome": "returned",
+      "value": {
+        "estimate": 0.834098227677046,
+        "u": 0.3502517366990252,
+        "requested": 10000,
+        "returned": 5032,
+        "nonfinite_returned": 0,
+        "seed": 101,
+        "sample_sha256": "ae24d219d484e0d6e3b8838497265a07eb54e32caa00852b037013995679c662",
+        "equal_tailed_95": [
+          0.18631263532504588,
+          1.4978488409043735
+        ],
+        "library_warnings": [
+          "Some Monte-Carlo samples in f are NaN. Ignoring in statistics."
+        ],
+        "input_samples": {
+          "x": 10000
+        },
+        "shortest_95": [
+          0.17515355799378712,
+          1.4771554436188028
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "name": "mcerp/sample-non-PSD",
+      "outcome": "raised",
+      "exception": "IndexError",
+      "message": "index 10000 is out of bounds for axis 0 with size 10000",
+      "warnings": []
+    },
+    {
+      "name": "mcerp/sample-perfect-correlation",
+      "outcome": "returned",
+      "value": {
+        "estimate": 5.400231715704615e-05,
+        "u": 0.00481395221239701,
+        "requested": 10000,
+        "returned": 10000,
+        "nonfinite_returned": 0,
+        "seed": 101,
+        "sample_sha256": "894290bc8134d0650dfdd833f8b1873f9795fe5147e4fc8a0fb3229010417dbd",
+        "equal_tailed_95": [
+          -0.0005835042881164376,
+          0.0006345958429404049
+        ],
+        "input_samples": {
+          "x": 10000,
+          "y": 10000
+        },
+        "observed_input_correlation": [
+          [
+            1.0,
+            0.9999884179922448
+          ],
+          [
+            0.9999884179922449,
+            0.9999999999999998
+          ]
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "name": "mcerp/invalid-domain",
+      "outcome": "returned",
+      "value": {
+        "estimate": "nan",
+        "u": "nan",
+        "requested": 10000,
+        "returned": 10000,
+        "nonfinite_returned": 5000,
+        "seed": 101,
+        "sample_sha256": "f98dc10df76ff06a68b17cbaad0eb42cfddb9f17380a3b646f0b81fb275b0001",
+        "equal_tailed_95": null,
+        "input_samples": {
+          "x": 10000
+        }
+      },
+      "warnings": []
+    },
+    {
+      "name": "uncertainties/non-PSD-reconstructed-covariance",
+      "outcome": "returned",
+      "value": [
+        [
+          1.2666666666666666,
+          0.6333333333333335,
+          0.6333333333333334
+        ],
+        [
+          0.6333333333333335,
+          1.2666666666666673,
+          -0.6333333333333332
+        ],
+        [
+          0.6333333333333334,
+          -0.6333333333333332,
+          1.2666666666666662
+        ]
+      ],
+      "warnings": []
+    }
+  ],
+  "checks": [
+    {
+      "name": "GTC/independent/first-order",
+      "passed": true,
+      "reference": [
+        50.0,
+        4.123105625617661
+      ]
+    },
+    {
+      "name": "uncertainties/independent/first-order",
+      "passed": true,
+      "reference": [
+        50.0,
+        4.123105625617661
+      ]
+    },
+    {
+      "name": "Suncal/independent/first-order",
+      "passed": true,
+      "reference": [
+        50.0,
+        4.123105625617661
+      ]
+    },
+    {
+      "name": "Suncal/independent/sampled-moments",
+      "passed": true,
+      "reference": [
+        50.0,
+        4.123105625617661
+      ],
+      "absolute_tolerance": [
+        0.1,
+        0.06
+      ]
+    },
+    {
+      "name": "Suncal/independent/sample-accounting",
+      "passed": true
+    },
+    {
+      "name": "mcerp/independent/sampled-moments",
+      "passed": true,
+      "reference": [
+        50.0,
+        4.123105625617661
+      ],
+      "absolute_tolerance": [
+        0.1,
+        0.06
+      ]
+    },
+    {
+      "name": "mcerp/independent/sample-accounting",
+      "passed": true
+    },
+    {
+      "name": "GTC/positive-correlation/first-order",
+      "passed": true,
+      "reference": [
+        50.0,
+        4.795831523312719
+      ]
+    },
+    {
+      "name": "uncertainties/positive-correlation/first-order",
+      "passed": true,
+      "reference": [
+        50.0,
+        4.795831523312719
+      ]
+    },
+    {
+      "name": "Suncal/positive-correlation/first-order",
+      "passed": true,
+      "reference": [
+        50.0,
+        4.795831523312719
+      ]
+    },
+    {
+      "name": "Suncal/positive-correlation/sampled-moments",
+      "passed": true,
+      "reference": [
+        50.0,
+        4.795831523312719
+      ],
+      "absolute_tolerance": [
+        0.1,
+        0.06
+      ]
+    },
+    {
+      "name": "Suncal/positive-correlation/sample-accounting",
+      "passed": true
+    },
+    {
+      "name": "mcerp/positive-correlation/sampled-moments",
+      "passed": true,
+      "reference": [
+        50.0,
+        4.795831523312719
+      ],
+      "absolute_tolerance": [
+        0.1,
+        0.06
+      ]
+    },
+    {
+      "name": "mcerp/positive-correlation/sample-accounting",
+      "passed": true
+    },
+    {
+      "name": "GTC/negative-correlation/first-order",
+      "passed": true,
+      "reference": [
+        50.0,
+        3.3166247903554
+      ]
+    },
+    {
+      "name": "uncertainties/negative-correlation/first-order",
+      "passed": true,
+      "reference": [
+        50.0,
+        3.3166247903554
+      ]
+    },
+    {
+      "name": "Suncal/negative-correlation/first-order",
+      "passed": true,
+      "reference": [
+        50.0,
+        3.3166247903554
+      ]
+    },
+    {
+      "name": "Suncal/negative-correlation/sampled-moments",
+      "passed": true,
+      "reference": [
+        50.0,
+        3.3166247903554
+      ],
+      "absolute_tolerance": [
+        0.1,
+        0.06
+      ]
+    },
+    {
+      "name": "Suncal/negative-correlation/sample-accounting",
+      "passed": true
+    },
+    {
+      "name": "mcerp/negative-correlation/sampled-moments",
+      "passed": true,
+      "reference": [
+        50.0,
+        3.3166247903554
+      ],
+      "absolute_tolerance": [
+        0.1,
+        0.06
+      ]
+    },
+    {
+      "name": "mcerp/negative-correlation/sample-accounting",
+      "passed": true
+    },
+    {
+      "name": "GTC/shared-cancellation/first-order",
+      "passed": true,
+      "reference": [
+        -10.0,
+        2.23606797749979
+      ]
+    },
+    {
+      "name": "uncertainties/shared-cancellation/first-order",
+      "passed": true,
+      "reference": [
+        -10.0,
+        2.23606797749979
+      ]
+    },
+    {
+      "name": "Suncal/shared-cancellation/first-order",
+      "passed": true,
+      "reference": [
+        -10.0,
+        2.23606797749979
+      ]
+    },
+    {
+      "name": "Suncal/shared-cancellation/sampled-moments",
+      "passed": true,
+      "reference": [
+        -10.0,
+        2.23606797749979
+      ],
+      "absolute_tolerance": [
+        0.1,
+        0.06
+      ]
+    },
+    {
+      "name": "Suncal/shared-cancellation/sample-accounting",
+      "passed": true
+    },
+    {
+      "name": "mcerp/shared-cancellation/sampled-moments",
+      "passed": true,
+      "reference": [
+        -10.0,
+        2.23606797749979
+      ],
+      "absolute_tolerance": [
+        0.1,
+        0.06
+      ]
+    },
+    {
+      "name": "mcerp/shared-cancellation/sample-accounting",
+      "passed": true
+    },
+    {
+      "name": "GTC/square-at-zero/first-order",
+      "passed": true,
+      "reference": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "uncertainties/square-at-zero/first-order",
+      "passed": true,
+      "reference": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Suncal/square-at-zero/first-order",
+      "passed": true,
+      "reference": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Suncal/square-at-zero/sampled-moments",
+      "passed": true,
+      "reference": [
+        1.0,
+        1.4142135623730951
+      ],
+      "absolute_tolerance": [
+        0.03,
+        0.04
+      ]
+    },
+    {
+      "name": "Suncal/square-at-zero/sample-accounting",
+      "passed": true
+    },
+    {
+      "name": "Suncal/chi-square-interval",
+      "passed": true
+    },
+    {
+      "name": "mcerp/square-at-zero/sampled-moments",
+      "passed": true,
+      "reference": [
+        1.0,
+        1.4142135623730951
+      ],
+      "absolute_tolerance": [
+        0.03,
+        0.04
+      ]
+    },
+    {
+      "name": "mcerp/square-at-zero/sample-accounting",
+      "passed": true
+    },
+    {
+      "name": "mcerp/chi-square-interval",
+      "passed": true
+    },
+    {
+      "name": "GTC/mass-calibration/first-order",
+      "passed": true,
+      "reference": [
+        1.234,
+        0.05385164807134505
+      ]
+    },
+    {
+      "name": "uncertainties/mass-calibration/first-order",
+      "passed": true,
+      "reference": [
+        1.234,
+        0.05385164807134505
+      ]
+    },
+    {
+      "name": "Suncal/mass-calibration/first-order",
+      "passed": true,
+      "reference": [
+        1.234,
+        0.05385164807134505
+      ]
+    },
+    {
+      "name": "Suncal/mass-calibration/sampled-moments",
+      "passed": true,
+      "reference": [
+        1.2341,
+        0.0754
+      ],
+      "absolute_tolerance": [
+        0.001,
+        0.001
+      ]
+    },
+    {
+      "name": "Suncal/mass-calibration/sample-accounting",
+      "passed": true
+    },
+    {
+      "name": "mcerp/mass-calibration/sampled-moments",
+      "passed": true,
+      "reference": [
+        1.2341,
+        0.0754
+      ],
+      "absolute_tolerance": [
+        0.001,
+        0.001
+      ]
+    },
+    {
+      "name": "mcerp/mass-calibration/sample-accounting",
+      "passed": true
+    },
+    {
+      "name": "GTC/GUM-H2-0/jacobian",
+      "passed": true,
+      "reference_u": 0.06997872798837175
+    },
+    {
+      "name": "GTC/GUM-H2-1/jacobian",
+      "passed": true,
+      "reference_u": 0.2957168268461236
+    },
+    {
+      "name": "GTC/GUM-H2-2/jacobian",
+      "passed": true,
+      "reference_u": 0.23660297183529755
+    },
+    {
+      "name": "uncertainties/GUM-H2-0/jacobian",
+      "passed": true,
+      "reference_u": 0.06997872798837175
+    },
+    {
+      "name": "uncertainties/GUM-H2-1/jacobian",
+      "passed": true,
+      "reference_u": 0.2957168268461236
+    },
+    {
+      "name": "uncertainties/GUM-H2-2/jacobian",
+      "passed": true,
+      "reference_u": 0.23660297183529755
+    },
+    {
+      "name": "Suncal/GUM-H2-0/jacobian",
+      "passed": true,
+      "reference_u": 0.06997872798837175
+    },
+    {
+      "name": "Suncal/GUM-H2-1/jacobian",
+      "passed": true,
+      "reference_u": 0.2957168268461236
+    },
+    {
+      "name": "Suncal/GUM-H2-2/jacobian",
+      "passed": true,
+      "reference_u": 0.23660297183529755
+    },
+    {
+      "name": "GTC/effective-df-independent",
+      "passed": true,
+      "actual": 21.273783900129143,
+      "reference": 21.273783900129146
+    },
+    {
+      "name": "GTC/coverage-factor-independent",
+      "passed": true,
+      "actual": 2.0779854138191536
+    },
+    {
+      "name": "Suncal/mass-stability/100000/101",
+      "passed": true
+    },
+    {
+      "name": "Suncal/mass-stability/100000/202",
+      "passed": true
+    },
+    {
+      "name": "Suncal/mass-stability/100000/303",
+      "passed": true
+    },
+    {
+      "name": "Suncal/mass-stability/400000/101",
+      "passed": true
+    },
+    {
+      "name": "Suncal/mass-stability/400000/202",
+      "passed": true
+    },
+    {
+      "name": "Suncal/mass-stability/400000/303",
+      "passed": true
+    },
+    {
+      "name": "Suncal/repeat-seed",
+      "passed": true
+    },
+    {
+      "name": "Suncal/different-seed",
+      "passed": true
+    },
+    {
+      "name": "mcerp/mass-stability/100000/101",
+      "passed": true
+    },
+    {
+      "name": "mcerp/mass-stability/100000/202",
+      "passed": true
+    },
+    {
+      "name": "mcerp/mass-stability/100000/303",
+      "passed": true
+    },
+    {
+      "name": "mcerp/mass-stability/400000/101",
+      "passed": true
+    },
+    {
+      "name": "mcerp/mass-stability/400000/202",
+      "passed": true
+    },
+    {
+      "name": "mcerp/mass-stability/400000/303",
+      "passed": true
+    },
+    {
+      "name": "mcerp/repeat-seed",
+      "passed": true
+    },
+    {
+      "name": "mcerp/different-seed",
+      "passed": true
+    },
+    {
+      "name": "Suncal/fresh-process-replay",
+      "passed": true
+    },
+    {
+      "name": "mcerp/fresh-process-replay",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "failed_checks": [],
+  "limitations": [
+    "No editor integration, cancellation, journal, migration or omission qualification.",
+    "Fixed seeds and thresholds do not certify adaptive convergence or arbitrary joint distributions.",
+    "First-order square-at-zero result is an applicability failure, not an arithmetic defect.",
+    "MC equal-tailed intervals must not be compared to published shortest intervals.",
+    "Raw failure probes record library behavior; they are not passing adapter safety checks."
+  ]
+}

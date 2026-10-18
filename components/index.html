@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
     </nav>
   </div>
 </header>
-<div class="docs"><nav class="docs-nav" aria-label="Site sections"><button class="docs-fold" type="button" data-fold="nav" aria-label="Hide navigation">‹</button><button type="button" class="mobile-nav-toggle" aria-expanded="true" aria-controls="nav-sections">Hide site sections</button><div id="nav-sections"><details class="group" open=""><summary class="t">Overview</summary><ul><li><a href="../index.html">Overview</a></li><li><a href="../brief/index.html">Brief</a></li><li><a href="../assessment/index.html">Assessment</a></li></ul></details><details class="group" open=""><summary class="t">Study</summary><ul><li><a href="../map/index.html">Workbench map</a></li><li><a href="../architecture/index.html">Assembly and dependencies</a></li><li><a href="../alternatives/index.html">Alternatives</a></li><li><a href="../sources/index.html">Sources</a></li></ul></details><details class="group" open=""><summary class="t">Construction</summary><ul><li><a href="../design/index.html">Template and skill</a></li><li><a href="../offers/index.html">Optional capabilities</a></li><li><a href="../components/index.html">Reusable components</a></li><li><a href="../linked-editor/index.html">Linked data editor</a></li><li><a href="../publication/index.html">Publication figures</a></li><li><a href="../fitting/index.html">Fitting linked data</a></li><li><a href="../history/index.html">Action journal</a></li><li><a href="../roadmap/index.html">Roadmap</a></li><li><a href="../ideas/index.html">Ideas</a></li><li><a href="../manual/index.html">Manual</a></li></ul></details><details class="group" open=""><summary class="t">Record</summary><ul><li><a href="../about/index.html">Method</a></li><li><a href="../log/index.html">Log</a></li><li><a href="../releases/index.html">Release status</a></li></ul></details></div></nav><div class="docs-main">
+<div class="docs"><nav class="docs-nav" aria-label="Site sections"><button class="docs-fold" type="button" data-fold="nav" aria-label="Hide navigation">‹</button><button type="button" class="mobile-nav-toggle" aria-expanded="true" aria-controls="nav-sections">Hide site sections</button><div id="nav-sections"><details class="group" open=""><summary class="t">Overview</summary><ul><li><a href="../index.html">Overview</a></li><li><a href="../brief/index.html">Brief</a></li><li><a href="../assessment/index.html">Assessment</a></li></ul></details><details class="group" open=""><summary class="t">Study</summary><ul><li><a href="../map/index.html">Workbench map</a></li><li><a href="../architecture/index.html">Assembly and dependencies</a></li><li><a href="../alternatives/index.html">Alternatives</a></li><li><a href="../sources/index.html">Sources</a></li></ul></details><details class="group" open=""><summary class="t">Construction</summary><ul><li><a href="../design/index.html">Template and skill</a></li><li><a href="../offers/index.html">Optional capabilities</a></li><li><a href="../components/index.html">Reusable components</a></li><li><a href="../linked-editor/index.html">Linked data editor</a></li><li><a href="../publication/index.html">Publication figures</a></li><li><a href="../fitting/index.html">Fitting linked data</a></li><li><a href="../uncertainty/index.html">Uncertainty engines</a></li><li><a href="../history/index.html">Action journal</a></li><li><a href="../roadmap/index.html">Roadmap</a></li><li><a href="../ideas/index.html">Ideas</a></li><li><a href="../manual/index.html">Manual</a></li></ul></details><details class="group" open=""><summary class="t">Record</summary><ul><li><a href="../about/index.html">Method</a></li><li><a href="../log/index.html">Log</a></li><li><a href="../releases/index.html">Release status</a></li></ul></details></div></nav><div class="docs-main">
 
 <header id="title-block-header">
 <h1 class="title">Reuse components, compose capabilities</h1>
@@ -173,8 +173,8 @@ document.addEventListener("DOMContentLoaded", function () {
 </tr>
 <tr class="odd">
 <td>Monte Carlo propagation</td>
-<td><a href="https://numpy.org/doc/stable/reference/random/generator.html">NumPy random generators</a> and numerical model adapters</td>
-<td>Reuse sampling/numerical primitives. The measurement-specific joint distributions, convergence criteria and reporting contract still need to be implemented and tested.</td>
+<td><a href="https://sandialabs.github.io/suncal/">Suncal</a> and <a href="https://eggzec.github.io/mcerp/">mcerp</a></td>
+<td>Existing propagation engines now pass bounded reference checks. Joint distributions, invalid draws, convergence and editor contracts still need qualification.</td>
 </tr>
 <tr class="even">
 <td>Publication figures and reports</td>
@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <p>The standards register starts with the <a href="https://www.bipm.org/en/committees/jc/jcgm/publications">BIPM JCGM publications</a>: GUM 100, its 2026 amendment on nonlinearity, Supplement 1 (JCGM 101) for Monte Carlo propagation, Supplement 2 for multiple outputs, and the guidance on developing measurement models. The 2026 amendment explicitly addresses nonlinearity; a library's name alone cannot establish that all these cases are covered.</p>
 <p>Proposed qualification requirements:</p>
 <ul><li><strong>Inputs:</strong> defined measurand and model, units, estimates, standard uncertainties or distributions, correlation/dependence information and provenance. Shared calibration effects must not be treated as independent noise for each point.</li><li><strong>GUM adapter:</strong> a documented propagation method, sensitivity information, covariance handling, uncertainty budget and appropriate coverage treatment. Do not assume a universal coverage factor of two.</li><li><strong>Monte Carlo adapter:</strong> sample the specified joint inputs; record the generator, seed, numerical environment, trials, convergence checks, invalid model evaluations and interval convention. The number of draws alone does not demonstrate accuracy.</li><li><strong>Validation:</strong> compare with analytical cases and published reference examples; include correlated inputs, nonlinear models, degenerate covariance and failed fits. A production adapter must state its qualified scope.</li></ul>
-<p>The optional SciPy adapter now supplies two fitting models. GUM and Monte Carlo remain researched design candidates. The experiment's asynchronous mean only tests that a dependent calculation follows a data revision. Its scalar yerr column is deliberately insufficient for a general uncertainty model.</p>
+<p>The optional SciPy adapter now supplies two fitting models. Four GUM and sampling candidates now have a <a href="../uncertainty/index.html">bounded numerical and failure audit</a>; generated-editor integration remains open. The experiment's asynchronous mean only tests that a dependent calculation follows a data revision. Its scalar yerr column is deliberately insufficient for a general uncertainty model.</p>
 <h2 id="adoption" class="anchored">Adoption audit before implementation</h2>
 <p>The user's explicit <a href="../brief/index.html#R20">R20</a> makes this the entry condition for each new capability: search, inspect, test a bounded example, then decide whether to adopt a whole component, reuse selected parts, adapt an existing system, or implement a missing piece. Innovation should address an evidenced limitation, with a comparison against the existing option.</p>
 <div class="table-wrap">
@@ -249,14 +249,19 @@ document.addEventListener("DOMContentLoaded", function () {
 <td>Adopt the solver with the bounded <a href="../fitting/index.html">fitting adapter</a>.</td>
 </tr>
 <tr class="even">
-<td>lmfit / GTC / uncertainties</td>
-<td>Primary API documentation reviewed; no project numerical qualification yet.</td>
-<td>Remain candidates; require separate reference and integration checks.</td>
+<td>GTC / uncertainties / Suncal / mcerp</td>
+<td>Four pinned libraries tested: 73 numerical checks and 19 raw failure probes.</td>
+<td><a href="../uncertainty/index.html">Prefer GTC for the next bounded integration</a>; sampling and host admission remain open.</td>
 </tr>
 <tr class="odd">
+<td>lmfit</td>
+<td>Primary API documentation reviewed.</td>
+<td>Candidate; no project numerical or host qualification.</td>
+</tr>
+<tr class="even">
 <td><a href="https://www.metas.ch/UncLib">METAS UncLib</a></td>
-<td>Official indexed documentation describes uncertainty methods and a redistribution restriction; full-page retrieval timed out.</td>
-<td>Retain as a methodological/external-tool candidate. Bundling is not approved; verify exact distribution terms before any integration decision.</td>
+<td>The official 2.9 EULA restricts redistribution. Full text was reviewed; subsequent direct downloads failed. No runtime was tested.</td>
+<td>Exclude from bundled constructor candidates; retain as an external-tool study. This is a distribution gate, not a numerical failure.</td>
 </tr>
 </tbody>
 </table>

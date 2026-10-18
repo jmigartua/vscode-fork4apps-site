@@ -1,0 +1,491 @@
+{
+  "checked": "2026-10-18",
+  "candidate_records": [
+    {
+      "name": "GTC",
+      "version": "1.5.1",
+      "release": "2024-06-24T02:29:26.092707Z",
+      "project_urls": {
+        "Homepage": "https://github.com/MSLNZ/GTC"
+      },
+      "license_label": "MIT",
+      "installed_file_sha256": {
+        "GTC-1.5.1.dist-info/LICENSE": "f859182f47f0ea288d6ceb2750f197760db0d062d56d548aa2068ba80843f648",
+        "GTC/LU.py": "25a1ca2e9717f7aa95eb0241518de46e08492032341cdbf03d18ecb18087b52c",
+        "GTC/__init__.py": "6bac015f9413b8d628b18fb3071395d45e2c8d1a908b1131e2de22f2748f75a7",
+        "GTC/archive.py": "b369c6c6bf9f3d1999ff591758966a025e194648cde750442468158994433632",
+        "GTC/archive_old.py": "2f06ad434951c38ef5851d07499ba0c0ef7bfc623fa993e605d4ae5cf82bc34f",
+        "GTC/context.py": "b27660b6541c063ec715d6c9957852acecb696b116a37fe7f46064d756f13d0c",
+        "GTC/core.py": "e03b23905bd131ae4955ceb396b298906f71c1eebfed413a0bb73b19830f05a6",
+        "GTC/deprecated.py": "6a3311b017ea61d0a8b0ec176dfbf75f5f97caee2505e86d07f91a05a2b9594d",
+        "GTC/formatting.py": "ca898c38fd17dd3dffcf4ef1e7859c8adf5044533cdf9db9ebb23759051ec0a7",
+        "GTC/function.py": "7c30e8905946ff770a4206f57e0f0920499999a0dc0369782f59bebbf6bb4583",
+        "GTC/json_format.py": "ba19384365eb230e245bcfcebefa5e3144a5e91c521ae89dc76f64a7a7878e2f",
+        "GTC/json_format_old.py": "461cefd9cc38dd91b0deb2f72ca36f7abeb5c0b032e8523d71471c3aa0b81470",
+        "GTC/lib.py": "443028b59119228605d8b1ca59db3f6579993ab8d4b768f1a419e3a484f1ac5b",
+        "GTC/linear_algebra.py": "6828d53cfec9120b8cfb170c96622da7c91d1a9dbf8df0dc71407be3104a86ae",
+        "GTC/named_tuples.py": "54836756fbaa33b3ebc19c4136ad9a225b590ea6fbee8adc5d76221415a66839",
+        "GTC/nodes.py": "485e4bae5caf9bd15588b23a006525d3daee21b6aaccb0d45f56f16c3be767b4",
+        "GTC/persistence.py": "52c011bfe3adf645f5d6f1d46cfe1698193e08b49af79db2d793408be0e79685",
+        "GTC/reporting.py": "7886511e8813afe1f97ce9c56e8ce938f0f3d9a95ca7281bbe38878503ac451e",
+        "GTC/type_a.py": "0fa05fc0d0dd7173219b7adf5819ffac6d23fbf816be44bd205d4c0f8ace70da",
+        "GTC/type_b.py": "68747ee04c69a6d012fe54d7e2602ce4641021666e3e3b92c559281e9ff0992b",
+        "GTC/uncertain_array.py": "c1aafa0ede105daff35f058417e665fc6511d467a58c5247212ec17cbbf772df",
+        "GTC/vector.py": "a97d44abf727449e99c83a364c3464d426d1391b891296ecebc226684719bde4",
+        "GTC/xml_format.py": "6b771fab0672b52e8a72e2e22b632e9d685cb35e487082895e2466e484e6500e"
+      }
+    },
+    {
+      "name": "uncertainties",
+      "version": "3.2.3",
+      "release": "2025-04-21T19:58:26.864888Z",
+      "project_urls": {
+        "Changelog": "https://github.com/lmfit/uncertainties/blob/master/CHANGES.rst",
+        "Documentation": "https://uncertainties.readthedocs.io/",
+        "Issues": "https://github.com/lmfit/uncertainties/issues",
+        "Repository": "https://github.com/lmfit/uncertainties"
+      },
+      "license_label": "Revised BSD License",
+      "installed_file_sha256": {
+        "uncertainties-3.2.3.dist-info/licenses/LICENSE.txt": "607252657d1d0a066e035c00902555a211dc8d34b785b1f4774e926034b747c9",
+        "uncertainties/__init__.py": "b3f6c6f4af7abf194d9c653c0989c4be742fd9e2a7bb044da29d3f43eb736dd5",
+        "uncertainties/core.py": "5eae211bc850fb3718991fcff0c1907aaf33c1f749b0bf86355b813fc9ee7f86",
+        "uncertainties/formatting.py": "20164bf19ab9dbbf659efe731a0e84d5468c20a4f7e46cfc475247a5b0cc20d9",
+        "uncertainties/ops.py": "8ff9c7b8e7b35be0eb743c2a15b5b7340a2b04d2446ed84345c119e0cd401cb6",
+        "uncertainties/parsing.py": "31381a704155d7a5de077c98e3c394bc5f1fc593aa4a28bfdfb992b90696b595",
+        "uncertainties/umath.py": "7c268baf6247cd58fcb67e7957183d8d8de1df40556b4cf68ae79ee4ce2956ea",
+        "uncertainties/umath_core.py": "013b192a4926859b555d804c1b2a85405a87282885739c3a1810afca08be2bc0",
+        "uncertainties/unumpy/__init__.py": "ee939fab6e743710fb06695b742bbc6fac1d6f7ab203df1afacfcfb1c896919f",
+        "uncertainties/unumpy/core.py": "05f766089ebcb5f76d3c97c55581406131bb9c48cd9724eb90c37a44d071d253",
+        "uncertainties/unumpy/ulinalg.py": "7002e44eb543617e7bd54c303a2077e8e51d729fa2fae275c0c292332abf1e8d",
+        "uncertainties/version.py": "3fd9fceb2a83423e2ec43aaf7082869495ac03d619ec6d414ae11736a54009e2"
+      }
+    },
+    {
+      "name": "suncal",
+      "version": "1.7.1",
+      "release": "2026-07-11T21:49:50.625931Z",
+      "project_urls": {
+        "Documentation": "https://sandialabs.github.io/suncal/",
+        "Homepage": "https://sandialabs.github.io/suncal/",
+        "Source Code": "https://github.com/sandialabs/suncal"
+      },
+      "license_label": "GNU General Public License v3 (GPLv3)",
+      "installed_file_sha256": {
+        "suncal-1.7.1.dist-info/licenses/LICENSE": "3237699d9e6781c85877365abd9493ca132a0fd31f43e1a3278b8e75f3654af4",
+        "suncal/__init__.py": "375a81e1f6228da2cc55254405a17e86d91b5483a1d1ce13b654d676cb316def",
+        "suncal/__main__.py": "fbafe3212087477749ad91cd2c61e6fb56ed0f6d4d8bfbffea7f9e5546aac4c0",
+        "suncal/common/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "suncal/common/distributions.py": "fbd189cec6c1195e0178a338a0133872c7ea223f5a115d4a2ade12a4990e5198",
+        "suncal/common/limit.py": "3d2278b1f81cd2c4011c75055d4c68b58ea53a0e3e3983869b6fabe08c206557",
+        "suncal/common/matrix.py": "6cf1f13b96c0beb4563713664fd4c48095dc0df7caaf603f790cc63456ffd72d",
+        "suncal/common/multivariate_t.py": "2bb4349e3a06618d0dd192da04f11ae976c4377f0fc489d0a002c6a7cf792f46",
+        "suncal/common/plotting.py": "d34057cfe9f798f24dca4499b64568d7625fe1cd9433f188e5b7966e6252d5ab",
+        "suncal/common/report.py": "b0f2f5af04af365c2e855d1f4ac2ab13a353b0e5b4821f831a2be51def982428",
+        "suncal/common/reporter.py": "6348cac7ed3bb54044558ceea666ed97ff8378630dda6770992d19f49ba62b6e",
+        "suncal/common/style/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "suncal/common/style/css.py": "c4af8afe01405eace8f71e7624d040fd9a8c5c6adb32507799b972f180dc1d6e",
+        "suncal/common/style/latexchars.py": "dae8b00d6d461f63718a16cb1a5d2c9bbd7b309d12f0c9c18e33da9c030eea5d",
+        "suncal/common/ttable.py": "b8e09651c21eb9ea43dff7db43f93fec3c3a32a59c2424b6295fa4b2ddaeaf71",
+        "suncal/common/unitmgr.py": "acde89e89073ad82de850157a86859d2cec00c2abc78cd01774c687440213fed",
+        "suncal/common/uparser.py": "6fe83e480d9c088dbabe57f079caf780d11a8bf70a3e490efbfd7235dd48d0bc",
+        "suncal/curvefit/__init__.py": "458c8411d06988b7adcc5c03050e376aab6af50695ff4db99dee76515c2067ee",
+        "suncal/curvefit/curvefit.py": "c0720e29721c6144208ffa3b51b3e3a9358f862198bdd0c28f3e91ef051dc272",
+        "suncal/curvefit/curvefit_model.py": "efba4b0665239f46eabb990cf33664f77b532b1411c0aafafd04e6500f65c124",
+        "suncal/curvefit/fitparse.py": "80091c3cb9917085b9b7d19125056d3abc972c7040017ef40fc522464f7fecbf",
+        "suncal/curvefit/report/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "suncal/curvefit/report/curvefit.py": "7622adb56ec820948f2e702c7b8943754fe0cc10a642cd650566082ad8034cd3",
+        "suncal/curvefit/report/wave.py": "7cceb1abf01e168f1c07c2d3d163076184a372504100066f4573686b510b6e07",
+        "suncal/curvefit/results/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "suncal/curvefit/results/curvefit.py": "79bbae90defe9520676b242e593ccbd51096bf9ede6646396febce612adc2c56",
+        "suncal/curvefit/uncertarray.py": "9d3d056c5896b4785fa5fd8483e22a0a4a0f21f0fe2eae824b1bdc5d13ab0d21",
+        "suncal/curvefit/waveform/__init__.py": "379d988051dd5ef5695866d8b85e1ada4091c8c9e2068a9037b986bea71971fa",
+        "suncal/curvefit/waveform/extrema.py": "8d109f69aa5b2b765c392df1bf7469f9b9f98d52a853f7d6384d1c0fcb620ef1",
+        "suncal/curvefit/waveform/pulse.py": "7d14bdac55723be3c76b3c06300288b5bb3c653594b4d0e9a00a62a5814ebace",
+        "suncal/curvefit/waveform/threshold.py": "eee76faee75682d15a2d4269de9c762caff707461e6ec67f9876247d43f4ee9b",
+        "suncal/datasets/__init__.py": "2963b56075b532d53390ac9ad05bc5f4db792dcecf1e1c30f102adfcf1d22f90",
+        "suncal/datasets/dataset.py": "2a9332641d47bb27a2ff35315d1f57c9f74aead74e3bf83774110032e891ca8c",
+        "suncal/datasets/dataset_model.py": "e12d9d5c000db4a9b82232723744186e02097d423974045fdf6c8cfab5bdcd3a",
+        "suncal/datasets/report/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "suncal/datasets/report/dataset.py": "16e4596dfc9b45690e15182a4d85bbd4c1ab2a091d654a69ce8eac58b2bf6156",
+        "suncal/distexplore/__init__.py": "d250d75dfb292fff2c7b4c7edcf3f212dc523600204ad2d240e3541c134c46be",
+        "suncal/distexplore/dist_explore.py": "2675315deea6e842fd9f15e60ff84d3e5dfbc6af829ad0c7799036d706dc15a5",
+        "suncal/distexplore/report/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "suncal/distexplore/report/dist_explore.py": "c02a22dca5e7adf2aa34803377e95f1f9daceece515a1fb36b305ffb5388f209",
+        "suncal/gui/__init__.py": "adf40326c8f1a9407aea9d4a773ea413ed1515bc24570519a1421185a63dce82",
+        "suncal/gui/__main__.py": "0ecf0bc4c76e5b785d35ec61fc30e831deeef726506f15bcbc0111e602fa3a4e",
+        "suncal/gui/__pycache__/gen_licenses.cpython-312.pyc": "0cd0892c8401336c9a2de54a94f5bbd145219198663306144bfb5a25e45ec6b4",
+        "suncal/gui/__pycache__/licenses.cpython-312.pyc": "d48559a212c0c1ca622f6cf6551f7386887c4057b959bac1c7fea8712bb59396",
+        "suncal/gui/delegates.py": "3c028f71831d708c5621eb581c80c1504b3637579f81e123ad3f9e0a9d2a1e92",
+        "suncal/gui/gen_licenses.py": "3888852abdc465130db16834d58aff67d750ddab556ec1581a15ebef1ffab759",
+        "suncal/gui/gui_common.py": "cbda2f608fc2b0df375b181042240e7a971315c53b8dfb26d38e43a337db2dd7",
+        "suncal/gui/gui_main.py": "f306d778449f20c92ea05f32c167452f07a666a0854e0352fc5c4c2069fc86e6",
+        "suncal/gui/gui_math.py": "6c3f9abe901e9bc2df592aaadb91d23040098cdfc2fe1e6be930464080f9d9f4",
+        "suncal/gui/gui_settings.py": "b9fed16ae6cbccfbed727f6ce8fd908492ab90555b3bab8f2ef3060e73b1f0d9",
+        "suncal/gui/gui_styles.py": "08b973ce5216d84051ffa5c3a229becdb542cc16730ed4c2ca6cf8412a5cfe8f",
+        "suncal/gui/help_strings/__init__.py": "47cc4332fab81711c301bbb82ebadf2dd0c874ca49df56f5a4ee79fd6b563d33",
+        "suncal/gui/help_strings/anova_help.py": "bdff725d3db3f0396be11284819b7e824599331f3bb28cc30374af0823111690",
+        "suncal/gui/help_strings/curvefit_help.py": "f135ee48d76bd96983be4c8837be66957384e32267ef6faa52a74881de0b5521",
+        "suncal/gui/help_strings/distexplore_help.py": "cb23b298e726e9af8a2430f258db8d64d1bab987f996052b2c8e80c44877e111",
+        "suncal/gui/help_strings/interval_help.py": "59ab94c48495e0a4f6f901248f8f7ddd10a3f3558814a905bfa23c76bd1025dd",
+        "suncal/gui/help_strings/main_help.py": "73efd4220e1233612aca6d40867cf80d24b437e8a14108e22737c8288f549dd8",
+        "suncal/gui/help_strings/mqa_help.py": "f68c993555670b8a0055a89cbe267e5a99b6365bc763515a717f65bf9cdf2e6c",
+        "suncal/gui/help_strings/risk_help.py": "64111444a24acd73905adaffd24859758f63730a8b34261330b7579703fae03a",
+        "suncal/gui/help_strings/system_help.py": "38f200d3dbe8807bbcb325b2a5cf2aaaea8da9bc6788c0ac1787d9bb9e061b17",
+        "suncal/gui/help_strings/uncert_help.py": "f6845aac3de24fdc3381f3e7d3fbcc922e2a277c702e3301ac373c034ee5bafa",
+        "suncal/gui/help_strings/wizard_help.py": "48f2e2956c77cb51c0d0b2be37f1d64d160ec0d193de601e933db22b2a26f522",
+        "suncal/gui/icons/__init__.py": "16d39decb94316c6f45b52464477978977b62a9fc12b97ea4a6e130ae6ef553f",
+        "suncal/gui/icons/icons.py": "2fb70e4b4caa0fbbd3065f14c1c2ebe0ae7c772d53f5c8104db963801f161f41",
+        "suncal/gui/icons/pngs.py": "10f48a0c9a767137c1af849d408d3fef59ca7a0f127d7bb87e06f29f1ce80730",
+        "suncal/gui/icons/snllogo.py": "d88ff2313d687c60a8682035d77e8d26d4b81bce57209b1073e30aa6b551ac09",
+        "suncal/gui/licenses.py": "474c930338e683a8b765b4b3463161372a2890b10a54c629495cb9fb663e1020",
+        "suncal/gui/page_about.py": "bfdc6f9fcbca72b1c4ae09cbd932abf2bfb2c44d1600512e2d5cffb3dd536738",
+        "suncal/gui/page_csvload.py": "e5fed1d920a0d3b1e924a9bfaa5e203ca0c06c68e78c03c101be2da1a6341b11",
+        "suncal/gui/page_curvefit.py": "1af8700076785fac4139d84fdd66aa241dfc062a595cfbcbf973e910719cced7",
+        "suncal/gui/page_dataimport.py": "af7c9cd33197cb18c328db3e2652c8e816808fe45879a65cd547a6087321745f",
+        "suncal/gui/page_dataset.py": "26411b8586295c107f52979b08bd5ee9561338459730f3226db17324c4d55925",
+        "suncal/gui/page_distexplore.py": "a3f8a63eadfedac4b0c279d0edddf618bcea7ef58b74cf93fc66fad0f28ddeef",
+        "suncal/gui/page_guardband.py": "96616aaabd51f98562462cf0284d974cabc8505f12e7663fa1b2844c4eb12ccb",
+        "suncal/gui/page_interval.py": "144eb5c1e159e862342a05e9a17d94901caa4713df1b4ab94bdea996b8de9712",
+        "suncal/gui/page_meassys.py": "2e2c33ab017f14da5f5ddcaf4d8d301ce2bc0ddeaca7e340921221a8ff50b113",
+        "suncal/gui/page_measys_curve.py": "c9790c196fb7f20b5ea16cd49e8bf1089d6f5321b694af4bfd0c8dc40a359a27",
+        "suncal/gui/page_mqa.py": "3d08e098cc9099d7a4259ed363d83070992cdba51979e9f8cfd29432da620abe",
+        "suncal/gui/page_reverse.py": "ae53902c00b1bcb6c8183f1cb2592aa974690bb1e02150030fd678953270b419",
+        "suncal/gui/page_risk.py": "a56f487701188de83450f649397c6dccab88ecfd3105a92a8415796b91b8bf8b",
+        "suncal/gui/page_settings.py": "c977347cf0e0d0bdb9e3884eea0c6ca717dcc6e5732392ff8294100b80cdd724",
+        "suncal/gui/page_sweep.py": "f412d4f9aadd5f8e048f84a60b6c7c9ac4faedb2e3e17954978e5f7f1aada209",
+        "suncal/gui/page_typea.py": "9ed0e61084b90bae86721c6df7862144ea00a8308f3777354f068f8e8ff1bcc6",
+        "suncal/gui/page_uncert.py": "3c940eb4f35d5f7d838ed0be98c1febbe29c1f7628f36e292c909c8628d17066",
+        "suncal/gui/page_uncert_input.py": "b54a9f995ceb134d37f815f0592e7c7e513d0f17b00c239794822c34b28749e3",
+        "suncal/gui/page_uncert_output.py": "d3cf165acf11e3fb68f75432d1f712597731ddd2fbd785bb8e37721d225ee2f9",
+        "suncal/gui/page_wizard.py": "f8624cc2bcf0f4645a6743e9078fb41e0fa3a0b84c993f2f9892b37e39b392d1",
+        "suncal/gui/tool_risk.py": "8a0474a30e0402bb7570c56936b865195510f215f2d45b3428f1b88aba7469c0",
+        "suncal/gui/tool_riskcurves.py": "bf9c7a62c6d073c52ff0f397a8e85aff1f7692deb471887aee50ca29216cb5d6",
+        "suncal/gui/tool_ttable.py": "12e49b73923d063f6a7f28eab451807aafee850edbcc0a50a1a1023531500fe4",
+        "suncal/gui/tool_units.py": "c5c0802a6ad366dc3b201325aac999899978668253411a934de5446f180d7638",
+        "suncal/gui/widgets/__init__.py": "1c85050cafb848fef7250033dba6c4aa06747df16651bb8b1119eb8abd6f5463",
+        "suncal/gui/widgets/assign.py": "c963a88590d5ea9cd23936dfffe58398cf1b6413e0fb3e52d17573f2d5e0725a",
+        "suncal/gui/widgets/buttons.py": "127e35cb7003987c636027187b4bf126942b89b5059f0351c43571967ee3902e",
+        "suncal/gui/widgets/colormap.py": "3b7815d797adb4cfd063c2f3f21b07a237ea343bb216ffb1e1daf7daef6c60f7",
+        "suncal/gui/widgets/combo.py": "5e53d428a2ed692427d111f35a791e0074538d2e47204833465aa3193f9dffe8",
+        "suncal/gui/widgets/equipment.py": "aee07006c924592ef74aa5f95eca4d7f092da9c00ff6f97ee1c752c7313b3485",
+        "suncal/gui/widgets/intervalbins.py": "5cb2cf41076a344509ff6908706c26d988ab757e5d94a5e709bf957c94dc4bfc",
+        "suncal/gui/widgets/mkdown.py": "09b47986a232680d5dc391db20440ab10d2b54239d41ef247cd800ea14244823",
+        "suncal/gui/widgets/mqa.py": "6bbdfe723472855c9e87568ad89cb4813dbb42c5e8d842586aee592b997bcfd4",
+        "suncal/gui/widgets/panel.py": "8e7f21424ce117192bf7fd76de86426893b69731886963cf2e8dcecd109ed342",
+        "suncal/gui/widgets/pdf.py": "dc66a50f55a378b0c702b73073d6b004d19acd2cd03b39dd3ebd6bebfcf87c3c",
+        "suncal/gui/widgets/stack.py": "47efb09ccad8862ee9c21435b2825c363aefc551eaf4eca4ca5d5f0d8dfd692a",
+        "suncal/gui/widgets/stats.py": "c88c7384d0b30ae8a849b88a7563439f859e5c6392c38f974df2ae9efea44811",
+        "suncal/gui/widgets/table.py": "740c91aadff006ed665de81ecea5d259a247814d87ef6c22726bf677106235a3",
+        "suncal/intervals/__init__.py": "2454e59062e50d7f308d276f82eb50d5f5231e0343c39930419be51093d4f8f8",
+        "suncal/intervals/binoms2.py": "9e901571d3663f601587cb552f3920c381f45dfd492d1ba0ef370301e8fab128",
+        "suncal/intervals/fit.py": "145f6521abb522ca497fc5cbb29dcb7dbaf92fc39e3ba7b9bca0892e0f093367",
+        "suncal/intervals/report/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "suncal/intervals/report/attributes.py": "2d686289e545b9fb3da8ebf4c7a538c47262a73abf0b978b94143c3bf1269839",
+        "suncal/intervals/report/variables.py": "ebdfb5cce2eaaf4974819b00a8f30e4c32192ef3258ad588d0a121ef6a704d85",
+        "suncal/intervals/s2models.py": "b51fd234a7610d2126ac70a41c2a350dfa3566a2d9cbdb6ab29195c5fbf053de",
+        "suncal/intervals/testa3.py": "7e2665e1642e6bc45af19901fe801241ecf125d29578c33121d8d8a97f7f5861",
+        "suncal/intervals/variables.py": "c6cceda304f26a91758fb810dabe0268ac0ec23fc3035bad12f2cd7d5df9c664",
+        "suncal/meassys/__init__.py": "7f0ff344d09b691e607096f74e57c7287079db73d2f31cbad6fed51886266e09",
+        "suncal/meassys/curve.py": "5c634258fa970b432e6e317e9a8389c694fe1e0929e118b3b32eb776a14639fd",
+        "suncal/meassys/meas_result.py": "3ccaefa9f604442bce60f7dceb4089ca970575c264c5029a0aebe93d4b840ca2",
+        "suncal/meassys/meassys.py": "6017c1355c4b9628d3eec8933f8b8c0697bce64ff7fa357d750297a51aa69ded",
+        "suncal/meassys/report/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "suncal/meassys/report/meassys.py": "b7d9285a3d40423e6ea7e8c7df22219ba960961d02b9037466db8b1e52ca0c11",
+        "suncal/mqa/__init__.py": "3f76c07727e7b46fa4161f2e8c894f992e5724ad02e47c194324f156b58633eb",
+        "suncal/mqa/costs.py": "beccb43f7d467e77509fd820a10383ef36f574b6d7793ed0322c39bb713d4666",
+        "suncal/mqa/equipment.py": "92fe03a2e8c5e4cddfa7391333814bc117aeebd07587b0c0e61dc4b6882cd53e",
+        "suncal/mqa/guardband.py": "c4ede157c641595c1599b5aee687590001589029f080049336ab38365999f2ce",
+        "suncal/mqa/measure.py": "3e020e8d4a5c7e2afdf078d7608b6de051d557f3a17979912638bf04b7d75e1d",
+        "suncal/mqa/mqa.py": "e13f2f9764012906a24cbe3813ea7bf3fc796ba274c382765b89197dd1e9a9d8",
+        "suncal/mqa/pdf.py": "89b963ffcb0b2bd9cfcb3c07a130f8747c5129794a855e48c31e5c59650f2bab",
+        "suncal/mqa/report/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "suncal/mqa/report/quantity.py": "04fc00da142c02d7ad738e0cd4cfb177a4cc8ff1605683a7d671361f00c8be56",
+        "suncal/mqa/report/system.py": "2eed8c9915a7c1a07ffc4c65f7e522bcc5f39e1c3dfd3eb3c7b8dd2b7a754cf3",
+        "suncal/mqa/result.py": "726affc493759c05405d36fe4f353aeb39f0774551108a30dfc13a91a13f5940",
+        "suncal/mqa/risks.py": "9b873c2f167ff962eeb8ad620f4b943d388642ff39986403f7e3eca98fec31db",
+        "suncal/mqa/system.py": "cab89368e3d15e03c15c6d82e1362dcfc0ed398eb74822f34766c8b1a814b46d",
+        "suncal/project/__init__.py": "d4e360ebefd3a4f08ca8858538c767997f5990a45f7492ad781fa8049ab51dc2",
+        "suncal/project/component.py": "04831b8fb2248f73ff64d9cc4355529fd8cbe57345653437372754cbb4022eeb",
+        "suncal/project/proj_curvefit.py": "65de453c4eca69b89e6e4c3b83a1cbc9ed8039f6a783533096d46ca04f2d731b",
+        "suncal/project/proj_dataset.py": "f25da51564ece9b0366da545c3f868dd34a9e2b1e494b960b15a6830d3f81253",
+        "suncal/project/proj_explore.py": "633ba3a83d25b25d29b4575db8d72d3a229a5b390367d163babc393da3cd1d41",
+        "suncal/project/proj_interval.py": "bf854ff175489a502be8d36b7a5f561eb1c87987ed14757c4e92292be97c7e78",
+        "suncal/project/proj_meassys.py": "df8613b619c542ad12b2cc25bdaaef1d0552762d4c564b71672101d5fa9657f9",
+        "suncal/project/proj_mqa.py": "e83403d46a843ad09ba51aff3c03d6fdd137b0815654d20ec0f32d263ad3a426",
+        "suncal/project/proj_reverse.py": "344aa78e9a19ee1ad6ac71618bd26b7a07a0eda9d5054c1226caaeba1cc66255",
+        "suncal/project/proj_revsweep.py": "f3c107120254a4ca048db0907706444f44030b99b140c11da55f4660e12fd34c",
+        "suncal/project/proj_risk.py": "43ea9c2e16c068122220f9e6aa73a5e1e37edf0215e0bfcb83dc82af48903645",
+        "suncal/project/proj_sweep.py": "ce1e1f26af45b8ba2b2cfc13a09467e8ce5238b93efebf4460c7847234b0eddd",
+        "suncal/project/proj_uncert.py": "1309a800ee7ebbe158bab115a9a7ecd960e94383fbc85dbb738cdf2b61af281e",
+        "suncal/project/project.py": "6935141d2c175b643d69bd65a640d4891020e76a6370a602341fc44b7852347e",
+        "suncal/reverse/__init__.py": "017ac41dae00feeb550d00d90921a9b6a417d49aceedbff34ae3bbf8b38ca847",
+        "suncal/reverse/report/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "suncal/reverse/report/reverse.py": "d359e59fa10e221a72e559b16496fc79ddf5b63b058d4b3a566fd57b0a9d4e35",
+        "suncal/reverse/reverse.py": "3a9b9fd6cb3b949a6da324c078369392a6b1a1c3fb821cecbf882716aadfdd97",
+        "suncal/risk/__init__.py": "aa1377642822fbdb8a35dead895f73d0d6be52184996782c74f1c6e874a2976c",
+        "suncal/risk/deaver.py": "aadef5c242408605ebfc5c9ad35ebb22c172e8d3a1e95eed5fb6ddf6aa4a48a3",
+        "suncal/risk/guardband.py": "afe0c8d5faf349a18cf4dfbef66c8ec32f58e864fbce8c1ed578af250871ab6c",
+        "suncal/risk/guardband_tur.py": "2143ccac6b81e987f9c5ca1c7168474c42fa4b4d239602cbb36e5aa0d76597cd",
+        "suncal/risk/report/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "suncal/risk/report/risk.py": "c8c6df2e71bcd0e25fde3df02e053322a183f4987a68074b8001054f1c8206a8",
+        "suncal/risk/risk.py": "e5b8039e61a18b7f4246cd322b737e5d6be12400936840ce13225d3d604fe51f",
+        "suncal/risk/risk_gage.py": "bdf0e097ed8d1397bad854b69adffc25acd3a5b33d7bfd02a5974bec746c1af2",
+        "suncal/risk/risk_model.py": "ff6e76b186e0ad69a2543af3f2ed40fc565e59c18cd1b8fd5db652d29c738721",
+        "suncal/risk/risk_montecarlo.py": "0964f707e5c5ef5b7800819c69055ae52c7b31cf6c6a0a7f0af96b71e489f1aa",
+        "suncal/risk/risk_quad.py": "36a569b8f57b1b5b95f62759daad6cd5a53aa4929b9e74b1d2566959459610bb",
+        "suncal/risk/risk_simpson.py": "ea31c14721c28d187ca5b80ef4ca933d4a3045a3d6a24165405ed702ecf8ff1d",
+        "suncal/risk/risk_sweep.py": "7e0782547636e7f19da46f5f087181ffec1e8baefcc574cb4bb1172b85e74984",
+        "suncal/risk/risk_tsayke.py": "7662a569dbd9cd77ec73397a2f027feeec938320ea1daa928e389f60ec19cd23",
+        "suncal/sweep/__init__.py": "b5459af0f9ca4128291c129fafbadeedc42be712594f380756d437e09df0b39e",
+        "suncal/sweep/report/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "suncal/sweep/report/revsweep.py": "bd9a021317e3c042797117cefba12006d148c519d205db71ab0e10a8f34b5e34",
+        "suncal/sweep/report/sweep.py": "a5294cd8c7a0bcec298818b9eafe76040d1c3e58d74fd4c2832238e732ca71af",
+        "suncal/sweep/results/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "suncal/sweep/results/revsweeper.py": "89433f37dcfab733d4721a7c44525f36df3a1179ba495bca5451ef01dc27de71",
+        "suncal/sweep/results/sweep.py": "349d3b0246234445c135a983e723210da2840d795976b1a483088077d71ffe3d",
+        "suncal/sweep/revsweeper.py": "c2b2b619fddd87e6d479dc2d32848427a481eed7d86c43835c45b152d36df55b",
+        "suncal/sweep/sweeper.py": "c8350cb66ea982f24f8516ab72ed0186bca72698674f0388fdf95180b25c1f3c",
+        "suncal/uncertainty/__init__.py": "dae4221dd24cbaa3b4273e4820c1df38c79747c9ac9346bc4258743877d38fdc",
+        "suncal/uncertainty/model.py": "86a64f44cdac247fbbe64249f0a055fd91155c24b050466a05912e090d115a5a",
+        "suncal/uncertainty/model_cplx.py": "189be0c63b4f1a08aa243a0074a1a109c51ba08bc2b1c94d13736a44fce231b2",
+        "suncal/uncertainty/report/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "suncal/uncertainty/report/cplx.py": "b77096d38173c919f8b1851bdb869659bee21cc7ee03232f7d8e38ee2a4d904e",
+        "suncal/uncertainty/report/gum.py": "261e729dd721a4bd692618f263ecc03a08a0168c6438c455a99207698ea80e6a",
+        "suncal/uncertainty/report/monte.py": "18dd2c3137b18314a3e94692fe8298d7c0fc9107b1c17da928067c30c1bfdf5b",
+        "suncal/uncertainty/report/uncertainty.py": "15acdb8b8271a0bc0ffd1bb472f1f9c63edac8e6de80423eba35d0808543e6d0",
+        "suncal/uncertainty/report/units.py": "2916c2ca88979c29f42dbbfade25927cf28700132ef09b4b0cc547992cc10a7a",
+        "suncal/uncertainty/results/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "suncal/uncertainty/results/gum.py": "f55282a1353b77146d6d01800adf738dab390239ebd0ce7fd7728410902ae802",
+        "suncal/uncertainty/results/monte.py": "99e207d325d11b9d525cb5b5f1a49441e30007044028616c82c5379de91f03cf",
+        "suncal/uncertainty/results/uncertainty.py": "7921e018b56e89e3433380728ef8c55e2cce3bec83361d79a70be0e237949a15",
+        "suncal/uncertainty/variables.py": "6054e8efefe669e82f9e9678a6625f811a9d3689306d060fe62b793e372ccb30",
+        "suncal/version.py": "cb80e0c4f761039c6a2881eb52215c2236021f629f2b365968f4a478e933d3f3"
+      }
+    },
+    {
+      "name": "mcerp",
+      "version": "1.1.1",
+      "release": "2026-08-19T10:07:19.809141Z",
+      "project_urls": {
+        "documentation": "https://eggzec.github.io/mcerp/",
+        "homepage": "https://eggzec.github.io/mcerp/",
+        "issues": "https://github.com/eggzec/mcerp/issues",
+        "releasenotes": "https://github.com/eggzec/mcerp/releases/latest",
+        "source": "https://github.com/eggzec/mcerp"
+      },
+      "license_label": "BSD-3-Clause",
+      "installed_file_sha256": {
+        "mcerp-1.1.1.dist-info/licenses/LICENSE": "303665d52a50653e312c58fec3b489042f1e2383bf19f941911f393bf8b9d3bc",
+        "mcerp/__init__.py": "4a8e8f4af2efddeb0fde2e49cfb22a511a96b942369a64cd61191d150f397c7b",
+        "mcerp/core.py": "044a87b2ed456a7156cec9b0626b5c1ba3299d6f2d67f07714243da2f84aab0b",
+        "mcerp/correlate.py": "09fbaaa6391b74626fe63bfe0340235f0c9c13b3f03dcfead2458b7787a31c67",
+        "mcerp/lhd.py": "4b598c26cd37168a4f9235f4c7b4c3fe7d99d1433b66a1c85ca7c65ce9ab08c2",
+        "mcerp/stats.py": "31c2c251b284fa65bf70ed9760248849862e01f6a2443a15e8f220f88ba1278a",
+        "mcerp/umath.py": "e5a1d75ee9363592caf0830b16b660cb18dd0ebf6777d16c72f28c2666ce6f7b"
+      }
+    }
+  ],
+  "installed_distributions": [
+    {
+      "name": "GTC",
+      "version": "1.5.1",
+      "url": "https://files.pythonhosted.org/packages/86/b7/6170650b7ac14b08943f8fd688ce7c814eb941dece45dac9996620a8a08c/GTC-1.5.1-py2.py3-none-any.whl",
+      "archive_hashes": {
+        "sha256": "f332ff13f4b4925ad89cb7180dcabd0ce5bcce3a501af6e722049ae53b0dbb9f"
+      }
+    },
+    {
+      "name": "uncertainties",
+      "version": "3.2.3",
+      "url": "https://files.pythonhosted.org/packages/8f/5e/f1e1dd319e35e962a4e00b33150a8868b6329cc1d19fd533436ba5488f09/uncertainties-3.2.3-py3-none-any.whl",
+      "archive_hashes": {
+        "sha256": "313353900d8f88b283c9bad81e7d2b2d3d4bcc330cbace35403faaed7e78890a"
+      }
+    },
+    {
+      "name": "suncal",
+      "version": "1.7.1",
+      "url": "https://files.pythonhosted.org/packages/82/ae/1787ee4e46afe24a5c71eddeab381160110336b4af70f8dedc7a20f737f0/suncal-1.7.1-py3-none-any.whl",
+      "archive_hashes": {
+        "sha256": "5241b902b511affc2ed27799ff7acbc651ca02715709b341a707012d228b2fde"
+      }
+    },
+    {
+      "name": "mcerp",
+      "version": "1.1.1",
+      "url": "https://files.pythonhosted.org/packages/2c/b5/db908a50b73511c20dd0bc1ae9e3c7cd2f68534028349f9fe40d0ed8f465/mcerp-1.1.1-py3-none-any.whl",
+      "archive_hashes": {
+        "sha256": "d1c543880cc864ddf6c3c2390b74572d5b426abab8c9c65a9e9307cdeac9201c"
+      }
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.4",
+      "url": "https://files.pythonhosted.org/packages/34/f2/b4fc1bafca03868220b5eaf729d2f21ebd7d7b151c0f9e144fe212bbca35/numpy-2.5.4-cp312-cp312-macosx_14_0_x86_64.whl",
+      "archive_hashes": {
+        "sha256": "aec3fc4b32ff82421274f5d205c559c51c840c8df66a78efd7f3612dd005a26a"
+      }
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1",
+      "url": "https://files.pythonhosted.org/packages/35/f5/906eda513271c8deb5af284e5ef0206d17a96239af79f9fa0aebfe0e36b4/scipy-1.17.1-cp312-cp312-macosx_14_0_x86_64.whl",
+      "archive_hashes": {
+        "sha256": "c80be5ede8f3f8eded4eff73cc99a25c388ce98e555b17d31da05287015ffa5b"
+      }
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.10.9",
+      "url": "https://files.pythonhosted.org/packages/35/c6/5581e26c72233ebb2a2a6fed2d24fb7c66b4700120b813f51b0555acf0b6/matplotlib-3.10.9-cp312-cp312-macosx_10_13_x86_64.whl",
+      "archive_hashes": {
+        "sha256": "f0c3c28d9fbcc1fe7a03be236d73430cf6409c41fb2383a7ac52fe932b072cb1"
+      }
+    },
+    {
+      "name": "contourpy",
+      "version": "1.4.0",
+      "url": "https://files.pythonhosted.org/packages/97/ba/01bde9753bdbba04a6da9d2bff3881f021bc708f654655e95fae26d3b3a3/contourpy-1.4.0-cp312-cp312-macosx_10_13_x86_64.whl",
+      "archive_hashes": {
+        "sha256": "186ba929df36d61b6127da2e89cd1357e4cb79aca647381ab1a6feb0b152877b"
+      }
+    },
+    {
+      "name": "cycler",
+      "version": "0.12.1",
+      "url": "https://files.pythonhosted.org/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl",
+      "archive_hashes": {
+        "sha256": "85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30"
+      }
+    },
+    {
+      "name": "fonttools",
+      "version": "4.67.0",
+      "url": "https://files.pythonhosted.org/packages/e3/c8/5963603c5f9bbc28bde3a29dd7cdbe0bfcbee414b0f7eccec04ae477e1b6/fonttools-4.67.0-cp312-cp312-macosx_10_13_x86_64.whl",
+      "archive_hashes": {
+        "sha256": "ad813967410ba6d24a52850df59b164ee17883f17b96a91b4b0ac6e9d7b5a118"
+      }
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.5.1",
+      "url": "https://files.pythonhosted.org/packages/71/74/c21f339956f6f691b2ed7e31d5f3ae767304df6c460192739fc830853051/kiwisolver-1.5.1-cp312-cp312-macosx_10_13_x86_64.whl",
+      "archive_hashes": {
+        "sha256": "0ebdef3eae5336568147c39a55be6a2036ffde53faa9ca2d978989ae7c2da12c"
+      }
+    },
+    {
+      "name": "Markdown",
+      "version": "3.11.1",
+      "url": "https://files.pythonhosted.org/packages/75/e6/1c7b7a48aa3f2c2a5d3c71a6c9c90a6c8c2903e5c73663b5f5e38f87257f/markdown-3.11.1-py3-none-any.whl",
+      "archive_hashes": {
+        "sha256": "f1fa378ba5d682900c9ecb55ccceacca936016dda7c3b27097e8ae03ff78feb5"
+      }
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "url": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl",
+      "archive_hashes": {
+        "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+      }
+    },
+    {
+      "name": "pillow",
+      "version": "13.0.0",
+      "url": "https://files.pythonhosted.org/packages/7a/b8/58d79332229482eb0d27c82973850808c19d37e5bdc14443d3417bd373f5/pillow-13.0.0-cp312-cp312-macosx_10_13_x86_64.whl",
+      "archive_hashes": {
+        "sha256": "67c8d44ad89fa7eb88de5d6ef6199b1e03dd24974f85a67639fc8badb801fe79"
+      }
+    },
+    {
+      "name": "Pint",
+      "version": "0.26.1",
+      "url": "https://files.pythonhosted.org/packages/6d/5c/9507ea3c732f8a259f45ddf190a741e9bf7d3fe229b5d473917ee6efbf1e/pint-0.26.1-py3-none-any.whl",
+      "archive_hashes": {
+        "sha256": "e982b129415c09c63308f314ae44697d83e5c96f253bcc0d5b833fc3329eb6d4"
+      }
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.3",
+      "url": "https://files.pythonhosted.org/packages/38/bb/d215ee7c73b61497b28a5503f9f53523f294fcc936762b7caf90e0c1c2b5/pyparsing-3.3.3-py3-none-any.whl",
+      "archive_hashes": {
+        "sha256": "ece8c00a69cf01b45d0b1dedabb469c90d8caf996d4fda40f147627a122849a4"
+      }
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "url": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "archive_hashes": {
+        "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427"
+      }
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "url": "https://files.pythonhosted.org/packages/d1/33/422b98d2195232ca1826284a76852ad5a86fe23e31b009c9886b2d0fb8b2/pyyaml-6.0.3-cp312-cp312-macosx_10_13_x86_64.whl",
+      "archive_hashes": {
+        "sha256": "7f047e29dcae44602496db43be01ad42fc6f1cc0d8cd6c83d342306c32270196"
+      }
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0",
+      "url": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl",
+      "archive_hashes": {
+        "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5"
+      }
+    },
+    {
+      "name": "flexcache",
+      "version": "0.3",
+      "url": "https://files.pythonhosted.org/packages/27/cd/c883e1a7c447479d6e13985565080e3fea88ab5a107c21684c813dba1875/flexcache-0.3-py3-none-any.whl",
+      "archive_hashes": {
+        "sha256": "d43c9fea82336af6e0115e308d9d33a185390b8346a017564611f1466dcd2e32"
+      }
+    },
+    {
+      "name": "flexparser",
+      "version": "0.4",
+      "url": "https://files.pythonhosted.org/packages/fe/5e/3be305568fe5f34448807976dc82fc151d76c3e0e03958f34770286278c1/flexparser-0.4-py3-none-any.whl",
+      "archive_hashes": {
+        "sha256": "3738b456192dcb3e15620f324c447721023c0293f6af9955b481e91d00179846"
+      }
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0",
+      "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl",
+      "archive_hashes": {
+        "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c"
+      }
+    },
+    {
+      "name": "platformdirs",
+      "version": "4.13.4",
+      "url": "https://files.pythonhosted.org/packages/58/51/5614d0537dd830ca64d95a2f254bd66bdf3ac61d41cffcccaec62121fcfd/platformdirs-4.13.4-py3-none-any.whl",
+      "archive_hashes": {
+        "sha256": "502ce08e9d36cf90579ee44e1e764838842fa658e4975ef47344fd053011d2c8"
+      }
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+      "archive_hashes": {
+        "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"
+      }
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+      "archive_hashes": {
+        "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+      }
+    }
+  ]
+}
